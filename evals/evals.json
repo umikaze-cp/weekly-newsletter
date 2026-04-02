@@ -1,0 +1,23 @@
+{
+  "skill_name": "weekly-newsletter",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "今週のAI×DXニュースレターを作って",
+      "expected_output": "4セクション構成のHTMLニュースレター（ニュースTOP3、ツール2件、用語解説1つ、コラム）",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "生成AIの業務活用をテーマにニュースレターを作って",
+      "expected_output": "生成AIの業務活用に焦点を当てた4セクション構成のHTMLニュースレター",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Vol.5のニュースレターをお願い。クラウド関連は除外して",
+      "expected_output": "Vol.5表記、クラウド関連トピックなしの4セクション構成HTMLニュースレター",
+      "files": []
+    }
+  ]
+}

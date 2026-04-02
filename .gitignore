@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+._*
+
+# エディタ
+.vscode/
+*.swp
+*.swo
+
+# Node.js（将来使う場合）
+node_modules/
+
+# 一時ファイル
+*.tmp
+*.bak
