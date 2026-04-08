@@ -16,8 +16,6 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 
 - [Vol.1 — 創刊号](outputs/vol1/)
 - [Vol.1 特集 — 生成AIの業務活用](outputs/vol1-special/)
-- [Vol.5](outputs/vol5/)
-
 ## 📁 プロジェクト構成
 
 ```
@@ -31,10 +29,8 @@ weekly-newsletter/
 └── outputs/               ← 生成したニュースレター
     ├── vol1/
     │   └── index.html     ← Vol.1 創刊号（最終版）
-    ├── vol1-special/
-    │   └── index.html     ← Vol.1 特集号
-    └── vol5/
-        └── index.html     ← Vol.5
+    └── vol1-special/
+        └── index.html     ← Vol.1 特集号
 ```
 
 ## 📱 レスポンシブ対応
