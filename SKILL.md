@@ -90,33 +90,12 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
        iPad縦向き768px をカバー
        ====================== */
     @media only screen and (min-width: 681px) and (max-width: 840px) {
-      /* コンテナを画面幅の94%に広げる */
-      .email-container {
-        width: 94% !important;
-        max-width: 800px !important;
-      }
-      /* 本文エリアのパディングをやや広めに */
-      .content-cell {
-        padding-left: 28px !important;
-        padding-right: 28px !important;
-      }
-      /* カード内のパディング調整 */
-      .card-cell {
-        padding: 18px 20px !important;
-      }
-      /* 本文テキストをやや大きめに（タブレットの閲覧距離に最適化） */
-      .body-text {
-        font-size: 15px !important;
-        line-height: 1.8 !important;
-      }
-      /* ヘッダータイトルを少し大きく */
-      .header-title {
-        font-size: 28px !important;
-      }
-      /* セクション見出しを少し大きく */
-      .section-heading {
-        font-size: 21px !important;
-      }
+      .email-container { width: 94% !important; max-width: 800px !important; }
+      .content-cell { padding-left: 28px !important; padding-right: 28px !important; }
+      .card-cell { padding: 18px 20px !important; }
+      .body-text { font-size: 15px !important; line-height: 1.8 !important; }
+      .header-title { font-size: 28px !important; }
+      .section-heading { font-size: 21px !important; }
     }
 
     /* ======================
@@ -124,38 +103,13 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
        iPhone / Android をカバー
        ====================== */
     @media only screen and (max-width: 680px) {
-      /* メインコンテナを画面幅に追従させる */
-      .email-container {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
-      /* ヘッダーのフォントサイズ調整 */
-      .header-title {
-        font-size: 22px !important;
-      }
-      /* 本文エリアのパディングを狭める */
-      .content-cell {
-        padding-left: 16px !important;
-        padding-right: 16px !important;
-      }
-      /* ニュースカードの内側パディング調整 */
-      .card-cell {
-        padding: 14px 14px !important;
-      }
-      /* セクション見出しのサイズ調整 */
-      .section-heading {
-        font-size: 18px !important;
-      }
-      /* 本文テキストの読みやすさ確保 */
-      .body-text {
-        font-size: 14px !important;
-        line-height: 1.8 !important;
-      }
-      /* リンクのタップ領域確保 */
-      .source-link {
-        display: inline-block !important;
-        padding: 4px 0 !important;
-      }
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .header-title { font-size: 22px !important; }
+      .content-cell { padding-left: 16px !important; padding-right: 16px !important; }
+      .card-cell { padding: 14px 14px !important; }
+      .section-heading { font-size: 18px !important; }
+      .body-text { font-size: 14px !important; line-height: 1.8 !important; }
+      .source-link { display: inline-block !important; padding: 4px 0 !important; }
     }
   </style>
 </head>
@@ -205,7 +159,7 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 5. 本文の `<p>` には `class="body-text"` を付与（モバイル時にline-height:1.8で読みやすく）
 6. ソースリンクの `<a>` には `class="source-link"` を付与（モバイル時にタップ領域拡大）
 7. MSO条件コメント `<!--[if mso]>` でOutlook対応の固定幅テーブルをラップする
-8. メディアクエリは「タブレット（681〜840px）」→「スマホ（680px以下）」の順で記述する。タブレット用ではコンテナ幅を94%・最大800pxに広げ、フォントサイズをPC版よりやや大きく（本文15px、見出し21px、タイトル28px）して閲覧距離に最適化する。iPad横向き（1024px）以上ではPC表示（800px固定）がそのまま適用される
+8. メディアクエリは「タブレット（681〜840px）」→「スマホ（680px以下）」の順で記述する
 
 **各セクションのHTML：**
 - セクション見出しは `<h2>` タグ、アクセントカラーの左ボーダー付き
@@ -213,19 +167,142 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 - リンクはアクセントカラー（#2563eb）で下線付き
 - 英語キーワードは `<span style="color:#6b7280; font-size:0.9em;">` で表示
 
-### Step 4: 出力
+### Step 4: 戻るボタンの追加
+
+各号のHTMLには、`</body>` 閉じタグの直前に「バックナンバー一覧へ戻る」ボタンを追加する。GitHub Pages上でのナビゲーション用。
+
+```html
+<style>
+  .back-btn {
+    position: fixed; bottom: 28px; right: 28px;
+    width: 52px; height: 52px;
+    background: transparent; border: none; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    z-index: 1000; text-decoration: none; color: #2563eb;
+    transition: color 0.2s, transform 0.15s;
+  }
+  .back-btn svg { width: 44px; height: 44px; }
+  .back-btn:hover { transform: scale(1.2); }
+  @media (max-width: 680px) {
+    .back-btn { width: 44px; height: 44px; bottom: calc(8px + env(safe-area-inset-bottom, 0px)); right: 16px; }
+    .back-btn svg { width: 38px; height: 38px; }
+  }
+</style>
+<a href="../../index.html" class="back-btn" title="バックナンバー一覧へ戻る">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 14L4 9l5-5"/>
+    <path d="M4 9h8a5 5 0 0 1 0 10H8"/>
+  </svg>
+</a>
+```
+
+**リンクパスのルール：** 各号は `outputs/volX/index.html` に配置されるため、バックナンバー一覧（ルートの `index.html`）への相対パスは `../../index.html` となる。
+
+### Step 5: バックナンバーページの更新
+
+新しい号を生成したら、ルートの `index.html`（バックナンバー一覧ページ）も更新する。
+
+**更新ルール：**
+1. `<ul class="issue-list">` の先頭（最初の `<li>` の前）に新しい号のエントリを追加する（新しい号が一番上に来る）
+2. エントリのフォーマット：
+
+```html
+<li>
+  <a href="outputs/volX/">
+    <span class="vol">Vol.X</span>
+    <div class="title">ニュース見出し1 / ニュース見出し2 / ニュース見出し3</div>
+    <div class="date">YYYY年MM月DD日号</div>
+  </a>
+</li>
+```
+
+3. 特集号の場合は `<span class="vol">Vol.X 特集号</span>` とし、タイトルに `🎯 特集：` プレフィックスを付ける
+4. ニュースレターHTML本体と一緒にバックナンバーページも出力する
+
+**バックナンバーページのテンプレート：** 初回作成時は以下の構造で生成する。
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI×DX Weekly — バックナンバー</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, 'Hiragino Sans', 'Yu Gothic', sans-serif;
+      background: #f5f5f5; color: #333; line-height: 1.7;
+    }
+    .header {
+      background: linear-gradient(135deg, #1e3a5f, #2563eb);
+      color: #fff; text-align: center; padding: 48px 20px;
+    }
+    .header h1 { font-size: 32px; letter-spacing: 1px; }
+    .header p { margin-top: 8px; font-size: 16px; opacity: 0.85; }
+    .container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
+    h2 {
+      font-size: 20px; color: #1e3a5f;
+      border-left: 4px solid #2563eb; padding-left: 12px; margin-bottom: 20px;
+    }
+    .issue-list { list-style: none; }
+    .issue-list li {
+      background: #fff; border: 1px solid #e5e7eb;
+      border-radius: 8px; margin-bottom: 12px; transition: box-shadow 0.2s;
+    }
+    .issue-list li:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .issue-list a { display: block; padding: 20px 24px; text-decoration: none; color: #333; }
+    .issue-list .vol { font-size: 12px; color: #2563eb; font-weight: bold; text-transform: uppercase; }
+    .issue-list .title { font-size: 17px; font-weight: bold; color: #1e3a5f; margin-top: 4px; }
+    .issue-list .date { font-size: 13px; color: #6b7280; margin-top: 4px; }
+    .footer { text-align: center; padding: 24px 20px; font-size: 13px; color: #6b7280; }
+    @media (max-width: 680px) {
+      .header h1 { font-size: 24px; }
+      .container { padding: 20px 16px; }
+      .issue-list a { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI×DX Weekly</h1>
+    <p>中小企業のDX推進を応援するニュースレター</p>
+  </div>
+  <div class="container">
+    <h2>📚 バックナンバー</h2>
+    <ul class="issue-list">
+      <!-- ここに各号のエントリを新しい順に追加 -->
+    </ul>
+  </div>
+  <div class="footer">
+    <p>© 2026 AI×DX Weekly. All rights reserved.</p>
+  </div>
+</body>
+</html>
+```
+
+### Step 6: 出力
 
 生成したHTMLを `/mnt/user-data/outputs/` に保存する。
 
-ファイル名: `ai-dx-weekly-vol{号数}-{YYYYMMDD}.html`
+**出力ファイル：**
+- ニュースレター本体: `outputs/volX/index.html`（GitHub Pages用のディレクトリ構造）
+- バックナンバーページ: `index.html`（新号エントリ追加済み）
 
 保存後、`present_files` ツールでユーザーに提示する。
+
+### Step 7: 号数管理
+
+**号数（Vol.）の管理ルール：**
+- ユーザーから号数の指定がなければ、バックナンバーページの最新号数 +1 で自動採番する
+- 特集号は同じVol.番号に「特集号」サフィックスを付ける（例: Vol.1 特集号）
+- フォルダ名は `vol{数字}`、特集号は `vol{数字}-special` とする
 
 ## ユーザーへの確認ポイント
 
 生成前に、以下をユーザーに確認する（指定がなければデフォルトで進める）：
 
-- **号数**（Vol.XX）：指定がなければ「Vol.1」から開始
+- **号数**（Vol.XX）：指定がなければ直前の号数 +1 で自動採番
 - **特集テーマ**：指定があればそのテーマを重点的にカバー
 - **除外トピック**：「この話題は入れないで」という指定があれば対応
 
@@ -241,3 +318,6 @@ HTMLを出力する前に、以下を確認する：
 - [ ] 英語キーワードが各所に併記されているか
 - [ ] HTMLがメールクライアントで崩れない構造か（テーブルレイアウト使用）
 - [ ] 著作権に配慮し、要約は独自の言葉で書かれているか
+- [ ] 戻るボタンが `</body>` 直前に追加されているか
+- [ ] バックナンバーページに新号エントリが追加されているか
+- [ ] レスポンシブ用のclass属性（content-cell, card-cell, section-heading, body-text, source-link）が全要素に付与されているか
