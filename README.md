@@ -24,22 +24,27 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 
 ```
 weekly-newsletter/
-├── README.md              ← このファイル
-├── SKILL.md               ← Claudeスキル本体
-├── index.html             ← バックナンバー一覧ページ
-├── work-log.md            ← 作業ログ・学習メモ
+├── README.md                          ← このファイル
+├── SKILL.md                           ← Claudeスキル本体
+├── weekly-newsletter.skill            ← スキル登録カード
+├── weekly-newsletter-workflow.md      ← 毎週月曜日の作業プロセス
+├── index.html                         ← バックナンバー一覧ページ
+├── work-log.md                        ← 作業ログ・学習メモ
 ├── .gitignore
+├── images/
+│   ├── apple-touch-icon.png
+│   └── favicon.ico
 ├── evals/
-│   └── evals.json         ← テストケース定義
-└── outputs/               ← 生成したニュースレター
+│   └── evals.json                     ← テストケース定義
+└── outputs/                           ← 生成したニュースレター
     ├── vol1/
-    │   └── index.html     ← Vol.1 創刊号
+    │   └── index.html                 ← Vol.1 創刊号
     ├── vol1-special/
-    │   └── index.html     ← Vol.1 特集号
+    │   └── index.html                 ← Vol.1 特集号
     ├── vol2/
-    │   └── index.html     ← Vol.2
+    │   └── index.html                 ← Vol.2
     └── vol3/
-        └── index.html     ← Vol.3
+        └── index.html                 ← Vol.3
 ```
 
 ## 📱 レスポンシブ対応
@@ -55,7 +60,42 @@ weekly-newsletter/
 - **HTML**: テーブルレイアウト（メールクライアント互換）
 - **CSS**: メディアクエリによるレスポンシブ対応
 - **ホスティング**: GitHub Pages
-- **コンテンツ生成**: Claude Opus 4.6 + Web検索
+- **コンテンツ生成**: Claude Sonnet 4.6（Claude Code CLI v2.1.114）
+- **Web検索**: Exa MCP Server（セマンティック検索 + 記事本文取得）
+- **バージョン管理**: Git（Sourcetree）
+
+## 💻 開発環境
+
+| 項目 | 内容 |
+|------|------|
+| PC | MacBook Pro 13-inch 2017（Intel Core i5） |
+| OS | macOS Ventura 13.7.8 |
+| エディタ | Visual Studio Code |
+| Node.js | v24.15.0（LTS） |
+| npm | v11.12.1 |
+| Claude Code | v2.1.114（CLI版） |
+| MCP | Exa MCP Server（exa-mcp-server via npx） |
+| Git GUI | Sourcetree |
+
+## 🔄 毎週の作業フロー
+
+詳細は [weekly-newsletter-workflow.md](weekly-newsletter-workflow.md) を参照。
+
+```
+Step 0  準備・MCP確認（ターミナル版）
+  ↓
+Step 1  ニュースレター生成指示（ターミナル版 + Exa MCP）
+  ↓
+Step 2  生成物の確認・修正（拡張機能版）
+  ↓
+Step 3  ブラウザプレビュー（手動）
+  ↓
+Step 4  Git commit & push（Sourcetree）
+  ↓
+Step 5  GitHub Pages 公開確認（手動）
+  ↓
+Step 6  作業記録の更新（拡張機能版）
+```
 
 ## 📊 発行履歴
 
