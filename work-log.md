@@ -126,7 +126,7 @@
 ## Phase 7: 次のステップ（TODO）
 
 ### ⑱ 運用の安定化
-- [ ] 配信曜日を決定（月曜朝を推奨）
+- [x] 配信曜日を決定 → **毎週月曜日**に確定
 - [ ] 読者フィードバックの収集方法を検討
 - [ ] 過去号の用語解説で取り上げたキーワード一覧を管理
 
@@ -137,15 +137,79 @@
 
 ---
 
+## Phase 8: Exa MCP導入・Claude Code CLI環境構築（2026年4月18日）
+
+### ⑳ 課題の整理
+- claude.ai（Webチャット）でニュースレターを生成 → ダウンロード → VSCodeにコピー → Sourcetreeでcommit/push、という手動ステップが多く非効率だった
+- Claude Code（ターミナル版）からWeb検索→HTML生成→ファイル出力を一気通貫で行う環境を構築することを決定
+
+### ㉑ 開発環境の構築
+
+**Node.jsのインストール:**
+- nodejs.org から LTS版（v24.15.0）をインストール
+- npm v11.12.1 も同時にインストール済み
+
+**Claude Code CLI のインストール:**
+- `sudo npm install -g @anthropic-ai/claude-code` で v2.1.114 をインストール
+- Claude Proアカウント（サブスクリプション）で認証完了
+
+**つまずいたポイント:**
+- `npm install -g` で EACCES（権限エラー）が発生 → `sudo` で解決
+- npmキャッシュの権限問題 → `sudo chown -R $(whoami) ~/.npm` + `npm cache clean --force` で解決
+
+### ㉒ Exa MCP サーバーの導入
+
+**Exaを選定した理由:**
+- 2026年時点で最も利用されているAI向け検索MCPサーバー
+- セマンティック検索（意味ベース）でニュースの関連性が高い
+- 記事本文（Full text）まで取得可能 → 要約の品質が向上
+- 無料クレジット$10付与（ニュースレター用途では十分）
+
+**セットアップ手順:**
+1. exa.ai でアカウント作成（Claude → MCP → News monitoring を選択）
+2. APIキーを取得
+3. 環境変数に設定: `echo 'export EXA_API_KEY="..."' >> ~/.zshrc`
+4. MCPサーバー追加: `claude mcp add-json exa '{"command":"npx","args":["-y","exa-mcp-server"],"env":{"EXA_API_KEY":"..."}}'`
+5. `/mcp` で `exa · ✓ connected` を確認
+
+**つまずいたポイント:**
+- 最初 `$EXA_API_KEY` の変数展開がうまくいかず `failed` に → APIキーを直接埋め込みで解決
+- npmキャッシュの EEXIST エラー → キャッシュクリアで解決
+
+### ㉓ ターミナル版 vs 拡張機能版の使い分けを整理
+
+| 作業 | ターミナル版 | 拡張機能版 |
+|------|------------|----------|
+| ニュースレター生成（Exa検索必要） | ✅ | ❌ MCP未設定 |
+| コードの修正・質問 | ○ | ✅ エディタ連携 |
+| Git操作 | ○ | ○ |
+| MCP設定 | ✅ | ❌ |
+
+**重要な発見:** ターミナル版と拡張機能版は設定ファイルが別々。ターミナルで設定したMCPは拡張機能側には反映されない。
+
+### ㉔ 毎週月曜日の作業プロセスを策定
+- `weekly-newsletter-workflow.md` を作成
+- 6ステップの作業フローを定義（準備 → 生成 → 確認 → プレビュー → Git → 公開確認 → 記録更新）
+- 各ステップでターミナル版/拡張機能版/Sourcetree/手動のどれを使うか明示
+- 所要時間の目安: 約17〜24分/号
+
+### ㉕ README.md・work-log.mdの更新
+- README.md: 技術スタックにExa MCP追記、開発環境セクション新設、作業フロー概要追記、プロジェクト構成にworkflowファイル追記
+- work-log.md: Phase 8（本セクション）を追記
+
+---
+
 ## 📁 生成ファイル一覧
 
 | ファイル名 | 内容 |
 |-----------|------|
 | `SKILL.md` | ニュースレタースキル本体（v2） |
-| `README.md` | プロジェクト説明（Vol.3まで反映） |
+| `weekly-newsletter.skill` | スキル登録カード |
+| `weekly-newsletter-workflow.md` | 毎週月曜日の作業プロセス |
+| `README.md` | プロジェクト説明（Exa MCP対応版） |
 | `index.html` | バックナンバー一覧ページ |
 | `evals/evals.json` | テストケース定義（5件） |
-| `work-log.md` | 作業ログ・学習メモ |
+| `work-log.md` | 作業ログ・学習メモ（Phase 8まで） |
 | `outputs/vol1/index.html` | Vol.1 創刊号 |
 | `outputs/vol1-special/index.html` | Vol.1 特集号 |
 | `outputs/vol2/index.html` | Vol.2 |
@@ -162,3 +226,8 @@
 - **GitHub Pagesのディレクトリ構成**: `outputs/volX/index.html` にすると `outputs/volX/` でアクセスできる（index.htmlを省略可能）
 - **戻るボタンのenv()関数**: `env(safe-area-inset-bottom)` でiPhoneのホームバーとの干渉を防ぐ
 - **スキル運用のポイント**: バックナンバーページの更新を忘れがちなのでワークフローに明記することが重要
+- **MCP（Model Context Protocol）**: Claude Codeに外部ツールとの接続口を追加する仕組み。MCPサーバーを追加すると、Claude Codeからデータベース、API、Web検索などが使えるようになる
+- **Exa**: AI向けに設計されたセマンティック検索エンジン。キーワードの一致ではなく意味の近さで検索する。記事本文も取得可能
+- **ターミナル版 vs 拡張機能版**: 同じClaude Codeでも設定ファイルが別。MCP設定はターミナル版のみ反映される
+- **npmキャッシュの権限問題**: `sudo` でグローバルインストールするとキャッシュの所有者がrootになる。`sudo chown -R $(whoami) ~/.npm` で修復可能
+- **セマンティック検索の比喩**: 従来の検索が「伝票番号で倉庫を探す」なら、セマンティック検索は「保管条件・商品特性の意味で最適な棚を見つける」方式
