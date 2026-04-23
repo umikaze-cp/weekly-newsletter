@@ -256,6 +256,28 @@
 
 ---
 
+## Phase 10: favicon・ロゴ画像・ヘッダーレイアウト改善（2026年4月23日）
+
+### ㉗ favicon・apple-touch-iconの適用
+- `images/` フォルダに `favicon.ico` と `apple-touch-icon.png` を配置
+- `index.html`（バックナンバーページ）の `<head>` に favicon・apple-touch-icon の `<link>` タグを追加
+- ニュースレター本体テンプレート（SKILL.md Step 3）にも同様に追加（パス: `../../images/`）
+- バックナンバーページテンプレート（SKILL.md Step 5）にも追加（パス: `images/`）
+
+### ㉘ ヘッダーの絵文字→ロゴ画像に変更
+- `index.html` ヘッダーの `🤖 AI×DX Weekly` を `<img>` タグ（apple-touch-icon.png）+ テキストに変更
+- SKILL.md の両テンプレートにも同様の変更を反映
+- 品質チェックリストに favicon・ロゴ画像の確認項目を2件追加
+
+### ㉙ ヘッダーレイアウトを縦並び→横並びに変更
+- `.header` に `display:flex; align-items:stretch; justify-content:center; gap:20px;` を追加
+- ロゴ画像（56px）の右側にタイトルとサブタイトルを縦配置する `<div style="display:flex; flex-direction:column;">` でラップ
+- タイトル（h1）は上端固定（`margin:0`）、サブタイトル（p）は下端固定（`margin-top:auto`）
+- スマホ（max-width:680px）では `flex-direction:column` で縦並び・中央揃えに戻す
+- `index.html` と SKILL.md バックナンバーテンプレートの両方に反映
+
+---
+
 ## 💡 学んだこと・メモ
 
 - **メディアクエリ**: 画面サイズに応じてCSSを切り替える仕組み。タブレット用を追加するとテスト工数が増えるトレードオフがある
