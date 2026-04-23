@@ -269,6 +269,14 @@
 - SKILL.md の両テンプレートにも同様の変更を反映
 - 品質チェックリストに favicon・ロゴ画像の確認項目を2件追加
 
+### ㉚ スマホヘッダーのロゴ崩れを修正（2026年4月23日）
+- iPhone縦・横でロゴが大きすぎて崩れる問題を修正
+- `@media (max-width: 680px)` 内の `.header` 関連を変更：
+  - スマホでも横並び（`flex-direction: row`）を維持、padding縮小（24px 16px）、gap:14px
+  - ロゴを44px×44pxに縮小（`!important` で上書き）
+  - h1を20px、pを12pxに縮小、左揃えに統一
+- `index.html` と SKILL.md バックナンバーテンプレートの両方に反映
+
 ### ㉙ ヘッダーレイアウトを縦並び→横並びに変更
 - `.header` に `display:flex; align-items:stretch; justify-content:center; gap:20px;` を追加
 - ロゴ画像（56px）の右側にタイトルとサブタイトルを縦配置する `<div style="display:flex; flex-direction:column;">` でラップ

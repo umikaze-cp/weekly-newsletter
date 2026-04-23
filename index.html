@@ -74,9 +74,11 @@
       color: #6b7280;
     }
     @media (max-width: 680px) {
-      .header { flex-direction: column; text-align: center; padding: 32px 20px; }
-      .header h1 { font-size: 24px; text-align: center; }
-      .header p { text-align: center; }
+      .header { flex-direction: row; text-align: left; padding: 24px 16px; gap: 14px; }
+      .header img { width: 44px !important; height: 44px !important; }
+      .header h1 { font-size: 20px; text-align: left; }
+      .header p { text-align: left; font-size: 12px; }
+      .header > div { align-items: flex-start; }
       .container { padding: 20px 16px; }
       .issue-list a { padding: 16px; }
     }
