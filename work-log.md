@@ -214,6 +214,45 @@
 | `outputs/vol1-special/index.html` | Vol.1 特集号 |
 | `outputs/vol2/index.html` | Vol.2 |
 | `outputs/vol3/index.html` | Vol.3 |
+| `outputs/vol4/index.html` | Vol.4 |
+
+---
+
+## Phase 9: 編集者コメント欄スタイル全号統一（2026年4月23日）
+
+### ㉓ 課題の整理
+- Vol.1〜Vol.4で編集者コメント欄のHTML構造・スタイルがバラバラだった
+- Vol.2を基準として全号統一する方針に決定
+
+### ㉔ 修正内容
+
+**対象ファイルと変更点:**
+
+| ファイル | 変更内容 |
+|---------|---------|
+| `outputs/vol1/index.html` | 変更なし（すでにVol.2基準を満たしていた） |
+| `outputs/vol1-special/index.html` | tdにclass追加、h2にclass追加・font-size修正、カードセルclass/padding修正、p要素のclass・font-size・line-height修正 |
+| `outputs/vol3/index.html` | 「編集後記」→「編集者コメント」、見出しとカードを別trに分離、カードのbackground/border/padding/class修正、🚀→📌変更、来週予告にcolor:#92400e適用 |
+| `outputs/vol4/index.html` | 見出しとカードを別trに分離、カードのbackground/border/padding/class修正（border-leftのみ→全辺border） |
+
+**統一仕様（Vol.2基準）:**
+- カード：`background:#fefce8; border:1px solid #fde68a; border-radius:8px;`
+- カードセル：`class="column-box-cell" style="padding:24px;"`
+- 来週予告：📌で始まる、`font-size:14px; color:#92400e;`
+- 見出しtrとカードtrは別の`<tr>`に分ける
+
+### ㉕ ドキュメント更新
+- `SKILL.md` のセクション4にスタイル仕様を追記
+- `work-log.md` に本フェーズを記録
+
+### ㉖ 来週予告末尾の全号統一（2026年4月23日）
+- 全号（Vol.1〜Vol.4）の来週予告行末尾を「〜お届け予定です。お楽しみに！」に統一
+- Vol.1: 「レポート予定です。お楽しみに！」→「お届け予定です。お楽しみに！」
+- Vol.1-special: 「お届け予定です！」→「お届け予定です。お楽しみに！」
+- Vol.2: 「お届け予定です！」→「お届け予定です。お楽しみに！」
+- Vol.3: 「お届け予定です！」→「お届け予定です。お楽しみに！」
+- Vol.4: 「取り上げる予定です！」→「お届け予定です。お楽しみに！」
+- SKILL.md の来週予告ルールも同様に更新
 
 ---
 

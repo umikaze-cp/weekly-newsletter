@@ -59,6 +59,14 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 - トーンは「詳しい先輩が雑談で教えてくれる」感じ
 - 締めに、来週への期待や読者へのアクションを一言添える
 
+**スタイル仕様（全号統一、Vol.2基準）:**
+- 見出し：h2要素、`class="section-heading"`、`font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;`
+- カード背景色：`background:#fefce8; border:1px solid #fde68a; border-radius:8px;`
+- カードセル：`class="column-box-cell" style="padding:24px;"`
+- 本文：`class="body-text" style="font-size:15px; line-height:1.8;"`
+- 来週予告：`📌`で始まり「〜お届け予定です。お楽しみに！」で終わる。`style="font-size:14px; color:#92400e;"`（classなし）
+- 見出しtrとカードtrは別の`<tr>`に分ける
+
 ### Step 3: HTML生成
 
 以下のデザインガイドラインに従ってHTMLメールを生成する。
