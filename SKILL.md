@@ -91,6 +91,8 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
   <title>AI×DX Weekly - Vol.XX（YYYY年MM月DD日号）</title>
   <style>
     /* ======================
@@ -131,7 +133,10 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
           <!-- ヘッダー -->
           <tr>
             <td style="background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:30px; text-align:center; color:#ffffff;">
-              <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px;">🤖 AI×DX Weekly</h1>
+              <div style="display:inline-flex; align-items:center; gap:8px;">
+                <img src="../../images/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:6px; width:32px; height:32px;">
+                <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px;">AI×DX Weekly</h1>
+              </div>
               <p style="margin:8px 0 0; font-size:14px; opacity:0.9;">Vol.XX ｜ YYYY年MM月DD日号</p>
             </td>
           </tr>
