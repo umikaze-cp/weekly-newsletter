@@ -72,6 +72,20 @@
       .column-box-cell {
         padding: 16px !important;
       }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
     }
   </style>
 </head>
@@ -257,6 +271,14 @@
                   </td>
                 </tr>
               </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
             </td>
           </tr>
 

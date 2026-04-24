@@ -121,6 +121,20 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
       .section-heading { font-size: 18px !important; }
       .body-text { font-size: 14px !important; line-height: 1.8 !important; }
       .source-link { display: inline-block !important; padding: 4px 0 !important; }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
     }
   </style>
 </head>
@@ -148,6 +162,14 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
           <!-- 各 <h2> に class="section-heading" を付与 -->
           <!-- 各本文 <p> に class="body-text" を付与 -->
           <!-- 各ソースリンク <a> に class="source-link" を付与 -->
+
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
+            </td>
+          </tr>
 
           <!-- フッター -->
           <!-- ルール: 2行構成で固定。Vol番号・日付・注意書きは含めない -->

@@ -346,6 +346,30 @@
 
 ---
 
+## Phase 13: Weeklyライブラリへのリンク追加（2026年4月24日）
+
+### ㊴ 全Volページへのライブラリリンク追加
+- 対象: `outputs/vol1/`, `outputs/vol1-special/`, `outputs/vol2/`, `outputs/vol3/`, `outputs/vol4/` の各 `index.html`
+- 編集者コメントカード直後、フッターの `<!-- フッター -->` コメント直前に `<tr>` を挿入
+- インラインスタイルで右寄せ表示（`padding:8px 40px 20px; text-align:right;`）
+- ホバー効果（`transform: scale(1.2)`）と📚アニメーション（`book-wiggle`）を head 内 `<style>` に追加
+- スマホ対応: `@media (max-width: 680px)` 内に `.library-link { font-size: 13px !important; }` を追加
+- メール配信時はホバーが効かないだけで表示は崩れない設計
+
+### ㊵ ドキュメント更新
+- `SKILL.md` のニュースレター本体テンプレート（Step 3）にも同構造を追加（CSS・HTML両方）
+- `work-log.md` に本フェーズを記録
+
+### ㊶ ライブラリリンクの微調整（2026年4月24日）
+- `font-size` を `14px` → `16px` に変更（全5ページ + SKILL.mdテンプレート）
+- テキスト末尾の「 →」を削除（「📚 Weeklyライブラリへ」で終わる形に統一）
+
+### ㊷ ホバー拡大基点の修正（2026年4月24日）
+- head 内 `<style>` の `.library-link:hover` の直前に `.library-link { transform-origin: right center; }` を追加
+- 右寄せ配置と合わせ、ホバー時に右端を基点として左方向に拡大するよう修正（全5ページ + SKILL.mdテンプレート）
+
+---
+
 ## 💡 学んだこと・メモ
 
 - **メディアクエリ**: 画面サイズに応じてCSSを切り替える仕組み。タブレット用を追加するとテスト工数が増えるトレードオフがある
