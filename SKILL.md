@@ -91,6 +91,7 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="../../manifest.json">
   <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
   <title>AI×DX Weekly - Vol.XX（YYYY年MM月DD日号）</title>
@@ -242,7 +243,8 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI×DX Weekly — バックナンバー</title>
+  <title>AI×DX Weekly</title>
+  <link rel="manifest" href="manifest.json">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -312,6 +314,37 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 - ユーザーから号数の指定がなければ、バックナンバーページの最新号数 +1 で自動採番する
 - 特集号は同じVol.番号に「特集号」サフィックスを付ける（例: Vol.1 特集号）
 - フォルダ名は `vol{数字}`、特集号は `vol{数字}-special` とする
+
+## manifest.json の管理ルール
+
+プロジェクトルート（`index.html` と同じ階層）に `manifest.json` を1つ配置する。
+
+**設定値（変更しないこと）：**
+```json
+{
+  "name": "AI×DX Weekly",
+  "short_name": "AI×DX Weekly",
+  "description": "中小企業のDX推進を応援するニュースレター",
+  "start_url": "/weekly-newsletter/",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#1e3a5f",
+  "icons": [
+    { "src": "images/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "images/favicon.ico", "sizes": "any", "type": "image/x-icon" }
+  ]
+}
+```
+
+**`<link rel="manifest">` のパス：**
+- ルート `index.html` → `href="manifest.json"`
+- 各号 `outputs/volX/index.html` → `href="../../manifest.json"`
+
+**新号追加時の確認事項：**
+- `<head>` に `<link rel="manifest" href="../../manifest.json">` が含まれているか（テンプレートには既に記載済み）
+- `manifest.json` 自体は変更不要
+
+---
 
 ## ユーザーへの確認ポイント
 
