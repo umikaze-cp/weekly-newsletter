@@ -149,9 +149,11 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
           <!-- 各ソースリンク <a> に class="source-link" を付与 -->
 
           <!-- フッター -->
+          <!-- ルール: 2行構成で固定。Vol番号・日付・注意書きは含めない -->
           <tr>
-            <td style="background:#1e3a5f; padding:20px; text-align:center; color:#ffffff; font-size:12px;">
-              <p style="margin:0;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+            <td style="background:#1e3a5f; padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+              <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
             </td>
           </tr>
 
