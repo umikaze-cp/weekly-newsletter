@@ -272,7 +272,7 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
     .issue-list .vol { font-size: 12px; color: #2563eb; font-weight: bold; text-transform: uppercase; }
     .issue-list .title { font-size: 17px; font-weight: bold; color: #1e3a5f; margin-top: 4px; }
     .issue-list .date { font-size: 13px; color: #6b7280; margin-top: 4px; }
-    .footer { text-align: center; padding: 24px 20px; font-size: 13px; color: #6b7280; }
+    .footer { background: linear-gradient(135deg, #1e3a5f, #2563eb); color: #ffffff; text-align: center; padding: 24px 20px; font-size: 13px; }
     @media (max-width: 680px) {
       .header h1 { font-size: 24px; }
       .container { padding: 20px 16px; }
@@ -292,7 +292,7 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
     </ul>
   </div>
   <div class="footer">
-    <p>© 2026 AI×DX Weekly. All rights reserved.</p>
+    <p style="color: #ffffff; opacity: 0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
   </div>
 </body>
 </html>
