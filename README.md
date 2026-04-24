@@ -14,7 +14,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 
 ## 🌐 公開URL（GitHub Pages）
 
-- **バックナンバー一覧**: [index.html](index.html)
+- **Weeklyライブラリ**: [index.html](index.html)
 - [Vol.3 — Microsoft対日投資 / Gemma 4 / 補助金2026](outputs/vol3/)（2026年4月13日号）
 - [Vol.2 — Japan DX Week 春 / 関西DX戦略 / 補助金申請準備](outputs/vol2/)（2026年4月6日号）
 - [Vol.1 特集 — 生成AIの業務活用](outputs/vol1-special/)（2026年4月3日号）
@@ -28,7 +28,7 @@ weekly-newsletter/
 ├── SKILL.md                           ← Claudeスキル本体
 ├── weekly-newsletter.skill            ← スキル登録カード
 ├── weekly-newsletter-workflow.md      ← 毎週月曜日の作業プロセス
-├── index.html                         ← バックナンバー一覧ページ
+├── index.html                         ← Weeklyライブラリページ
 ├── work-log.md                        ← 作業ログ・学習メモ
 ├── .gitignore
 ├── images/
