@@ -301,6 +301,34 @@
 
 ---
 
+## Phase 11: manifest.json追加・タイトルタグ統一（2026年4月24日）
+
+### ㉝ manifest.jsonの作成
+- プロジェクトルートに `manifest.json` を新規作成
+- 設定内容：name/short_name「AI×DX Weekly」、start_url「/weekly-newsletter/」、display「standalone」、theme_color「#1e3a5f」、background_color「#f5f5f5」
+- アイコン：`images/apple-touch-icon.png`（180×180）と `images/favicon.ico`（any）
+
+### ㉞ 全HTMLへの `<link rel="manifest">` 追加
+| ファイル | href |
+|---------|------|
+| `index.html`（ルート） | `manifest.json` |
+| `outputs/vol1/index.html` | `../../manifest.json` |
+| `outputs/vol1-special/index.html` | `../../manifest.json` |
+| `outputs/vol2/index.html` | `../../manifest.json` |
+| `outputs/vol3/index.html` | `../../manifest.json` |
+| `outputs/vol4/index.html` | `../../manifest.json` |
+
+### ㉟ タイトルタグの変更
+- ルート `index.html` の `<title>` を「AI×DX Weekly — バックナンバー」→「AI×DX Weekly」に変更（iPhone Safari ホーム画面追加時の表示名統一）
+- 各号の `<title>` は「AI×DX Weekly - Vol.X（日付号）」のまま変更なし
+
+### ㊱ ドキュメント更新
+- `SKILL.md` に「manifest.json の管理ルール」セクションを追加（設定値・パスルール・新号追加時の確認事項）
+- ニュースレター本体テンプレートと バックナンバーページテンプレートの `<head>` に `<link rel="manifest">` を追加
+- `work-log.md` に本フェーズを記録
+
+---
+
 ## 💡 学んだこと・メモ
 
 - **メディアクエリ**: 画面サイズに応じてCSSを切り替える仕組み。タブレット用を追加するとテスト工数が増えるトレードオフがある
