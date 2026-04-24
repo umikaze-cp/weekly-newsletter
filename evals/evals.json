@@ -4,7 +4,7 @@
     {
       "id": 1,
       "prompt": "今週のAI×DXニュースレターを作って",
-      "expected_output": "4セクション構成のHTMLニュースレター（ニュースTOP3、ツール2件、用語解説1つ、コラム）。バックナンバーページも更新されること。戻るボタンが含まれること。",
+      "expected_output": "4セクション構成のHTMLニュースレター（ニュースTOP3、ツール2件、用語解説1つ、コラム）。Weeklyライブラリページも更新されること。戻るボタンが含まれること。",
       "files": []
     },
     {
@@ -16,7 +16,7 @@
     {
       "id": 3,
       "prompt": "Vol.4のニュースレターを作って",
-      "expected_output": "Vol.4として生成されたHTMLニュースレター。outputs/vol4/index.htmlに保存。バックナンバーページのissue-list先頭にVol.4エントリが追加されること。",
+      "expected_output": "Vol.4として生成されたHTMLニュースレター。outputs/vol4/index.htmlに保存。WeeklyライブラリページのIssue-list先頭にVol.4エントリが追加されること。",
       "files": []
     },
     {

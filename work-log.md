@@ -90,7 +90,7 @@
 - Vol.2（2026/04/06）: Japan DX Week春 / 関西DX戦略Next / 補助金申請準備
 - Vol.3（2026/04/13）: Microsoft 1.6兆円対日投資 / Gemma 4 / 補助金2026
 
-### ⑫ バックナンバーページの作成
+### ⑫ Weeklyライブラリページの作成
 - ルートに `index.html` を作成し、全号をカード形式で一覧表示
 - 各号ページに「戻るボタン」（固定位置フローティング）を追加
 - GitHub Pages用のディレクトリ構成: `outputs/volX/index.html`
@@ -105,9 +105,9 @@
 
 ### ⑭ SKILL.mdの改善
 - **Step 4 追加**: 戻るボタンのHTMLテンプレートとリンクパスルール
-- **Step 5 追加**: バックナンバーページ（index.html）の自動更新ルール
+- **Step 5 追加**: Weeklyライブラリページ（index.html）の自動更新ルール
 - **Step 7 追加**: 号数の自動採番・管理ルール
-- **品質チェックリスト拡充**: 戻るボタン・バックナンバー更新・class属性の確認項目追加
+- **品質チェックリスト拡充**: 戻るボタン・Weeklyライブラリ更新・class属性の確認項目追加
 
 ### ⑮ README.mdの更新
 - Vol.1〜Vol.3全号のリンクを追記
@@ -207,7 +207,7 @@
 | `weekly-newsletter.skill` | スキル登録カード |
 | `weekly-newsletter-workflow.md` | 毎週月曜日の作業プロセス |
 | `README.md` | プロジェクト説明（Exa MCP対応版） |
-| `index.html` | バックナンバー一覧ページ |
+| `index.html` | Weeklyライブラリページ |
 | `evals/evals.json` | テストケース定義（5件） |
 | `work-log.md` | 作業ログ・学習メモ（Phase 8まで） |
 | `outputs/vol1/index.html` | Vol.1 創刊号 |
@@ -260,9 +260,9 @@
 
 ### ㉗ favicon・apple-touch-iconの適用
 - `images/` フォルダに `favicon.ico` と `apple-touch-icon.png` を配置
-- `index.html`（バックナンバーページ）の `<head>` に favicon・apple-touch-icon の `<link>` タグを追加
+- `index.html`（Weeklyライブラリページ）の `<head>` に favicon・apple-touch-icon の `<link>` タグを追加
 - ニュースレター本体テンプレート（SKILL.md Step 3）にも同様に追加（パス: `../../images/`）
-- バックナンバーページテンプレート（SKILL.md Step 5）にも追加（パス: `images/`）
+- Weeklyライブラリページテンプレート（SKILL.md Step 5）にも追加（パス: `images/`）
 
 ### ㉘ ヘッダーの絵文字→ロゴ画像に変更
 - `index.html` ヘッダーの `🤖 AI×DX Weekly` を `<img>` タグ（apple-touch-icon.png）+ テキストに変更
@@ -275,14 +275,14 @@
   - スマホでも横並び（`flex-direction: row`）を維持、padding縮小（24px 16px）、gap:14px
   - ロゴを44px×44pxに縮小（`!important` で上書き）
   - h1を20px、pを12pxに縮小、左揃えに統一
-- `index.html` と SKILL.md バックナンバーテンプレートの両方に反映
+- `index.html` と SKILL.md Weeklyライブラリテンプレートの両方に反映
 
 ### ㉙ ヘッダーレイアウトを縦並び→横並びに変更
 - `.header` に `display:flex; align-items:stretch; justify-content:center; gap:20px;` を追加
 - ロゴ画像（56px）の右側にタイトルとサブタイトルを縦配置する `<div style="display:flex; flex-direction:column;">` でラップ
 - タイトル（h1）は上端固定（`margin:0`）、サブタイトル（p）は下端固定（`margin-top:auto`）
 - スマホ（max-width:680px）では `flex-direction:column` で縦並び・中央揃えに戻す
-- `index.html` と SKILL.md バックナンバーテンプレートの両方に反映
+- `index.html` と SKILL.md Weeklyライブラリテンプレートの両方に反映
 
 ### ㉛ フッターレイアウト全号統一（2026年4月24日）
 - Vol.3・Vol.4のフッターをVol.2基準の2行構成に統一（Vol.1・Vol.1-special・Vol.2は変更なし）
@@ -296,7 +296,7 @@
   - 絵文字 `🤖` → `<img>` タグ（`../../images/apple-touch-icon.png`、56px）に差し替え
   - ロゴ＋テキストを横並び（flex）・中央揃えに統一
   - スマホ（max-width:680px）では縦並び・中央揃えにフォールバック
-- `index.html`（バックナンバーページ）のヘッダーも同仕様に合わせて最終調整
+- `index.html`（Weeklyライブラリページ）のヘッダーも同仕様に合わせて最終調整
 - GitHub Pages 再デプロイ（空コミット push）で全ページの表示を確認
 
 ---
@@ -319,17 +319,17 @@
 | `outputs/vol4/index.html` | `../../manifest.json` |
 
 ### ㉟ タイトルタグの変更
-- ルート `index.html` の `<title>` を「AI×DX Weekly — バックナンバー」→「AI×DX Weekly」に変更（iPhone Safari ホーム画面追加時の表示名統一）
+- ルート `index.html` の `<title>` を「AI×DX Weekly」に統一（iPhone Safari ホーム画面追加時の表示名統一）
 - 各号の `<title>` は「AI×DX Weekly - Vol.X（日付号）」のまま変更なし
 
 ### ㊱ ドキュメント更新
 - `SKILL.md` に「manifest.json の管理ルール」セクションを追加（設定値・パスルール・新号追加時の確認事項）
-- ニュースレター本体テンプレートと バックナンバーページテンプレートの `<head>` に `<link rel="manifest">` を追加
+- ニュースレター本体テンプレートと Weeklyライブラリページテンプレートの `<head>` に `<link rel="manifest">` を追加
 - `work-log.md` に本フェーズを記録
 
 ---
 
-## Phase 12: バックナンバーページのフッター配色変更（2026年4月24日）
+## Phase 12: Weeklyライブラリページのフッター配色変更（2026年4月24日）
 
 ### ㊲ フッターをヘッダーと同じ配色に変更
 - `index.html`（ルート）の `.footer` CSSを変更：
@@ -340,7 +340,7 @@
 - 各号の HTMLは変更なし
 
 ### ㊳ ドキュメント更新
-- `SKILL.md` のバックナンバーページテンプレートの `.footer` CSS も同仕様に更新
+- `SKILL.md` のWeeklyライブラリページテンプレートの `.footer` CSS も同仕様に更新
 - `<p>` タグに `style="color: #ffffff; opacity: 0.7;"` を反映
 - `work-log.md` に本フェーズを記録
 
@@ -354,7 +354,7 @@
 - **MSO条件コメント**: Outlook対応のためのHTML条件分岐
 - **GitHub Pagesのディレクトリ構成**: `outputs/volX/index.html` にすると `outputs/volX/` でアクセスできる（index.htmlを省略可能）
 - **戻るボタンのenv()関数**: `env(safe-area-inset-bottom)` でiPhoneのホームバーとの干渉を防ぐ
-- **スキル運用のポイント**: バックナンバーページの更新を忘れがちなのでワークフローに明記することが重要
+- **スキル運用のポイント**: Weeklyライブラリページの更新を忘れがちなのでワークフローに明記することが重要
 - **MCP（Model Context Protocol）**: Claude Codeに外部ツールとの接続口を追加する仕組み。MCPサーバーを追加すると、Claude Codeからデータベース、API、Web検索などが使えるようになる
 - **Exa**: AI向けに設計されたセマンティック検索エンジン。キーワードの一致ではなく意味の近さで検索する。記事本文も取得可能
 - **ターミナル版 vs 拡張機能版**: 同じClaude Codeでも設定ファイルが別。MCP設定はターミナル版のみ反映される

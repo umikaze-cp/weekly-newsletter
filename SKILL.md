@@ -185,7 +185,7 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 
 ### Step 4: 戻るボタンの追加
 
-各号のHTMLには、`</body>` 閉じタグの直前に「バックナンバー一覧へ戻る」ボタンを追加する。GitHub Pages上でのナビゲーション用。
+各号のHTMLには、`</body>` 閉じタグの直前に「Weeklyライブラリへ戻る」ボタンを追加する。GitHub Pages上でのナビゲーション用。
 
 ```html
 <style>
@@ -204,7 +204,7 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
     .back-btn svg { width: 38px; height: 38px; }
   }
 </style>
-<a href="../../index.html" class="back-btn" title="バックナンバー一覧へ戻る">
+<a href="../../index.html" class="back-btn" title="Weeklyライブラリへ戻る">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
     <path d="M9 14L4 9l5-5"/>
     <path d="M4 9h8a5 5 0 0 1 0 10H8"/>
@@ -212,11 +212,11 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 </a>
 ```
 
-**リンクパスのルール：** 各号は `outputs/volX/index.html` に配置されるため、バックナンバー一覧（ルートの `index.html`）への相対パスは `../../index.html` となる。
+**リンクパスのルール：** 各号は `outputs/volX/index.html` に配置されるため、Weeklyライブラリ（ルートの `index.html`）への相対パスは `../../index.html` となる。
 
-### Step 5: バックナンバーページの更新
+### Step 5: Weeklyライブラリページの更新
 
-新しい号を生成したら、ルートの `index.html`（バックナンバー一覧ページ）も更新する。
+新しい号を生成したら、ルートのWeeklyライブラリページも更新する。
 
 **更新ルール：**
 1. `<ul class="issue-list">` の先頭（最初の `<li>` の前）に新しい号のエントリを追加する（新しい号が一番上に来る）
@@ -233,9 +233,9 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 ```
 
 3. 特集号の場合は `<span class="vol">Vol.X 特集号</span>` とし、タイトルに `🎯 特集：` プレフィックスを付ける
-4. ニュースレターHTML本体と一緒にバックナンバーページも出力する
+4. ニュースレターHTML本体と一緒にWeeklyライブラリページも出力する
 
-**バックナンバーページのテンプレート：** 初回作成時は以下の構造で生成する。
+**Weeklyライブラリページのテンプレート：** 初回作成時は以下の構造で生成する。
 
 ```html
 <!DOCTYPE html>
@@ -286,7 +286,7 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
     <p>中小企業のDX推進を応援するニュースレター</p>
   </div>
   <div class="container">
-    <h2>📚 バックナンバー</h2>
+    <h2>📚 Weeklyライブラリ</h2>
     <ul class="issue-list">
       <!-- ここに各号のエントリを新しい順に追加 -->
     </ul>
@@ -304,14 +304,14 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 
 **出力ファイル：**
 - ニュースレター本体: `outputs/volX/index.html`（GitHub Pages用のディレクトリ構造）
-- バックナンバーページ: `index.html`（新号エントリ追加済み）
+- Weeklyライブラリページ: `index.html`（新号エントリ追加済み）
 
 保存後、`present_files` ツールでユーザーに提示する。
 
 ### Step 7: 号数管理
 
 **号数（Vol.）の管理ルール：**
-- ユーザーから号数の指定がなければ、バックナンバーページの最新号数 +1 で自動採番する
+- ユーザーから号数の指定がなければ、Weeklyライブラリページの最新号数 +1 で自動採番する
 - 特集号は同じVol.番号に「特集号」サフィックスを付ける（例: Vol.1 特集号）
 - フォルダ名は `vol{数字}`、特集号は `vol{数字}-special` とする
 
@@ -367,5 +367,5 @@ HTMLを出力する前に、以下を確認する：
 - [ ] HTMLがメールクライアントで崩れない構造か（テーブルレイアウト使用）
 - [ ] 著作権に配慮し、要約は独自の言葉で書かれているか
 - [ ] 戻るボタンが `</body>` 直前に追加されているか
-- [ ] バックナンバーページに新号エントリが追加されているか
+- [ ] Weeklyライブラリページに新号エントリが追加されているか
 - [ ] レスポンシブ用のclass属性（content-cell, card-cell, section-heading, body-text, source-link）が全要素に付与されているか
