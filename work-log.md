@@ -284,6 +284,14 @@
 - スマホ（max-width:680px）では `flex-direction:column` で縦並び・中央揃えに戻す
 - `index.html` と SKILL.md バックナンバーテンプレートの両方に反映
 
+### ㉛ 全号のヘッダーをロゴ画像＋中央揃えに統一（2026年4月24日）
+- Vol.1〜Vol.4 のニュースレター本体（`outputs/volX/index.html`）のヘッダーも同様に更新
+  - 絵文字 `🤖` → `<img>` タグ（`../../images/apple-touch-icon.png`、56px）に差し替え
+  - ロゴ＋テキストを横並び（flex）・中央揃えに統一
+  - スマホ（max-width:680px）では縦並び・中央揃えにフォールバック
+- `index.html`（バックナンバーページ）のヘッダーも同仕様に合わせて最終調整
+- GitHub Pages 再デプロイ（空コミット push）で全ページの表示を確認
+
 ---
 
 ## 💡 学んだこと・メモ
