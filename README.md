@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.4 — デジタル化・AI導入補助金2026申請スタート / Adobe Firefly AI Assistant / 中小企業が2カ月で月40時間削減](outputs/vol4/)（2026年4月20日号）
 - [Vol.3 — Microsoft対日投資 / Gemma 4 / 補助金2026](outputs/vol3/)（2026年4月13日号）
 - [Vol.2 — Japan DX Week 春 / 関西DX戦略 / 補助金申請準備](outputs/vol2/)（2026年4月6日号）
 - [Vol.1 特集 — 生成AIの業務活用](outputs/vol1-special/)（2026年4月3日号）
@@ -25,10 +26,12 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ```
 weekly-newsletter/
 ├── README.md                          ← このファイル
+├── CLAUDE.md                          ← Claude Code司令塔
 ├── SKILL.md                           ← Claudeスキル本体
 ├── weekly-newsletter.skill            ← スキル登録カード
 ├── weekly-newsletter-workflow.md      ← 毎週月曜日の作業プロセス
 ├── index.html                         ← Weeklyライブラリページ
+├── manifest.json                      ← PWA設定
 ├── work-log.md                        ← 作業ログ・学習メモ
 ├── .gitignore
 ├── images/
@@ -43,8 +46,10 @@ weekly-newsletter/
     │   └── index.html                 ← Vol.1 特集号
     ├── vol2/
     │   └── index.html                 ← Vol.2
-    └── vol3/
-        └── index.html                 ← Vol.3
+    ├── vol3/
+    │   └── index.html                 ← Vol.3
+    └── vol4/
+        └── index.html                 ← Vol.4
 ```
 
 ## 📱 レスポンシブ対応
@@ -105,6 +110,7 @@ Step 6  作業記録の更新（拡張機能版）
 | Vol.1特集 | 2026/04/03 | 生成AIの業務活用（パナソニック44.8万時間削減） |
 | Vol.2 | 2026/04/06 | Japan DX Week春 / 関西DX戦略Next / 補助金申請準備 |
 | Vol.3 | 2026/04/13 | Microsoft 1.6兆円対日投資 / Gemma 4 / 補助金2026 |
+| Vol.4 | 2026/04/20 | デジタル化・AI導入補助金2026申請スタート / Adobe Firefly AI Assistant / 中小企業が2カ月で月40時間削減 |
 
 ## 📝 作成者
 
