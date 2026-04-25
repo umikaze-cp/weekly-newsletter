@@ -215,6 +215,7 @@
 | `outputs/vol2/index.html` | Vol.2 |
 | `outputs/vol3/index.html` | Vol.3 |
 | `outputs/vol4/index.html` | Vol.4 |
+| `CLAUDE.md` | Claude Code起動時の司令塔（SKILL.md参照型） |
 
 ---
 
@@ -403,6 +404,42 @@
 - `SKILL.md` のニュースレター本体テンプレート（Step 3）フッター部分を同仕様に更新
 - `SKILL.md` の品質チェックリストにフッターグラデーション確認項目を追加
 - `SKILL.md` に「## フッター仕様（デザイン統一ルール）」セクションを新設
+- `work-log.md` に本フェーズを記録
+
+---
+
+## Phase 15: Claude Code 司令塔の整備（2026年4月25日）
+
+### ㊻ 課題の整理
+- Vol.4からClaude Code + Exa MCPに移行したが、SKILL.mdを
+  Claude Codeが自動読み込みする仕組みがなかった
+- 毎週「今週のニュースレターを作って」の短い指示で
+  安定したクオリティを維持するため、起動時自動読み込みされる
+  CLAUDE.md を整備することにした
+
+### ㊼ 修正内容
+
+**新規作成ファイル:**
+
+| ファイル | 内容 |
+|---------|------|
+| `CLAUDE.md` | Claude Code起動時の司令塔。SKILL.mdを参照させる薄い定義 |
+
+**設計方針:**
+- SKILL.md を Single Source of Truth として維持
+- CLAUDE.md は SKILL.md の内容をコピーせず、参照型で記述
+- Exa MCP検索の補足ルール（期間指定、英日クエリ併用、検索回数上限）を明文化
+- 品質チェックの実行タイミング（Step 6直前）を明文化
+- 作業終了時の必須アクション（チェックリスト実行/work-log追記/README更新/コミットメッセージ提示）を明文化
+
+### ㊽ README.md の更新
+- 「公開URL」セクションに Vol.4 のリンク追加（先頭に挿入）
+- 「プロジェクト構成」に `CLAUDE.md`、`manifest.json`、`outputs/vol4/` を追加
+- 「発行履歴」テーブルに Vol.4 のエントリ追加
+
+### ㊾ ドキュメント更新
+- `CLAUDE.md` 新規作成
+- `README.md` 更新（Vol.4反映 + CLAUDE.md記載）
 - `work-log.md` に本フェーズを記録
 
 ---
