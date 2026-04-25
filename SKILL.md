@@ -173,8 +173,9 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 
           <!-- フッター -->
           <!-- ルール: 2行構成で固定。Vol番号・日付・注意書きは含めない -->
+          <!-- bgcolor属性はOutlook等グラデーション非対応メーラー向けフォールバック -->
           <tr>
-            <td style="background:#1e3a5f; padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+            <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
               <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
               <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
             </td>
@@ -391,3 +392,14 @@ HTMLを出力する前に、以下を確認する：
 - [ ] 戻るボタンが `</body>` 直前に追加されているか
 - [ ] Weeklyライブラリページに新号エントリが追加されているか
 - [ ] レスポンシブ用のclass属性（content-cell, card-cell, section-heading, body-text, source-link）が全要素に付与されているか
+- [ ] フッターの `<td>` に `bgcolor="#1e3a5f"` 属性と `background:linear-gradient(135deg,#1e3a5f,#2563eb)` が設定されているか（Outlook等メーラー向けフォールバック含む）
+
+## フッター仕様（デザイン統一ルール）
+
+- フッター背景はヘッダーと同じグラデーション `linear-gradient(135deg,#1e3a5f,#2563eb)` を使用する
+- メール配信対応として、Outlook等グラデーション非対応メーラー向けに以下の3つを併記する:
+  1. `bgcolor="#1e3a5f"` 属性（HTML属性フォールバック）
+  2. `background:#1e3a5f` インラインスタイル（CSS フォールバック単色）
+  3. `background:linear-gradient(135deg,#1e3a5f,#2563eb)` インラインスタイル（対応ブラウザ用グラデーション）
+- 今後新規作成するVol号も同じフッター仕様を踏襲する
+- padding/text-align/color/font-size 等の他プロパティはVol号ごとの値を維持する

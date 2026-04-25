@@ -370,6 +370,43 @@
 
 ---
 
+---
+
+## Phase 14: 全Vol号フッター背景グラデーション統一（2026年4月25日）
+
+### ㊸ 課題の整理
+- Vol.1〜Vol.4のニュースレター本体フッターは `background:#1e3a5f`（単色紺）のままだった
+- Weeklyライブラリページ（`index.html`）はすでにグラデーション適用済みだったが、各号が未統一だった
+
+### ㊹ 修正内容
+- **対象ファイル（5ファイル）**:
+  - `outputs/vol1/index.html`
+  - `outputs/vol1-special/index.html`
+  - `outputs/vol2/index.html`
+  - `outputs/vol3/index.html`
+  - `outputs/vol4/index.html`
+
+**変更前:**
+```html
+<td style="background:#1e3a5f; padding:... ;">
+```
+**変更後:**
+```html
+<td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:... ;">
+```
+
+- **目的**: ヘッダー/フッターのデザイン統一、ブランディング一貫性の向上
+- **メール配信対応**: `bgcolor` 属性 + `background` 単色をフォールバックとして追加（Outlook等のグラデーション非対応メーラー向け）
+- `vol1-special` のみ元々 `font-size:12px` のため、その値は維持
+
+### ㊺ ドキュメント更新
+- `SKILL.md` のニュースレター本体テンプレート（Step 3）フッター部分を同仕様に更新
+- `SKILL.md` の品質チェックリストにフッターグラデーション確認項目を追加
+- `SKILL.md` に「## フッター仕様（デザイン統一ルール）」セクションを新設
+- `work-log.md` に本フェーズを記録
+
+---
+
 ## 💡 学んだこと・メモ
 
 - **メディアクエリ**: 画面サイズに応じてCSSを切り替える仕組み。タブレット用を追加するとテスト工数が増えるトレードオフがある
