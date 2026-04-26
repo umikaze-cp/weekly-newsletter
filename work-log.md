@@ -458,3 +458,25 @@
 - **ターミナル版 vs 拡張機能版**: 同じClaude Codeでも設定ファイルが別。MCP設定はターミナル版のみ反映される
 - **npmキャッシュの権限問題**: `sudo` でグローバルインストールするとキャッシュの所有者がrootになる。`sudo chown -R $(whoami) ~/.npm` で修復可能
 - **セマンティック検索の比喩**: 従来の検索が「伝票番号で倉庫を探す」なら、セマンティック検索は「保管条件・商品特性の意味で最適な棚を見つける」方式
+- **Claude.ai と Claude Code は別の課金体系**:
+  - Claude.ai(ブラウザ/アプリ): 全モデルがPro枠($20/月)で使用可能
+  - Claude Code(ターミナル): Pro枠 + extra usageの2階建て構造
+
+- **Claude Codeのモデル選択肢(2026/4時点・5種類)**:
+  | # | モデル | 課金 | 単価 |
+  |---|-------|------|------|
+  | 1 | Default (Sonnet 4.6) | Pro枠内 | - |
+  | 2 | Sonnet (1M context) | extra usage | $3/$15 per Mtok |
+  | 3 | Opus | (要確認) | - |
+  | 4 | Opus 4.7 (1M context) | extra usage | $5/$25 per Mtok |
+  | 5 | Haiku 4.5 | Pro枠内? | - |
+
+- **per Mtok = 100万トークンあたりの料金**:
+  - 入力(Input)単価/出力(Output)単価の順で表記
+  - 1Mtok ≒ 50万〜100万文字
+  - Vol発行1回 ≒ 4万トークン推定 → Opus 4.7で約$0.50〜3
+
+- **「Billed as extra usage」表記の意味**:
+  - 表記あり = Pro枠を超えた追加課金対象
+  - 表記なし = Pro枠内
+  - モデル選択時の指差し確認ポイント
