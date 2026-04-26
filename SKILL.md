@@ -206,36 +206,10 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 - リンクはアクセントカラー（#2563eb）で下線付き
 - 英語キーワードは `<span style="color:#6b7280; font-size:0.9em;">` で表示
 
-### Step 4: 戻るボタンの追加
+### Step 4: (削除済み)
 
-各号のHTMLには、`</body>` 閉じタグの直前に「Weeklyライブラリへ戻る」ボタンを追加する。GitHub Pages上でのナビゲーション用。
-
-```html
-<style>
-  .back-btn {
-    position: fixed; bottom: 28px; right: 28px;
-    width: 52px; height: 52px;
-    background: transparent; border: none; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    z-index: 1000; text-decoration: none; color: #2563eb;
-    transition: color 0.2s, transform 0.15s;
-  }
-  .back-btn svg { width: 44px; height: 44px; }
-  .back-btn:hover { transform: scale(1.2); }
-  @media (max-width: 680px) {
-    .back-btn { width: 44px; height: 44px; bottom: calc(8px + env(safe-area-inset-bottom, 0px)); right: 16px; }
-    .back-btn svg { width: 38px; height: 38px; }
-  }
-</style>
-<a href="../../index.html" class="back-btn" title="Weeklyライブラリへ戻る">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M9 14L4 9l5-5"/>
-    <path d="M4 9h8a5 5 0 0 1 0 10H8"/>
-  </svg>
-</a>
-```
-
-**リンクパスのルール：** 各号は `outputs/volX/index.html` に配置されるため、Weeklyライブラリ（ルートの `index.html`）への相対パスは `../../index.html` となる。
+フローティング戻るボタン（`class="back-btn"`）は2026年4月27日に全Vol号から削除。
+末尾の `class="library-link"` リンクとブラウザ標準の戻る機能で十分な導線を確保。
 
 ### Step 5: Weeklyライブラリページの更新
 
@@ -389,7 +363,6 @@ HTMLを出力する前に、以下を確認する：
 - [ ] 英語キーワードが各所に併記されているか
 - [ ] HTMLがメールクライアントで崩れない構造か（テーブルレイアウト使用）
 - [ ] 著作権に配慮し、要約は独自の言葉で書かれているか
-- [ ] 戻るボタンが `</body>` 直前に追加されているか
 - [ ] Weeklyライブラリページに新号エントリが追加されているか
 - [ ] レスポンシブ用のclass属性（content-cell, card-cell, section-heading, body-text, source-link）が全要素に付与されているか
 - [ ] フッターの `<td>` に `bgcolor="#1e3a5f"` 属性と `background:linear-gradient(135deg,#1e3a5f,#2563eb)` が設定されているか（Outlook等メーラー向けフォールバック含む）
