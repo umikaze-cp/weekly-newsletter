@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+  <title>AI×DX Weekly - Vol.5（2026年4月27日号）</title>
+  <style>
+    /* ======================
+       タブレット対応（681px〜840px）
+       ====================== */
+    @media only screen and (min-width: 681px) and (max-width: 840px) {
+      .email-container {
+        width: 94% !important;
+        max-width: 800px !important;
+      }
+      .content-cell {
+        padding-left: 28px !important;
+        padding-right: 28px !important;
+      }
+      .card-cell {
+        padding: 18px 20px !important;
+      }
+      .body-text {
+        font-size: 15px !important;
+        line-height: 1.8 !important;
+      }
+      .header-title {
+        font-size: 28px !important;
+      }
+      .section-heading {
+        font-size: 21px !important;
+      }
+    }
+
+    /* ======================
+       スマートフォン対応（680px以下）
+       ====================== */
+    @media only screen and (max-width: 680px) {
+      .email-container {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .header-title {
+        font-size: 22px !important;
+      }
+      .content-cell {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+      .card-cell {
+        padding: 14px 14px !important;
+      }
+      .section-heading {
+        font-size: 18px !important;
+      }
+      .body-text {
+        font-size: 14px !important;
+        line-height: 1.8 !important;
+      }
+      .source-link {
+        display: inline-block !important;
+        padding: 4px 0 !important;
+      }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family:system-ui,-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <!--[if mso]><table role="presentation" width="800" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" class="email-container" width="800" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:8px; overflow:hidden; max-width:800px; width:100%;">
+
+          <!-- ヘッダー -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:36px 30px; text-align:center; color:#ffffff;">
+              <div style="display:inline-flex; align-items:center; gap:8px;">
+                <img src="../../images/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:6px; width:32px; height:32px;">
+                <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px; font-weight:700;">AI×DX Weekly</h1>
+              </div>
+              <p style="margin:8px 0 0; font-size:14px; opacity:0.9;">Vol.5 ｜ 2026年4月27日号</p>
+              <p style="margin:12px 0 0; font-size:13px; opacity:0.75;">中小企業のDX推進を、もっと身近に。</p>
+            </td>
+          </tr>
+
+          <!-- イントロ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 36px 8px;">
+              <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                今週は「補助金第19回〆切」「Microsoft × Anthropicの自律AI連携」「セブン-イレブンでのAI空調本格運用」と、補助・新機能・実装の3つの動きが揃いました。明日4月28日（火）に補助金の最終チェックを済ませたい方は、まずニュース1から目を通してください。
+              </p>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 36px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- セクション1: 今週のニュース -->
+          <tr>
+            <td class="content-cell" style="padding:28px 36px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:20px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">
+                📰 今週のAI×DXニュース TOP3
+              </h2>
+
+              <!-- ニュース1 -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
+                <tr>
+                  <td class="card-cell" style="background:#f0f6ff; border:1px solid #bfdbfe; border-radius:8px; padding:20px 24px;">
+                    <p style="margin:0 0 6px; font-size:12px; color:#6b7280; font-weight:600; letter-spacing:0.5px;">NEWS 01</p>
+                    <h3 style="margin:0 0 10px; font-size:17px; color:#1e3a5f; line-height:1.5;">
+                      「デジタル化・AI導入補助金2026」第19回公募 締切4月30日迫る ─ AIエージェントも対象
+                      <span style="color:#6b7280; font-size:0.85em; font-weight:400;"> / SME Digital &amp; AI Subsidy Round 19</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      中小企業庁の「デジタル化・AI導入補助金2026」第19回公募の締切が<strong>2026年4月30日(水)</strong>に迫っています。最大450万円・補助率1/2(小規模事業者は要件達成で4/5)で、今年度から月額制のAIエージェントサービスも対象に追加。たとえば月額4万円のサービスなら実質負担20％で導入できる計算で、人手不足に直面する小規模事業者ほど恩恵が大きい設計です。締切が3日後と目前なので、未申請の方はIT支援事業者と最終チェックを今日中に済ませるのが安全です。
+                    </p>
+                    <a class="source-link" href="https://www.chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260310001.html" style="color:#2563eb; font-size:13px; text-decoration:underline;">▶ 公募要領を確認する（中小企業庁）</a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ニュース2 -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
+                <tr>
+                  <td class="card-cell" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:20px 24px;">
+                    <p style="margin:0 0 6px; font-size:12px; color:#6b7280; font-weight:600; letter-spacing:0.5px;">NEWS 02</p>
+                    <h3 style="margin:0 0 10px; font-size:17px; color:#1e3a5f; line-height:1.5;">
+                      Microsoft 365 Copilotに「Copilot Cowork」搭載 ─ AnthropicのClaudeで自律作業
+                      <span style="color:#6b7280; font-size:0.85em; font-weight:400;"> / Microsoft Copilot Cowork (Powered by Claude)</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      Microsoftは早期導入プログラム「Frontier」向けに、Anthropicの自律作業機能「Claude Cowork」を組み込んだ「Copilot Cowork」の提供を開始しました。「請求書3社分を比較して報告メール下書きまで作って」のような複数ステップの指示を、Word・Excel・Outlookを横断しながらClaudeが自動で実行します。Copilotは応答型から「自分で計画して動くAI」へと進化しており、すでにOffice 365を使っている中小企業はそのまま追加導入できる手軽さも魅力です。
+                    </p>
+                    <a class="source-link" href="https://note.com/integral_dev/n/naa13625b141f" style="color:#2563eb; font-size:13px; text-decoration:underline;">▶ 詳細を読む（インテグラル開発チーム）</a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ニュース3 -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                <tr>
+                  <td class="card-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:20px 24px;">
+                    <p style="margin:0 0 6px; font-size:12px; color:#6b7280; font-weight:600; letter-spacing:0.5px;">NEWS 03</p>
+                    <h3 style="margin:0 0 10px; font-size:17px; color:#1e3a5f; line-height:1.5;">
+                      パナソニックのAI空調サービス、セブン-イレブン33店舗で本格運用 ─ 消費電力 最大28.1%削減
+                      <span style="color:#6b7280; font-size:0.85em; font-weight:400;"> / Panasonic HVAC CLOUD AI Service</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      パナソニックHVAC&amp;CCが、業務用空調向けAIサービス「Panasonic HVAC CLOUD」をセブン-イレブン全国33店舗で4月24日から本格運用開始しました。外気温・気象情報・利用者のリモコン操作をAIが学習して空調を自動制御し、実証実験では<strong>最大28.1％の消費電力削減</strong>と年間CO2約84トン削減を実現。注目したいのは「既設空調機への後付け導入が可能」という点で、大規模工事なしで省エネ効果が得られるため、店舗運営をしている中小企業にとって導入ハードルがかなり低い好例です。
+                    </p>
+                    <a class="source-link" href="https://news.panasonic.com/jp/press/jn260424-1" style="color:#2563eb; font-size:13px; text-decoration:underline;">▶ プレスリリースを読む（パナソニック）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 36px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- セクション2: おすすめツール -->
+          <tr>
+            <td class="content-cell" style="padding:28px 36px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:20px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">
+                🛠️ 今週のおすすめツール・リソース
+              </h2>
+
+              <!-- ツール1 -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; padding:20px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+                    <p style="margin:0 0 4px;">
+                      <span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 01</span>
+                    </p>
+                    <h3 style="margin:10px 0 8px; font-size:16px; color:#1e3a5f;">
+                      Microsoft 365 Copilot Cowork <span style="color:#6b7280; font-size:0.85em; font-weight:400;">― Office内でClaudeが自律作業するAIエージェント</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      Microsoft 365 Copilotに統合された自律型AIで、Word・Excel・Outlook・Teamsを横断しながら複数ステップの作業を完了させます。「先方からの返信メールを要約して、関連資料3点を添付した返信ドラフトを作って」のような指示を、Claudeのエージェント機能が計画→実行→提出まで一気通貫で処理。すでにMicrosoft 365を使っている企業は、ライセンスの追加だけで導入できる点が中小企業にとって大きな利点です。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:14px; color:#374151;">
+                      <strong>こんな人におすすめ：</strong>Office 365をすでに導入していて、メール・資料作成の負担を一段下げたい管理部門・営業マネージャー
+                    </p>
+                    <p style="margin:0 0 10px; font-size:14px; color:#374151;">
+                      <strong>料金目安：</strong>Microsoft 365 Copilot ライセンス（月額約4,500円/ユーザー〜）＋ Frontier早期導入プログラム参加
+                    </p>
+                    <a class="source-link" href="https://www.microsoft.com/ja-jp/microsoft-365/copilot" style="color:#2563eb; font-size:13px; text-decoration:underline;">▶ Microsoft 365 Copilot 公式ページ</a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ツール2 -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; padding:20px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+                    <p style="margin:0 0 4px;">
+                      <span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 02</span>
+                    </p>
+                    <h3 style="margin:10px 0 8px; font-size:16px; color:#1e3a5f;">
+                      Notion 3.4 <span style="color:#6b7280; font-size:0.85em; font-weight:400;">― ダッシュボード・スライド・AI生成が一気通貫のオールインワン</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      Notion最新版（3.4）では、データベースから自動でKPIダッシュボードを作る機能、任意のページをそのままスライドに変換できるプレゼンテーションモード、そして「Notion Agent」に指示すれば画像・チャート・図解まで生成できる機能が追加されました。月次報告書のグラフづくりや会議用スライドの準備が、別ツールに移動せず1か所で完結するのが大きな進化点です。社内ドキュメントを散在させたくない中小企業に特におすすめできます。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:14px; color:#374151;">
+                      <strong>こんな人におすすめ：</strong>議事録・タスク管理・社内ドキュメントを1か所にまとめたい中小企業のバックオフィス・経営企画担当者
+                    </p>
+                    <p style="margin:0 0 10px; font-size:14px; color:#374151;">
+                      <strong>料金目安：</strong>無料プランあり（チームプラン：月額約1,500円/ユーザー、AI機能はBusiness以上で利用可）
+                    </p>
+                    <a class="source-link" href="https://www.notion.so/ja/product/ai" style="color:#2563eb; font-size:13px; text-decoration:underline;">▶ Notion AI 公式ページ</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 36px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- セクション3: 用語解説 -->
+          <tr>
+            <td class="content-cell" style="padding:28px 36px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:20px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">
+                📖 用語解説・学習コーナー
+              </h2>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px; padding:20px 24px;">
+                    <h3 style="margin:0 0 6px; font-size:17px; color:#1e3a5f;">
+                      AIガードレール
+                      <span style="color:#6b7280; font-size:0.85em; font-weight:400;"> / AI Guardrails</span>
+                    </h3>
+                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">
+                      一言でいうと：「AIが暴走したり情報漏洩したりしないように張る『安全柵』の仕組み」
+                    </p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      AIガードレールは、生成AIの入力（プロンプト）と出力（回答）の両方をチェックして、機密情報の漏洩・不適切な発言・誤情報の流出をブロックする仕組みの総称です。たとえば社員が「顧客の個人情報を含むメール文面」を社内AIに貼り付けようとしたら自動でマスキング、AIが事実と異なる回答を出しそうになったら警告、といった具合に動きます。今週ニュースになった「F5 AI Guardrails」は企業向けの代表例で、社内AIを安全に運用するための“見えない安全装置”として注目されています。
+                    </p>
+                    <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>ビジネスでの使いどころ：</strong>「社員にChatGPTを自由に使わせたいけど、顧客情報や機密情報の漏洩が怖い」という中小企業にこそ必要な仕組みです。導入すると、社員はAIを安心して使い、経営者はリスクを抑えられる、という両立が実現できます。AIを業務に組み込む前後で、必ずセットで検討したい守りの一手です。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 36px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- セクション4: 編集者コメント -->
+          <tr>
+            <td class="content-cell" style="padding:8px 36px 8px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">💬 編集者コメント</h2>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="content-cell" style="padding:12px 36px 28px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fefce8; border-radius:8px; border:1px solid #fde68a;">
+                <tr>
+                  <td class="column-box-cell" style="padding:24px;">
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      今週個人的にぐっと来たのは、セブン-イレブンの空調事例です。「AI×省エネ」と聞くと工場や大企業の話に聞こえがちですが、コンビニ33店舗・後付け工事OKという内容で、もう完全に“身近なところ”に来ているなと感じました。スーパー、クリニック、町工場……同じやり方でうまくいくイメージが湧きやすい事例だと思います。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      もう一つ強調したいのは、補助金第19回の<strong>締切4月30日</strong>です。読んでいる時点で残り3日。「やっぱり今期はやめておくか」となりがちですが、ITベンダーに電話するだけでも今日のうちに動いておくと、第20回（来月）の申請が一気に楽になります。攻め（Copilot Cowork）と守り（AIガードレール）、どちらも今週仕込んでおきたい話題でした。
+                    </p>
+                    <p style="margin:0; font-size:14px; color:#92400e;">📌 来週はAIガードレール導入の3ステップを実例付きでお届け予定です。お楽しみに！</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 余白 -->
+          <tr>
+            <td style="padding:16px 0 0;"></td>
+          </tr>
+
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
+            </td>
+          </tr>
+
+          <!-- フッター -->
+          <tr>
+            <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+              <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
