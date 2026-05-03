@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.6 — デジタル化・AI導入補助金2026 1次締切5月12日 / ChatGPTワークスペースエージェント登場 / 中小企業AI導入率が1年で2倍に](outputs/vol6/)（2026年5月4日号）
 - [Vol.5 — AI導入補助金 第19回〆切迫る / Microsoft 365 Copilot Cowork / セブン-イレブン33店舗AI空調](outputs/vol5/)（2026年4月27日号）
 - [Vol.4 — デジタル化・AI導入補助金2026申請スタート / Adobe Firefly AI Assistant / 中小企業が2カ月で月40時間削減](outputs/vol4/)（2026年4月20日号）
 - [Vol.3 — Microsoft対日投資 / Gemma 4 / 補助金2026](outputs/vol3/)（2026年4月13日号）
@@ -51,8 +52,10 @@ weekly-newsletter/
     │   └── index.html                 ← Vol.3
     ├── vol4/
     │   └── index.html                 ← Vol.4
-    └── vol5/
-        └── index.html                 ← Vol.5
+    ├── vol5/
+    │   └── index.html                 ← Vol.5
+    └── vol6/
+        └── index.html                 ← Vol.6
 ```
 
 ## 📱 レスポンシブ対応
