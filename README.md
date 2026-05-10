@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.7 — 中小企業AI導入率が1年で2倍に / monday.com がAI Work Platformへ転換 / OpenAI 70言語リアルタイム音声翻訳発表](outputs/vol7/)（2026年5月11日号）
 - [Vol.6 — デジタル化・AI導入補助金2026 1次締切5月12日 / ChatGPTワークスペースエージェント登場 / 中小企業AI導入率が1年で2倍に](outputs/vol6/)（2026年5月4日号）
 - [Vol.5 — AI導入補助金 第19回〆切迫る / Microsoft 365 Copilot Cowork / セブン-イレブン33店舗AI空調](outputs/vol5/)（2026年4月27日号）
 - [Vol.4 — デジタル化・AI導入補助金2026申請スタート / Adobe Firefly AI Assistant / 中小企業が2カ月で月40時間削減](outputs/vol4/)（2026年4月20日号）
@@ -54,8 +55,10 @@ weekly-newsletter/
     │   └── index.html                 ← Vol.4
     ├── vol5/
     │   └── index.html                 ← Vol.5
-    └── vol6/
-        └── index.html                 ← Vol.6
+    ├── vol6/
+    │   └── index.html                 ← Vol.6
+    └── vol7/
+        └── index.html                 ← Vol.7
 ```
 
 ## 📱 レスポンシブ対応
@@ -118,6 +121,8 @@ Step 6  作業記録の更新（拡張機能版）
 | Vol.3 | 2026/04/13 | Microsoft 1.6兆円対日投資 / Gemma 4 / 補助金2026 |
 | Vol.4 | 2026/04/20 | デジタル化・AI導入補助金2026申請スタート / Adobe Firefly AI Assistant / 中小企業が2カ月で月40時間削減 |
 | Vol.5 | 2026/04/27 | AI導入補助金 第19回〆切迫る / Microsoft 365 Copilot Cowork搭載 / セブン-イレブン33店舗でAI空調本格運用 |
+| Vol.6 | 2026/05/04 | デジタル化・AI導入補助金2026 1次締切5月12日 / ChatGPTワークスペースエージェント登場 / 中小企業AI導入率が1年で2倍に |
+| Vol.7 | 2026/05/11 | 中小企業AI導入率が1年で2倍に / monday.com がAI Work Platformへ転換 / OpenAI 70言語リアルタイム音声翻訳発表 |
 
 ## 📝 作成者
 
