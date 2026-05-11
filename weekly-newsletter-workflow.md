@@ -21,11 +21,13 @@ Step 2  生成物の確認・修正（拡張機能版）
   ↓
 Step 3  ブラウザプレビュー（手動）
   ↓
-Step 4  Git commit & push（Sourcetree）
+Step 4  発行前構造監査（Claude Code）
   ↓
-Step 5  GitHub Pages で公開確認（手動）
+Step 5  Git commit & push（Sourcetree）
   ↓
-Step 6  作業記録の更新（拡張機能版）
+Step 6  GitHub Pages で公開確認（手動）
+  ↓
+Step 7  作業記録の更新（拡張機能版）
 ```
 
 ---
@@ -158,7 +160,30 @@ open outputs/volX/index.html
 
 ---
 
-## Step 4：Git commit & push（所要時間：3分）
+## Step 4：発行前構造監査（所要時間：1〜2分）
+
+**使用：ターミナル版**（Claude Code）
+
+ブラウザプレビューで視覚確認が終わったら、Claude Code に構造監査を実行させる。
+
+`docs/pre-publish-audit-prompt.md` の内容をそのまま Claude Code に貼り付けて実行する。
+
+### 監査レポートの見方
+
+| 判定 | 意味 | 対応 |
+|-----|------|------|
+| ✅ GO | 構造に問題なし | 次の Step へ進む |
+| ⛔ NO-GO | 構造ミスあり | Claude Code が提示する修正コードを承認して修正後、次へ |
+
+### 特に注意するポイント
+
+- **📚 Weeklyライブラリへ** リンクがヘッダー直下にあったら即 NO-GO
+- NEWS 01 → 02 → 03 の順序
+- フッターが最下部にあるか
+
+---
+
+## Step 5：Git commit & push（所要時間：3分）
 
 **使用：Sourcetree**（琉誠さんの通常ワークフロー：VSCode → Sourcetree → GitHub）
 
@@ -195,9 +220,9 @@ Vol.X ニュースレター追加（YYYY年MM月DD日号）
 
 ---
 
-## Step 5：GitHub Pages で公開確認（所要時間：1分）
+## Step 6：GitHub Pages で公開確認（所要時間：1分）
 
-**使用：手動操作（ブラウザ）**
+**使用：手動操作**
 
 push後、1〜2分待ってからGitHub PagesのURLにアクセスして確認する。
 
@@ -211,7 +236,7 @@ https://（ユーザー名）.github.io/weekly-newsletter/
 
 ---
 
-## Step 6：作業記録の更新（所要時間：2分）
+## Step 7：作業記録の更新（所要時間：2分）
 
 **使用：拡張機能版**
 
@@ -234,10 +259,11 @@ work-log.mdに今回のVol.Xの作業記録を追加して。
 | 1 | ニュースレター生成指示 | ターミナル版 | 3〜5分 |
 | 2 | 生成物の確認・修正 | 拡張機能版 | 5〜10分 |
 | 3 | ブラウザプレビュー | 手動 | 2分 |
-| 4 | Git commit & push | Sourcetree | 3分 |
-| 5 | GitHub Pages 公開確認 | 手動 | 1分 |
-| 6 | 作業記録の更新 | 拡張機能版 | 2分 |
-| | **合計** | | **約17〜24分** |
+| 4 | 発行前構造監査 | ターミナル版 | 1〜2分 |
+| 5 | Git commit & push | Sourcetree | 3分 |
+| 6 | GitHub Pages 公開確認 | 手動 | 1分 |
+| 7 | 作業記録の更新 | 拡張機能版 | 2分 |
+| | **合計** | | **約18〜26分** |
 
 ---
 

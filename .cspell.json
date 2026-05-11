@@ -1,0 +1,39 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    // AI企業・製品名
+    "Anthropic",
+    "OpenAI",
+    "ChatGPT",
+    "DeepSeek",
+    "Agentforce",
+    "Exa",
+    "Gemma",
+    "Cowork",
+    // AI・技術略語
+    "Mtok",
+    "MCP",
+    "GPT",
+    "LLM",
+    "SaaS",
+    // 開発ツール・サービス
+    "Sourcetree",
+    "GoTo",
+    "VSCode",
+    "Mailchimp",
+    // HTML・メール互換技術用語
+    "MSO",
+    "bgcolor",
+    "Hiragino",
+    // その他
+    "macOS",
+    "HVAC",
+    "Realtime",
+    "volX"
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    ".git/**"
+  ]
+}
