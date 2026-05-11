@@ -42,6 +42,8 @@ weekly-newsletter/
 │   └── favicon.ico
 ├── evals/
 │   └── evals.json                     ← テストケース定義
+├── docs/
+│   └── pre-publish-audit-prompt.md    ← 発行前構造監査プロンプト（Step 1〜7）
 └── outputs/                           ← 生成したニュースレター
     ├── vol1/
     │   └── index.html                 ← Vol.1 創刊号
