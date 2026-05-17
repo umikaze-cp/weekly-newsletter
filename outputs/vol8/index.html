@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+  <title>AI×DX Weekly - Vol.8（2026年5月18日号）</title>
+  <style>
+    /* ======================
+       タブレット対応（681px〜840px）
+       iPad縦向き768px をカバー
+       ====================== */
+    @media only screen and (min-width: 681px) and (max-width: 840px) {
+      .email-container { width: 94% !important; max-width: 800px !important; }
+      .content-cell { padding-left: 28px !important; padding-right: 28px !important; }
+      .card-cell { padding: 18px 20px !important; }
+      .body-text { font-size: 15px !important; line-height: 1.8 !important; }
+      .header-title { font-size: 28px !important; }
+      .section-heading { font-size: 21px !important; }
+    }
+
+    /* ======================
+       スマートフォン対応（680px以下）
+       iPhone / Android をカバー
+       ====================== */
+    @media only screen and (max-width: 680px) {
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .header-title { font-size: 22px !important; }
+      .content-cell { padding-left: 16px !important; padding-right: 16px !important; }
+      .card-cell { padding: 14px 14px !important; }
+      .section-heading { font-size: 18px !important; }
+      .body-text { font-size: 14px !important; line-height: 1.8 !important; }
+      .source-link { display: inline-block !important; padding: 4px 0 !important; }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family:system-ui,-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <!--[if mso]><table role="presentation" width="800" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" class="email-container" width="800" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:8px; overflow:hidden; max-width:800px; width:100%;">
+
+          <!-- ヘッダー -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:30px; text-align:center; color:#ffffff;">
+              <div style="display:inline-flex; align-items:center; gap:8px;">
+                <img src="../../images/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:6px; width:32px; height:32px;">
+                <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px;">AI×DX Weekly</h1>
+              </div>
+              <p style="margin:8px 0 0; font-size:14px; opacity:0.9;">Vol.8 ｜ 2026年5月18日号</p>
+              <p style="margin:12px 0 0; font-size:13px; opacity:0.75;">AIが動く、会社が変わる。</p>
+            </td>
+          </tr>
+
+          <!-- イントロ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                今週は「AIが人間の代わりに動く」というテーマが各所に重なった一週間でした。業務管理ツールへの自律型AIエージェント搭載、大手IT企業による中小企業向け伴走支援サービスの開始、そして創業100年の老舗企業が「できることから一つずつ」とAI活用に踏み出した事例まで。「難しそう」「大企業だけのもの」という先入観を超えて、AIはいよいよ中小企業の日常に入り込んできています。
+              </p>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- ★ 配置順序の厳守ルール ★                      -->
+          <!--   1. 📰 今週のニュース TOP3                    -->
+          <!--   2. 🛠️ 今週のおすすめツール                   -->
+          <!--   3. 📖 用語解説                              -->
+          <!--   4. 💬 編集者コメント                        -->
+          <!--   5. 📚 Weeklyライブラリへリンク（フッター直前）-->
+          <!--   6. フッター                                  -->
+          <!-- ============================================ -->
+
+          <!-- ==================== -->
+          <!-- 📰 今週のニュース TOP3 -->
+          <!-- ==================== -->
+          <tr>
+            <td class="content-cell" style="padding:32px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📰 今週のAI×DXニュース TOP3</h2>
+            </td>
+          </tr>
+
+          <!-- NEWS 01 薄青 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0f6ff; border:1px solid #bfdbfe; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 01</p>
+                    <h3 style="margin:0 0 6px; font-size:17px; color:#1e3a5f;">大塚商会、中小企業向け「AIまるごと伴走支援」を開始</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Otsuka Shokai / AI Support Service for SME</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      大塚商会は2026年5月13日、中堅・中小企業向けに「たよれーる AIまるごと伴走支援サービス」の提供を開始しました。Microsoft 365 Copilot・Dify・Azure AI Foundry Agent Serviceなど、複数のAIツールを横断的に支援するチケット制サービスです。
+                      導入後に「使いこなせない」と行き詰まりがちなAIツールの運用相談・再研修・エージェント作成支援を一手に引き受ける点が特徴。製品ごとに個別サポートを契約する手間を省き、AI活用の定着を継続的に後押しします。
+                      AIを導入したものの社内定着が進まないと感じている企業にとって、専門家への相談窓口が一本化されるのは大きなメリットです。料金は4チケット（99,600円/年）から始められます。
+                    </p>
+                    <a href="https://aismiley.co.jp/ai_news/otsuka-shokai-ai-support-service/" class="source-link" style="color:#2563eb; font-size:14px;">▶ 詳細を読む（AI-Smiley）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 02 薄緑 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 02</p>
+                    <h3 style="margin:0 0 6px; font-size:17px; color:#1e3a5f;">Productive 5.0、AI Agentsが日常業務を自律実行</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Productive 5.0 / AI Agents / Autonomous Workflow</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      業務管理プラットフォームのProductiveが2026年5月12日にバージョン5.0をリリース。AIエージェントが会議の文字起こし・リソース配分・レポート生成などの定型業務を自律的に実行し、チームが戦略的な仕事に集中できる環境を提供します。
+                      特に「AI Notetaker」は会議終了の瞬間に自動でサマリーとアクションアイテムを生成し、即タスクに変換。カレンダー・メール・チャットツールとの連携で、既存ワークフローへの追加導入がしやすい設計です。
+                      コンサルティング会社・デザイン事務所・IT企業など、プロジェクト型ビジネスを展開する中小企業に向いています。コンテンツ作成系のAI利用は広まる一方で、業務運営のAI化はまだ少ないという同社調査の課題感を正面から解決しようとする製品です。
+                    </p>
+                    <a href="https://www.globenewswire.com/news-release/2026/05/12/3293312/0/en/Productive-Launches-5-0-With-AI-Agents-That-Free-Teams-From-Routine-Work.html" class="source-link" style="color:#2563eb; font-size:14px;">▶ 詳細を読む（GlobeNewswire）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 03 薄黄 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 03</p>
+                    <h3 style="margin:0 0 6px; font-size:17px; color:#1e3a5f;">創業100年の昆布老舗がAI活用へ — 「等身大の一歩」が全国の手本に</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">SME AI Adoption / Legacy Business / Step by Step</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      北海道・日高食品工業（創業100年の昆布製造販売業）がAI活用に踏み出した事例が注目を集めています。全社員がAI研修を受け、まず紙のカレンダーをGoogle Workspaceに移行してデータを整え、イベント告知動画や画像をAIで作る——という「できることから一つずつ」のアプローチです。
+                      派手な成果発表ではなく、各部署が「自分ごと」としてAI活用を考え始めた段階にあるという率直な報告が、同じ悩みを抱える地方中小企業の共感を呼んでいます。
+                      中小機構の最新調査でも中小企業のAI導入率は20.4%（4社に1社）に達し、「AI＝大企業のもの」という時代は終わりつつあります。老舗の一歩は、迷っている企業への背中を押す好例といえます。
+                    </p>
+                    <a href="https://zept7.com/Information/2026/05/11/post-423/" class="source-link" style="color:#2563eb; font-size:14px;">▶ 詳細を読む（Zept）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ========================= -->
+          <!-- 🛠️ 今週のおすすめツール   -->
+          <!-- ========================= -->
+          <tr>
+            <td class="content-cell" style="padding:32px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">🛠️ 今週のおすすめツール・リソース</h2>
+            </td>
+          </tr>
+
+          <!-- TOOL 01 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); padding:24px;">
+                    <p style="margin:0 0 10px;">
+                      <span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 01</span>
+                    </p>
+                    <h3 style="margin:0 0 6px; font-size:17px; color:#1e3a5f;">AI CFO — 中小企業の経営判断をAIが支援</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">AI CFO / Management AI Agent / SME Finance</span></p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      株式会社Metricsが2026年5月に正式リリースした中小企業向け経営管理AIエージェント。経営分析・予算管理・ダッシュボード構築の3機能を同時に展開し、経営者の意思決定をサポートします。Notion・Slack・Google Workspaceとの連携も予定されており、会計データだけでなく会議記録や営業データも一元管理できるようになります。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;"><strong>こんな人におすすめ：</strong>「経営数字は見たいが、分析に時間をかけられない」中小企業の経営者・経理担当者</p>
+                    <p style="margin:0 0 10px; font-size:14px; color:#374151;"><strong>料金目安：</strong>正式リリース段階のため要問い合わせ（フリーミアム展開予定）</p>
+                    <a href="https://news.3rd-in.co.jp/article/3d2319de-4ce5-11f1-85da-9ca3ba083d71" class="source-link" style="color:#2563eb; font-size:14px;">▶ 詳細を読む</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- TOOL 02 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); padding:24px;">
+                    <p style="margin:0 0 10px;">
+                      <span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 02</span>
+                    </p>
+                    <h3 style="margin:0 0 6px; font-size:17px; color:#1e3a5f;">ChatSense — 社内AIエージェントでブラウザ操作まで自動化</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">ChatSense / Cowork / Business AI Agent</span></p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      ナレッジセンス社の法人向け生成AIエージェント「ChatSense」が、ブラウザ上の操作（検索・フォーム入力・データ収集）を自律実行する「Cowork」機能のベータ版を公開。利用状況の可視化と権限設定の透明化を備えた管理画面も整備され、セキュリティを保ちながら業務自動化を進められます。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;"><strong>こんな人におすすめ：</strong>定型的なWeb作業（フォーム入力・情報収集）を繰り返している担当者、AIを安全に使いたい管理者</p>
+                    <p style="margin:0 0 10px; font-size:14px; color:#374151;"><strong>料金目安：</strong>フリーミアム（詳細は公式サイトにて確認）</p>
+                    <a href="https://news.3rd-in.co.jp/article/bab86116-4ce9-11f1-8002-9ca3ba083d71" class="source-link" style="color:#2563eb; font-size:14px;">▶ 詳細を読む</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ===================== -->
+          <!-- 📖 用語解説            -->
+          <!-- ===================== -->
+          <tr>
+            <td class="content-cell" style="padding:32px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📖 用語解説・学習コーナー</h2>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px; padding:24px;">
+                    <h3 style="margin:0 0 10px; font-size:18px; color:#1e3a5f;">AIエージェント <span style="color:#6b7280; font-size:0.9em;">/ AI Agent</span></h3>
+                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">一言でいうと：「指示を受けて、自分で考えて、自分で動くAI」</p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      従来のAI（チャットAIなど）は「質問に答えるだけ」でしたが、AIエージェントは「目標を与えると、達成するための手順を自分で考えて実行する」点が違います。たとえば「今月の売上レポートを作って」と指示すると、データを集め、分析し、資料を作成し、メールで送信するまでを自律的に行います。
+                      人間が逐一「次はこれをして」と指示しなくても、複数ステップの仕事を連続してこなせるのが最大の特徴です。今週紹介したProductiveのAI Agentsや大塚商会の伴走支援対象ツール（Copilot Studio・Difyなど）も、このAIエージェントの考え方に基づいています。
+                    </p>
+                    <p class="body-text" style="margin:0 0 0; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>ビジネスでの使いどころ：</strong>受注メールの自動仕分け・返信案作成、会議後のタスク自動登録、定期レポートの自動作成など。「毎回同じ手順でやっている仕事」はエージェントに任せやすく、従業員が本来の業務に集中できる環境を作れます。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ===================== -->
+          <!-- 💬 編集者コメント      -->
+          <!-- ===================== -->
+          <tr>
+            <td class="content-cell" style="padding:32px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">💬 編集者コメント</h2>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="column-box-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      創業100年の昆布老舗が「まず紙のカレンダーをデジタル化するところから」と語る姿に、今週は少し胸が熱くなりました。AI活用というと「最新ツール導入」「全社展開」と大げさに構えがちですが、日高食品工業さんのような「等身大の一歩」こそが長続きする秘訣ではないでしょうか。AIは道具です。使い始めれば「次にこれができないか」と自然に発想が広がっていく。まずは一つ、試してみることが何より大切です。
+                    </p>
+                    <p style="margin:0; font-size:14px; color:#92400e;">📌 来週は「AI活用でコスト削減に成功した中小企業の最新事例」と「補助金2次締切（6/15）前の申請チェックリスト」をお届け予定です。お楽しみに！</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 📚 Weeklyライブラリへのリンク（編集者コメント直後・フッター直前） -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
+            </td>
+          </tr>
+
+          <!-- フッター -->
+          <!-- ルール: 2行構成で固定。Vol番号・日付・注意書きは含めない -->
+          <!-- bgcolor属性はOutlook等グラデーション非対応メーラー向けフォールバック -->
+          <tr>
+            <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+              <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
