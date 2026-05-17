@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.8 — 大塚商会がAI伴走支援サービス開始 / Productive 5.0 AI Agents搭載 / 創業100年の老舗が「等身大のAI活用」へ](outputs/vol8/)（2026年5月18日号）
 - [Vol.7 — 中小企業AI導入率が1年で2倍に / monday.com がAI Work Platformへ転換 / OpenAI 70言語リアルタイム音声翻訳発表](outputs/vol7/)（2026年5月11日号）
 - [Vol.6 — デジタル化・AI導入補助金2026 1次締切5月12日 / ChatGPTワークスペースエージェント登場 / 中小企業AI導入率が1年で2倍に](outputs/vol6/)（2026年5月4日号）
 - [Vol.5 — AI導入補助金 第19回〆切迫る / Microsoft 365 Copilot Cowork / セブン-イレブン33店舗AI空調](outputs/vol5/)（2026年4月27日号）
@@ -59,8 +60,10 @@ weekly-newsletter/
     │   └── index.html                 ← Vol.5
     ├── vol6/
     │   └── index.html                 ← Vol.6
-    └── vol7/
-        └── index.html                 ← Vol.7
+    ├── vol7/
+    │   └── index.html                 ← Vol.7
+    └── vol8/
+        └── index.html                 ← Vol.8
 ```
 
 ## 📱 レスポンシブ対応
@@ -125,6 +128,7 @@ Step 6  作業記録の更新（拡張機能版）
 | Vol.5 | 2026/04/27 | AI導入補助金 第19回〆切迫る / Microsoft 365 Copilot Cowork搭載 / セブン-イレブン33店舗でAI空調本格運用 |
 | Vol.6 | 2026/05/04 | デジタル化・AI導入補助金2026 1次締切5月12日 / ChatGPTワークスペースエージェント登場 / 中小企業AI導入率が1年で2倍に |
 | Vol.7 | 2026/05/11 | 中小企業AI導入率が1年で2倍に / monday.com がAI Work Platformへ転換 / OpenAI 70言語リアルタイム音声翻訳発表 |
+| Vol.8 | 2026/05/18 | 大塚商会AIまるごと伴走支援開始 / Productive 5.0 AI Agents搭載 / 創業100年の老舗が「等身大のAI活用」へ |
 
 ## 📝 作成者
 
