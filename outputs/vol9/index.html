@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+  <title>AI×DX Weekly - Vol.9（2026年5月25日号）</title>
+  <style>
+    /* ======================
+       タブレット対応（681px〜840px）
+       iPad縦向き768px をカバー
+       ====================== */
+    @media only screen and (min-width: 681px) and (max-width: 840px) {
+      .email-container { width: 94% !important; max-width: 800px !important; }
+      .content-cell { padding-left: 28px !important; padding-right: 28px !important; }
+      .card-cell { padding: 18px 20px !important; }
+      .body-text { font-size: 15px !important; line-height: 1.8 !important; }
+      .header-title { font-size: 28px !important; }
+      .section-heading { font-size: 21px !important; }
+    }
+
+    /* ======================
+       スマートフォン対応（680px以下）
+       iPhone / Android をカバー
+       ====================== */
+    @media only screen and (max-width: 680px) {
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .header-title { font-size: 22px !important; }
+      .content-cell { padding-left: 16px !important; padding-right: 16px !important; }
+      .card-cell { padding: 14px 14px !important; }
+      .section-heading { font-size: 18px !important; }
+      .body-text { font-size: 14px !important; line-height: 1.8 !important; }
+      .source-link { display: inline-block !important; padding: 4px 0 !important; }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family:system-ui,-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <!--[if mso]><table role="presentation" width="800" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" class="email-container" width="800" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:8px; overflow:hidden; max-width:800px; width:100%;">
+
+          <!-- ヘッダー -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:30px; text-align:center; color:#ffffff;">
+              <div style="display:inline-flex; align-items:center; gap:8px;">
+                <img src="../../images/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:6px; width:32px; height:32px;">
+                <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px;">AI×DX Weekly</h1>
+              </div>
+              <p style="margin:8px 0 0; font-size:14px; opacity:0.9;">Vol.9 ｜ 2026年5月25日号</p>
+              <p style="margin:12px 0 0; font-size:13px; opacity:0.75;">AIが、あなたの代わりに動き出す。</p>
+            </td>
+          </tr>
+
+          <!-- イントロ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                今週は「AIが指示を待つのをやめた」と感じさせるニュースが重なった一週間でした。AnthropicがQuickBooksやHubSpotと連携した中小企業向けAIパッケージを本格展開し、GoogleはGoogle I/Oで24時間稼働するパーソナルAIエージェントを発表。さらに日本政府の補助金制度がChatGPTやClaudeの月額費用まで対象に拡充され、AI導入の"お金の壁"も着実に下がっています。「AIを使う時代」から「AIに任せる時代」への転換点が、今週一気に近づきました。
+              </p>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- ★ 配置順序の厳守ルール ★                      -->
+          <!--   1. 📰 今週のニュース TOP3                    -->
+          <!--   2. 🛠️ 今週のおすすめツール                   -->
+          <!--   3. 📖 用語解説                              -->
+          <!--   4. 💬 編集者コメント                        -->
+          <!--   5. 📚 Weeklyライブラリへリンク（フッター直前）-->
+          <!--   6. フッター                                  -->
+          <!-- ============================================ -->
+
+          <!-- ① 📰 今週のAI×DXニュース TOP3 — セクション見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📰 今週のAI×DXニュース TOP3</h2>
+            </td>
+          </tr>
+
+          <!-- NEWS 01（薄青：公的・信頼度高） -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f0f6ff; border:1px solid #bfdbfe; border-radius:8px;">
+                <tr>
+                  <td class="card-cell" style="padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 01</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">Anthropic「Claude for Small Business」始動 — 中小企業の事務をAIが丸ごと代行</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Claude for Small Business / Agentic Workflow / SMB AI</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      Anthropicは5月13日、中小企業向けAIパッケージ「Claude for Small Business」を発表しました。QuickBooks・PayPal・HubSpot・Canva・DocuSign・Google Workspace・Microsoft 365と初めから連携し、請求書の催促、給与計算の準備、営業フォロー、月次決算まで15種類の業務フローをすぐに実行できます。「送信・投稿・支払い」の前には必ず人間の確認を挟む設計のため、AIが暴走するリスクを抑えながら使えます。すでに使っているツールに「トグルをオンにするだけ」で導入できるため、IT専任スタッフがいない中小企業でもすぐに始められます。
+                    </p>
+                    <a href="https://www.anthropic.com/news/claude-for-small-business" class="source-link" style="color:#2563eb; font-size:14px; text-decoration:underline;">出典: Anthropic公式発表（2026年5月13日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 02（薄緑：革新・新鮮） -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px;">
+                <tr>
+                  <td class="card-cell" style="padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 02</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">Google I/O 2026：Gemini Sparkが「24時間365日のパーソナルAI秘書」として登場</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Gemini Spark / Personal AI Agent / Google I/O 2026</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      5月19日のGoogle I/O 2026で、Googleはクラウド上で24時間稼働するパーソナルAIエージェント「Gemini Spark」を発表しました。スマホやPCに常駐し、スケジュール管理・メール整理・タスク実行を自律的に処理します。同時に次世代モデル「Gemini 3.5 Flash」と動画生成に強い「Gemini Omni」も投入され、AI性能の底上げも図られています。Canva・OpenTable等の外部サービスとはMCP（共通接続規格）で連携するため、業務ツールとの組み合わせが今後さらに広がる見込みです。少人数の経営者が"もう一人の自分"としてSparkを活用するシーンが、現実に近づいています。
+                    </p>
+                    <a href="https://blog.google/intl/ja-jp/company-news/technology/next-evolution-gemini-app/" class="source-link" style="color:#2563eb; font-size:14px; text-decoration:underline;">出典: Google公式ブログ（2026年5月19日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 03（薄黄：注目・温かみ） -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px;">
+                <tr>
+                  <td class="card-cell" style="padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 03</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">AI導入補助金2026、ChatGPT・Claude・Geminiの月額費用が補助対象に</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">IT導入補助金 / AI Adoption Subsidy / Generative AI Tools</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      中小企業庁のIT導入補助金が「デジタル化・AI導入補助金2026」として再編され、ChatGPT・Claude・GeminiなどのAIツール月額プランが初めて明示的に補助対象となりました。小規模事業者なら最大80%、中小企業でも最大75%の補助率が適用される場合があります。接客AIエージェント「Omakase AI」（ジールス）も5月21日に補助金対象プロダクトとして正式認定され、初年度費用が最大50%オフになるプランの提供を開始しています。AI導入を「いつかやること」から「今期の投資」に切り替える、絶好のタイミングが来ています。
+                    </p>
+                    <a href="https://www.jiji.com/jc/article?g=prt&k=000000200.000019209" class="source-link" style="color:#2563eb; font-size:14px; text-decoration:underline;">出典: 時事ドットコム（2026年5月21日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:4px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ② 🛠️ 今週のおすすめツール — セクション見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">🛠️ 今週のおすすめツール・リソース</h2>
+            </td>
+          </tr>
+
+          <!-- TOOL 01: vcita BizAI -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+                <tr>
+                  <td class="card-cell" style="padding:24px;">
+                    <p style="margin:0 0 10px;"><span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL</span></p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">vcita BizAI — チャットで動く中小企業向けAI業務管理</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">vcita BizAI / SMB AI Agent / Agentic Business Management</span></p>
+                    <p class="body-text" style="margin:0 0 8px; font-size:15px; line-height:1.8; color:#374151;">
+                      予約管理・請求書発行・顧客フォローを「今日の予約を教えて」「支払い待ちの顧客に請求書を再送して」といった自然な言葉で指示できるAI業務管理ツールです。2026年5月から完全なエージェント型に進化し、AIが自ら状況を分析して「この顧客にフォローアップを提案します」と先回りして動くようになりました。数万社の中小企業がすでに利用しており、実績のある安定したプラットフォームです。
+                    </p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;"><strong>こんな人におすすめ：</strong>少人数でサービス業（士業・整体院・サロン・コンサルなど）を運営しており、予約・請求・顧客管理を一人でこなしている方。</p>
+                    <p style="margin:0 0 8px; font-size:14px; color:#374151;"><strong>料金目安：</strong>フリーミアム（無料プランあり、有料プランは月額数千円〜）</p>
+                    <a href="https://www.vcita.com/" class="source-link" style="color:#2563eb; font-size:14px; text-decoration:underline;">公式サイト: vcita.com</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- TOOL 02: XeroForce -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+                <tr>
+                  <td class="card-cell" style="padding:24px;">
+                    <p style="margin:0 0 10px;"><span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL</span></p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">XeroForce — 自然言語で会計ワークフローをAI自動化</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">XeroForce / No-Code AI Agent / Accounting Automation</span></p>
+                    <p class="body-text" style="margin:0 0 8px; font-size:15px; line-height:1.8; color:#374151;">
+                      会計クラウド「Xero」が5月14日に発表したAIエージェントビルダーです。「入金が90日以上遅れている取引先に督促メールを毎週送って」のように言葉で入力するだけで、自動化ワークフローが構築できます。プログラミング不要で、Xeroのデータと連携したまま動くため、会計の専門知識を持ちながらITが苦手な経営者・税理士にも使いやすい設計です。現在は招待制のアルファ版で、年内に一般公開予定です。
+                    </p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;"><strong>こんな人におすすめ：</strong>Xeroを使っている中小企業の経営者・経理担当者・税理士で、月次業務の定型作業を自動化したい方。</p>
+                    <p style="margin:0 0 8px; font-size:14px; color:#374151;"><strong>料金目安：</strong>現在はアルファ版（招待制・無料）、一般公開後はXeroプランに含まれる予定</p>
+                    <a href="https://www.xero.com/ca/media-releases/xero-introduces-xeroforce/" class="source-link" style="color:#2563eb; font-size:14px; text-decoration:underline;">出典: Xero公式発表（2026年5月14日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:4px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ③ 📖 用語解説 — セクション見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📖 用語解説・学習コーナー</h2>
+            </td>
+          </tr>
+
+          <!-- 用語解説カード（薄紫） -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px;">
+                <tr>
+                  <td class="card-cell" style="padding:24px;">
+                    <h3 style="margin:0 0 10px; font-size:18px; color:#1e3a5f;">MCP（Model Context Protocol / モデル・コンテキスト・プロトコル）</h3>
+                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">一言でいうと：「AIと外部サービスをつなぐ共通の差し込みプラグ規格」</p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      MCPはAnthropicが提案し業界標準化が進んでいるオープン規格で、AIモデルが外部のデータやサービスに安全にアクセスするための共通インターフェースです。家電のコンセント形状が統一されていれば「この製品はこの国で使えるか」を気にしなくていいように、MCPが普及すると「このAIはこのツールと連携できるか」という心配が不要になります。今週のGoogle I/Oでも、Gemini SparkがCanva・OpenTable・Instacartと連携を開始した際にMCPが活用されています。
+                    </p>
+                    <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>ビジネスでの使いどころ：</strong>社内の在庫管理システムや顧客データベースを「MCP対応か否か」をベンダー選定の評価軸に加えておくと、今後どのAIツールを導入してもスムーズに連携できます。今すぐ実装が難しくても、この視点を持つだけで"つながりやすい"システム選びができます。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:4px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ④ 💬 編集者コメント — セクション見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">💬 編集者コメント</h2>
+            </td>
+          </tr>
+
+          <!-- 編集者コメントカード（薄黄） -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px;">
+                <tr>
+                  <td class="column-box-cell" style="padding:24px;">
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      今週を一言で表すなら、「AIが"待ち"をやめた週」です。これまでAIは「質問すれば答えてくれる道具」でしたが、Claude for Small BusinessもGemini Sparkも「頼む前に動いておきます」という設計に変わってきています。この変化は便利な反面、「本当に任せていいのか」という不安も当然あります。ただ、Claude for Small Businessの「送信前に必ず人間が確認する」という仕組みが示すように、"人間が最終判断する"という原則は守られています。AIをコントロールしながら使う感覚、少しずつ慣らしていきましょう。
+                    </p>
+                    <p style="margin:0; font-size:14px; color:#92400e;">📌 来週は、社内で増える「野良AIエージェント」をどう安全に管理するか（Microsoft Agent 365の活用ポイント）をお届け予定です。お楽しみに！</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ⑤ 📚 Weeklyライブラリへのリンク（編集者コメント直後・フッター直前） -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
+            </td>
+          </tr>
+
+          <!-- ⑥ フッター -->
+          <!-- ルール: 2行構成で固定。bgcolor属性はOutlook等グラデーション非対応メーラー向けフォールバック -->
+          <tr>
+            <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+              <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
