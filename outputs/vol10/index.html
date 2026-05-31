@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+  <title>AI×DX Weekly - Vol.10（2026年6月1日号）</title>
+  <style>
+    /* ======================
+       タブレット対応（681px〜840px）
+       iPad縦向き768px をカバー
+       ====================== */
+    @media only screen and (min-width: 681px) and (max-width: 840px) {
+      .email-container { width: 94% !important; max-width: 800px !important; }
+      .content-cell { padding-left: 28px !important; padding-right: 28px !important; }
+      .card-cell { padding: 18px 20px !important; }
+      .body-text { font-size: 15px !important; line-height: 1.8 !important; }
+      .header-title { font-size: 28px !important; }
+      .section-heading { font-size: 21px !important; }
+    }
+
+    /* ======================
+       スマートフォン対応（680px以下）
+       iPhone / Android をカバー
+       ====================== */
+    @media only screen and (max-width: 680px) {
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .header-title { font-size: 22px !important; }
+      .content-cell { padding-left: 16px !important; padding-right: 16px !important; }
+      .card-cell { padding: 14px 14px !important; }
+      .section-heading { font-size: 18px !important; }
+      .body-text { font-size: 14px !important; line-height: 1.8 !important; }
+      .source-link { display: inline-block !important; padding: 4px 0 !important; }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family:system-ui,-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <!--[if mso]><table role="presentation" width="800" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" class="email-container" width="800" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:8px; overflow:hidden; max-width:800px; width:100%;">
+
+          <!-- ヘッダー -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:30px; text-align:center; color:#ffffff;">
+              <div style="display:inline-flex; align-items:center; gap:8px;">
+                <img src="../../images/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:6px; width:32px; height:32px;">
+                <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px;">AI×DX Weekly</h1>
+              </div>
+              <p style="margin:8px 0 0; font-size:14px; opacity:0.9;">Vol.10 ｜ 2026年6月1日号</p>
+              <p style="margin:12px 0 0; font-size:13px; opacity:0.75;">AIが、休まず動き続ける。</p>
+            </td>
+          </tr>
+
+          <!-- イントロ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                今週は「AIが自分から動く」時代の到来を告げるニュースが相次ぎました。Googleは24時間バックグラウンドで自律的に動くAIエージェント「Gemini Spark」を正式リリース。マイクロソフトは7月1日から中小企業向けMicrosoft 365にAIアシスタント「Copilot」を標準搭載すると発表しました。国内では帝国データバンクの大規模調査で「AI活用企業の86.7%が業務効果を実感」という力強いデータも出ています。「AIを使う会社」と「使わない会社」の差が、着実に広がっています。
+              </p>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- ★ 配置順序の厳守ルール ★                      -->
+          <!--   1. 📰 今週のニュース TOP3                    -->
+          <!--   2. 🛠️ 今週のおすすめツール                   -->
+          <!--   3. 📖 用語解説                              -->
+          <!--   4. 💬 編集者コメント                        -->
+          <!--   5. 📚 Weeklyライブラリへリンク（フッター直前）-->
+          <!--   6. フッター                                  -->
+          <!-- ============================================ -->
+
+          <!-- ============ 📰 今週のAI×DXニュース TOP3 ============ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📰 今週のAI×DXニュース TOP3</h2>
+            </td>
+          </tr>
+
+          <!-- NEWS 01 薄青：公的・信頼度高 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0f6ff; border:1px solid #bfdbfe; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 01</p>
+                    <h3 style="margin:0 0 12px; font-size:17px; color:#1e3a5f;">Microsoft 365にCopilotが標準搭載へ — 7月1日から中小企業向けプランに
+                      <span style="color:#6b7280; font-size:0.9em; font-weight:400;"> / Microsoft 365 Business with Copilot</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      マイクロソフトは5月28日、7月1日から中小企業向けMicrosoft 365の「Business Standard」と「Business Premium」にAIアシスタント「Copilot」を標準搭載すると発表しました。WordやExcel、Outlookでそのまま使えるようになり、追加サブスクリプション不要でAI機能が手に入ります。Shopify・PayPalなど1,000以上のアプリとも連携でき、業務の自動化範囲が大幅に広がります。すでにMicrosoft 365を使っている中小企業にとっては、「気づいたらAIが入っていた」という形でDXが進む可能性があります。
+                    </p>
+                    <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/28/introducing-microsoft-365-business-with-copilot-the-new-standard-for-small-business/" class="source-link" style="color:#2563eb; font-size:13px; text-decoration:underline;">▶ ソース: Microsoft 365 Blog</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 02 薄緑：革新・新鮮 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 02</p>
+                    <h3 style="margin:0 0 12px; font-size:17px; color:#1e3a5f;">Googleが24時間働くAIエージェント「Gemini Spark」を正式公開
+                      <span style="color:#6b7280; font-size:0.9em; font-weight:400;"> / Google Gemini Spark, Agentic AI</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      Googleは5月30日、パソコンの電源が切れていても24時間バックグラウンドで自律的に動くAIエージェント「Gemini Spark」を米国で正式リリースしました。メールや予定表のデータを参照しながら、取引先リストの作成や価格比較などの業務を人間の指示なしで自動処理します。現時点では月額100ドル以上のプランが必要で日本展開は未定ですが、「AIが人間の代わりに動く」世界観を最も具体的に示した製品です。中小企業向けの低価格展開が今後の最大の注目点です。
+                    </p>
+                    <a href="https://ca.pcmag.com/ai/15947/googles-agentic-ai-tool-gemini-spark-is-now-available" class="source-link" style="color:#2563eb; font-size:13px; text-decoration:underline;">▶ ソース: PCMag</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 03 薄黄：成功事例・ストーリー -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 03</p>
+                    <h3 style="margin:0 0 12px; font-size:17px; color:#1e3a5f;">AI活用企業の86.7%が「業務効果あり」— 帝国データバンク全国調査
+                      <span style="color:#6b7280; font-size:0.9em; font-weight:400;"> / AI adoption ROI, SMB survey</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      帝国データバンクが全国2万3千社を対象に実施した調査で、生成AIを活用している企業の86.7%が「業務効果がある」と回答しました。中小企業の活用率はまだ32.4%と低い一方、「効果あり」の比率は大企業と大きく変わりません。主な活用業務は文書作成・要約、情報収集、企画アイデア出しの順で、難しいシステム開発より「今日からできる業務」から効果が出ています。「使い始めれば効果が出る」というデータは、社内でAI導入を提案する際の強力な説得材料になります。
+                    </p>
+                    <a href="https://aismiley.co.jp/ai_news/teikoku-databank-ai-202603report/" class="source-link" style="color:#2563eb; font-size:13px; text-decoration:underline;">▶ ソース: AI Smiley（帝国データバンク調査）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============ 🛠️ 今週のおすすめツール・リソース ============ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">🛠️ 今週のおすすめツール・リソース</h2>
+            </td>
+          </tr>
+
+          <!-- TOOL 01 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); padding:24px;">
+                    <p style="margin:0 0 10px;"><span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 01</span></p>
+                    <h3 style="margin:0 0 10px; font-size:17px; color:#1e3a5f;">Floatboat
+                      <span style="color:#6b7280; font-size:0.9em; font-weight:400;"> — カレンダー連動プロアクティブAIエージェント</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      GoogleカレンダーやNotionカレンダーと連携し、会議前のブリーフィング自動作成、議事録フォローアップのメール草稿、締め切りのリマインドをAIが先回りして処理します。「指示してから動く」のではなく「スケジュールを見て自動的に動く」のが最大の特徴です。2026年5月26日に正式ローンチされた、Sequoia出資の注目スタートアップです。
+                    </p>
+                    <p class="body-text" style="margin:0 0 6px; font-size:14px; color:#374151;"><strong>こんな人におすすめ：</strong>毎日複数の会議があり、議事録や確認メールが後手に回りがちなマネージャー・経営者</p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:14px; color:#374151;"><strong>料金目安：</strong>フリーミアム（無料プランあり）</p>
+                    <a href="https://floatboat.ai" class="source-link" style="color:#2563eb; font-size:13px; text-decoration:underline;">▶ floatboat.ai</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- TOOL 02 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); padding:24px;">
+                    <p style="margin:0 0 10px;"><span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 02</span></p>
+                    <h3 style="margin:0 0 10px; font-size:17px; color:#1e3a5f;">mfloow（エムフロー）業務設計AI機能
+                      <span style="color:#6b7280; font-size:0.9em; font-weight:400;"> — AIが質問するだけで業務フローを自動生成</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      AIから「この業務の目的は？」「担当者は？」といった質問に答えるだけで、チェックリスト付きの業務フローを自動生成します。頭の中にある「なんとなくの手順」を言語化・標準化するのをAIが全面サポートし、作成されたフローはそのまま実務で運用可能です。2026年5月26日にリリースされた新機能で、マニュアル作成やDX推進のハードルを大幅に下げます。
+                    </p>
+                    <p class="body-text" style="margin:0 0 6px; font-size:14px; color:#374151;"><strong>こんな人におすすめ：</strong>社内マニュアルがなく「属人化している業務を整理したい」DX担当者</p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:14px; color:#374151;"><strong>料金目安：</strong>要問い合わせ（プランにより異なる）</p>
+                    <a href="https://prtimes.jp/main/html/rd/p/000000023.000175284.html" class="source-link" style="color:#2563eb; font-size:13px; text-decoration:underline;">▶ プレスリリースで詳細を確認</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============ 📖 用語解説・学習コーナー ============ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📖 用語解説・学習コーナー</h2>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px; padding:24px;">
+                    <h3 style="margin:0 0 10px; font-size:17px; color:#1e3a5f;">AIエージェント
+                      <span style="color:#6b7280; font-size:0.9em; font-weight:400;"> / AI Agent</span>
+                    </h3>
+                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">
+                      一言でいうと：「人間が指示しなくても、自分で考えて動くAIのこと」
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      従来の生成AIは「質問→回答」という受け身の存在でしたが、AIエージェントは「目標を与えると、複数のステップを自ら考えて実行する」存在です。メール確認、情報収集、レポート作成、カレンダー管理といった複数の作業を、人間が一つひとつ指示しなくても連続して処理できます。今週発表されたGemini SparkやFloatboatはまさにこのAIエージェントの代表例です。「使う道具」から「一緒に働く同僚」へと、AIの立ち位置が変わりつつあります。
+                    </p>
+                    <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>ビジネスでの使いどころ：</strong>定型的な業務報告の自動収集、問い合わせへの一次対応、見積書作成の下準備など、「手順が決まっているが時間がかかる仕事」に特に効果的です。中小企業では「1人が複数の役割を担う」ことが多く、AIエージェントが1人分の業務を担ってくれると、本来の仕事に集中できます。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============ 💬 編集者コメント ============ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">💬 編集者コメント</h2>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p class="body-text" style="margin:0 0 16px; font-size:15px; line-height:1.8; color:#374151;">
+                      今週のキーワードは「自律」でした。Google、Microsoft、新興スタートアップが競うように「AIが先回りして動く」製品を打ち出しています。でも正直、一番刺さったのは帝国データバンクの数字です。「使った人の86.7%に効果あり」——これ、導入を迷っている社内の反対派を説得するのに使えますよね。データは最強の交渉ツール。今週だけでも「試してみよう」という一歩が踏み出しやすくなるニュースが揃っていたと思います。
+                    </p>
+                    <p style="margin:0; font-size:14px; color:#92400e;">📌 来週は「AIエージェント活用の国内中小企業事例」と「自社に合ったAIエージェントの選び方」をお届け予定です。お楽しみに！</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 📚 Weeklyライブラリへのリンク（編集者コメント直後・フッター直前） -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
+            </td>
+          </tr>
+
+          <!-- フッター -->
+          <!-- ルール: 2行構成で固定。bgcolor属性はOutlook等グラデーション非対応メーラー向けフォールバック -->
+          <tr>
+            <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+              <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
