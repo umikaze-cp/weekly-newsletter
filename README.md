@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.11 — MetaがWhatsApp・InstagramにAIエージェント全世界公開 / ZoomがAI Productivity Suite発表 / 国内企業の34.5%が生成AI業務活用](outputs/vol11/)（2026年6月8日号）
 - [Vol.10 — Microsoft 365にCopilot標準搭載へ / Googleが24時間AIエージェント「Gemini Spark」公開 / AI活用企業の86.7%が業務効果を実感](outputs/vol10/)（2026年6月1日号）
 - [Vol.9 — Claude for Small Business始動 / Gemini Sparkが24時間AIエージェントに / AI導入補助金2026で生成AI月額費用が補助対象へ](outputs/vol9/)（2026年5月25日号）
 - [Vol.8 — 大塚商会がAI伴走支援サービス開始 / Productive 5.0 AI Agents搭載 / 創業100年の老舗が「等身大のAI活用」へ](outputs/vol8/)（2026年5月18日号）
