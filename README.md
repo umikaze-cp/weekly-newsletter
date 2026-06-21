@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.13 — 大塚商会、建設業向けAIアシスタントテンプレートを無料提供開始 / Adobe Creative Cloud全製品にAIエージェント機能を一斉導入 / 「現場の人がAIで自社システムを作る」実践型トレーニング「AI GYM」が始動](outputs/vol13/)（2026年6月22日号）
 - [Vol.12 — GeminiがGoogleマップを「経営の参謀」に変える / 「定着するAI」へ——中小企業専用AIエージェント伴走サービス始動 / 補助金申請もAIが支援——省力化補助事業の計画書をAIが自動生成](outputs/vol12/)（2026年6月15日号）
 - [Vol.11 — MetaがWhatsApp・InstagramにAIエージェント全世界公開 / ZoomがAI Productivity Suite発表 / 国内企業の34.5%が生成AI業務活用](outputs/vol11/)（2026年6月8日号）
 - [Vol.10 — Microsoft 365にCopilot標準搭載へ / Googleが24時間AIエージェント「Gemini Spark」公開 / AI活用企業の86.7%が業務効果を実感](outputs/vol10/)（2026年6月1日号）
@@ -70,8 +71,14 @@ weekly-newsletter/
     │   └── index.html                 ← Vol.8
     ├── vol9/
     │   └── index.html                 ← Vol.9
-    └── vol10/
-        └── index.html                 ← Vol.10
+    ├── vol10/
+    │   └── index.html                 ← Vol.10
+    ├── vol11/
+    │   └── index.html                 ← Vol.11
+    ├── vol12/
+    │   └── index.html                 ← Vol.12
+    └── vol13/
+        └── index.html                 ← Vol.13
 ```
 
 ## 📱 レスポンシブ対応
