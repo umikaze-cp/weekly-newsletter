@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.14 — デジタル化・AI導入補助金2026 最大450万円・生成AIも対象に / Anthropic「Claude for Small Business」QuickBooks・PayPal連携 / 生成AI導入格差30ポイント（東京商工リサーチ調査）](outputs/vol14/)（2026年6月29日号）
 - [Vol.13 — 大塚商会、建設業向けAIアシスタントテンプレートを無料提供開始 / Adobe Creative Cloud全製品にAIエージェント機能を一斉導入 / 「現場の人がAIで自社システムを作る」実践型トレーニング「AI GYM」が始動](outputs/vol13/)（2026年6月22日号）
 - [Vol.12 — GeminiがGoogleマップを「経営の参謀」に変える / 「定着するAI」へ——中小企業専用AIエージェント伴走サービス始動 / 補助金申請もAIが支援——省力化補助事業の計画書をAIが自動生成](outputs/vol12/)（2026年6月15日号）
 - [Vol.11 — MetaがWhatsApp・InstagramにAIエージェント全世界公開 / ZoomがAI Productivity Suite発表 / 国内企業の34.5%が生成AI業務活用](outputs/vol11/)（2026年6月8日号）
@@ -77,8 +78,10 @@ weekly-newsletter/
     │   └── index.html                 ← Vol.11
     ├── vol12/
     │   └── index.html                 ← Vol.12
-    └── vol13/
-        └── index.html                 ← Vol.13
+    ├── vol13/
+    │   └── index.html                 ← Vol.13
+    └── vol14/
+        └── index.html                 ← Vol.14
 ```
 
 ## 📱 レスポンシブ対応
@@ -145,6 +148,11 @@ Step 6  作業記録の更新（拡張機能版）
 | Vol.7 | 2026/05/11 | 中小企業AI導入率が1年で2倍に / monday.com がAI Work Platformへ転換 / OpenAI 70言語リアルタイム音声翻訳発表 |
 | Vol.8 | 2026/05/18 | 大塚商会AIまるごと伴走支援開始 / Productive 5.0 AI Agents搭載 / 創業100年の老舗が「等身大のAI活用」へ |
 | Vol.9 | 2026/05/25 | Claude for Small Business始動 / Gemini Sparkが24時間AIエージェントに / AI導入補助金2026で生成AI月額費用が補助対象へ |
+| Vol.10 | 2026/06/01 | Microsoft 365にCopilot標準搭載へ / Googleが24時間AIエージェント「Gemini Spark」公開 / AI活用企業の86.7%が業務効果を実感 |
+| Vol.11 | 2026/06/08 | MetaがWhatsApp・InstagramにAIエージェント全世界公開 / ZoomがAI Productivity Suite発表 / 国内企業34.5%が生成AI業務活用（帝国データバンク調査） |
+| Vol.12 | 2026/06/15 | GeminiがGoogleマップを「経営の参謀」に変える / 中小企業専用AIエージェント伴走サービス始動 / 補助金申請もAIが支援 |
+| Vol.13 | 2026/06/22 | 大塚商会・建設業向けAIアシスタントテンプレート無料提供 / Adobe Creative Cloud全製品にAIエージェント機能導入 / AI GYM始動 |
+| Vol.14 | 2026/06/29 | デジタル化・AI導入補助金2026（最大450万円・生成AI対象） / Claude for Small Business（QuickBooks・PayPal連携） / 生成AI導入格差30ポイント |
 
 ## 📝 作成者
 

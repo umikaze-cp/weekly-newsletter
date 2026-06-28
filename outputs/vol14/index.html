@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+  <title>AI×DX Weekly - Vol.14（2026年6月29日号）</title>
+  <style>
+    /* ======================
+       タブレット対応（681px〜840px）
+       iPad縦向き768px をカバー
+       ====================== */
+    @media only screen and (min-width: 681px) and (max-width: 840px) {
+      .email-container { width: 94% !important; max-width: 800px !important; }
+      .content-cell { padding-left: 28px !important; padding-right: 28px !important; }
+      .card-cell { padding: 18px 20px !important; }
+      .body-text { font-size: 15px !important; line-height: 1.8 !important; }
+      .header-title { font-size: 28px !important; }
+      .section-heading { font-size: 21px !important; }
+    }
+
+    /* ======================
+       スマートフォン対応（680px以下）
+       iPhone / Android をカバー
+       ====================== */
+    @media only screen and (max-width: 680px) {
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .header-title { font-size: 22px !important; }
+      .content-cell { padding-left: 16px !important; padding-right: 16px !important; }
+      .card-cell { padding: 14px 14px !important; }
+      .section-heading { font-size: 18px !important; }
+      .body-text { font-size: 14px !important; line-height: 1.8 !important; }
+      .source-link { display: inline-block !important; padding: 4px 0 !important; }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family:system-ui,-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <!--[if mso]><table role="presentation" width="800" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" class="email-container" width="800" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:8px; overflow:hidden; max-width:800px; width:100%;">
+
+          <!-- ヘッダー -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:30px; text-align:center; color:#ffffff;">
+              <div style="display:inline-flex; align-items:center; gap:8px;">
+                <img src="../../images/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:6px; width:32px; height:32px;">
+                <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px;">AI×DX Weekly</h1>
+              </div>
+              <p style="margin:8px 0 0; font-size:14px; opacity:0.9;">Vol.14 ｜ 2026年6月29日号</p>
+              <p style="margin:12px 0 0; font-size:13px; opacity:0.75;">補助金×AI、中小企業が動き出す夏。</p>
+            </td>
+          </tr>
+
+          <!-- イントロ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                6月の最終週、AI×DXの現場では「大企業だけのもの」から「中小企業が補助金を使って今すぐ始める」フェーズへの急転換が鮮明になっています。政府の「デジタル化・AI導入補助金2026」では生成AIシステムも対象に加わり、最大450万円の支援でコスト障壁が一気に下がりました。一方、AnthropicはQuickBooksやPayPalと連携した「Claude for Small Business」を発表し、IT担当者なしでも経理・請求業務をAIに委ねられる環境が整いつつあります。東京商工リサーチの調査では大企業との格差が30ポイントに達しており、「様子見」を続けることのリスクも浮き彫りになってきました。今週は「今すぐ動ける」情報を3本お届けします。
+              </p>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- セクション順序（固定）:                        -->
+          <!-- 1. 📰 今週のニュース TOP3                    -->
+          <!-- 2. 🛠️ 今週のおすすめツール                   -->
+          <!-- 3. 📖 用語解説                              -->
+          <!-- 4. 💬 編集者コメント                        -->
+          <!-- 5. 📚 Weeklyライブラリへリンク               -->
+          <!-- 6. フッター                                  -->
+          <!-- ============================================ -->
+
+          <!-- ===================== -->
+          <!-- 📰 今週のAI×DXニュース TOP3 -->
+          <!-- ===================== -->
+          <tr>
+            <td class="content-cell" style="padding:32px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📰 今週のAI×DXニュース TOP3</h2>
+            </td>
+          </tr>
+
+          <!-- NEWS 01: 薄青 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0f6ff; border:1px solid #bfdbfe; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 01</p>
+                    <h3 style="margin:0 0 12px; font-size:17px; color:#1e3a5f; line-height:1.5;">デジタル化・AI導入補助金2026 — 最大450万円、生成AIシステムも対象に
+                      <span style="color:#6b7280; font-size:0.9em;"> / Digital AI Subsidy 2026</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      中小企業庁の「デジタル化・AI導入補助金2026」（旧IT導入補助金）の2026年6月18日付け1次採択結果が公表されました。通常枠は2,028件の申請に対して891件が採択（採択率43.9%）となり、今回から生成AIを活用したシステムも補助対象として明確化されています。基本補助率は1/2で、小規模事業者が賃上げ等の要件を満たすと4/5まで引き上げ可能、1者あたり最大450万円が支援されます。AIチャットボットや業務自動化ツールの導入コストの大部分を補助金でまかなえるようになったことで、資金面のハードルが大幅に下がりました。次回締切に向けてIT導入支援事業者への相談を早めに進めることが重要です。
+                    </p>
+                    <a href="https://hojyokin-portal.jp/columns/degital_ai_summary" class="source-link" style="color:#2563eb; font-size:14px; text-decoration:underline;" target="_blank" rel="noopener">📎 出典：補助金ポータル「デジタル化・AI導入補助金とは？」</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 02: 薄緑 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 02</p>
+                    <h3 style="margin:0 0 12px; font-size:17px; color:#1e3a5f; line-height:1.5;">Anthropic「Claude for Small Business」— QuickBooks・PayPal連携で中小企業の業務を自動化
+                      <span style="color:#6b7280; font-size:0.9em;"> / Claude for Small Business</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      AIメーカーのAnthropicが、中小企業向けパッケージ「Claude for Small Business」を発表しました。クラウド会計の QuickBooksや決済サービスのPayPalと連携し、経費入力・請求書作成・入金確認といった繰り返し業務をAIが自律的に処理できるようになります。追加費用はかからず、既存のClaude有料プランの範囲内で利用でき、IT担当者がいない中小企業でも既存ツールの中でAIが動く設計になっています。「AIエージェント」がこれほどシンプルな形で日常業務に入り込んできたのは初めてのケースで、中小企業の経理・バックオフィス業務の自動化が現実の選択肢になりました。
+                    </p>
+                    <a href="https://tech-noisy.com/2026/05/14/anthropic-claude-small-business-quickbooks-paypal/" class="source-link" style="color:#2563eb; font-size:14px; text-decoration:underline;" target="_blank" rel="noopener">📎 出典：TECH NOISY「AnthropicがClaude for Small Businessを発表」</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 03: 薄黄 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 03</p>
+                    <h3 style="margin:0 0 12px; font-size:17px; color:#1e3a5f; line-height:1.5;">生成AI「導入格差」30ポイント — 東京商工リサーチ調査、中小企業の対応が急務に
+                      <span style="color:#6b7280; font-size:0.9em;"> / AI Adoption Gap Survey Japan 2026</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      東京商工リサーチの2026年調査によると、大企業の生成AI活用推進率は59.1%に達した一方、中小企業は30%前後にとどまり、約30ポイントという大きな格差が確認されました。大企業が生成AIによる業務効率化を本格的に進める中、対応が遅れた中小企業は価格競争力・人材確保の両面で不利な状況に追い込まれるリスクが高まっています。「まだ様子見」という選択が格差の拡大につながりつつある現状を示すデータとして、多くのDX担当者・経営者が注目しています。まず1つのツールから試してみることが、格差を縮める最初の一歩になります。
+                    </p>
+                    <a href="https://www.ai-native.jp/blog/japan-ai-adoption-gap-2026-tsr-survey" class="source-link" style="color:#2563eb; font-size:14px; text-decoration:underline;" target="_blank" rel="noopener">📎 出典：AI NATIVE「日本企業の生成AI導入格差2026年版」</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:16px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ===================== -->
+          <!-- 🛠️ 今週のおすすめツール -->
+          <!-- ===================== -->
+          <tr>
+            <td class="content-cell" style="padding:32px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">🛠️ 今週のおすすめツール・リソース</h2>
+            </td>
+          </tr>
+
+          <!-- TOOL 01: Otter.ai -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; padding:24px; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+                    <p style="margin:0 0 10px;">
+                      <span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 01</span>
+                    </p>
+                    <h3 style="margin:0 0 10px; font-size:17px; color:#1e3a5f;">Otter.ai <span style="color:#6b7280; font-size:0.9em; font-weight:400;">— AIが会議を自動で記録・要約する議事録ツール</span></h3>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      ZoomやGoogle Meet、Microsoft Teamsに参加するだけで、会議の音声を自動で文字起こしし、要点とアクションアイテムをまとめた議事録を自動生成します。日本語にも対応しており、終了後すぐに共有・編集が可能です。会議中は話すことに集中でき、「誰が何を言ったか」の確認も数秒で完了します。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>こんな人におすすめ：</strong>週複数回の会議がある営業・管理職、議事録作成に時間を取られているチーム
+                    </p>
+                    <p style="margin:0 0 10px; font-size:14px; color:#374151;"><strong>料金：</strong>フリープランあり（月300分）／有料プランは$16.99/月〜</p>
+                    <a href="https://otter.ai/" class="source-link" style="color:#2563eb; font-size:14px; text-decoration:underline;" target="_blank" rel="noopener">🔗 Otter.ai 公式サイト</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- TOOL 02: Canva AI -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; padding:24px; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+                    <p style="margin:0 0 10px;">
+                      <span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 02</span>
+                    </p>
+                    <h3 style="margin:0 0 10px; font-size:17px; color:#1e3a5f;">Canva AI（マジックデザイン） <span style="color:#6b7280; font-size:0.9em; font-weight:400;">— デザイン初心者でもプロ品質の資料が作れるツール</span></h3>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      テキストを入力するだけでチラシ・SNS投稿・プレゼン資料のデザインをAIが自動生成します。「Magic Write」で文章も自動作成、「Magic Design」でブランドテンプレートを即座に生成でき、動画にはAI自動字幕も付きます。デザイナーを外注せず、少人数チームでも見映えのよい販促物が作れます。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>こんな人におすすめ：</strong>デザイナーがいない中小企業のマーケ担当者、SNS運用・広告制作を少人数でやっているチーム
+                    </p>
+                    <p style="margin:0 0 10px; font-size:14px; color:#374151;"><strong>料金：</strong>フリープランあり／Canva Pro ¥1,500/月〜</p>
+                    <a href="https://www.canva.com/ja_jp/" class="source-link" style="color:#2563eb; font-size:14px; text-decoration:underline;" target="_blank" rel="noopener">🔗 Canva 公式サイト（日本語）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:16px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ===================== -->
+          <!-- 📖 用語解説・学習コーナー -->
+          <!-- ===================== -->
+          <tr>
+            <td class="content-cell" style="padding:32px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📖 用語解説・学習コーナー</h2>
+            </td>
+          </tr>
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px; padding:24px;">
+                    <h3 style="margin:0 0 10px; font-size:18px; color:#1e3a5f;">AIエージェント <span style="color:#6b7280; font-size:0.85em; font-weight:400;">/ AI Agent</span></h3>
+                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">
+                      一言でいうと：「指示を出すだけで、計画から実行まで自律的にこなすAI」
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      従来のAIは「質問に答える」ものでしたが、AIエージェントは「目標」を与えると自分でステップを考え、ツールを使い、タスクを完了させます。例えば「来月の展示会の参加手続きをして」と伝えるだけで、公式サイトで申込フォームを確認し、必要事項を入力し、確認メールをカレンダーに登録するまでを自律的にこなします。今週ご紹介した「Claude for Small Business」もこのエージェント型の動作を経理・請求業務に特化させたものです。複数のアプリをまたいで人間が手作業でやっていた「つなぎ業務」をAIに任せられる時代が来ています。
+                    </p>
+                    <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>ビジネスでの使いどころ：</strong>問い合わせメールの受信→分類→返信ドラフト作成まで一気通貫の自動化、在庫量の確認→発注書作成→送信までのバックオフィス業務など、複数ステップにまたがる定型作業が特に効果を発揮します。「誰かがやらなければいけないが、付加価値が低い作業」から優先的に委ねてみましょう。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:16px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ===================== -->
+          <!-- 💬 編集者コメント・コラム -->
+          <!-- ===================== -->
+          <tr>
+            <td class="content-cell" style="padding:32px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 20px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">💬 編集者コメント</h2>
+            </td>
+          </tr>
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="column-box-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p class="body-text" style="margin:0 0 16px; font-size:15px; line-height:1.8; color:#374151;">
+                      今週の3つのニュースに共通するキーワードは、「コストを下げて、今すぐ始める」です。補助金でツール導入費を半分以下に抑え、Claude連携で繰り返し業務を自動化し、30ポイントの格差を一歩一歩縮めていく——その道筋が今週からリアルに見えてきました。「AIはまだウチには早い」とおっしゃっていた方も、今週ご紹介したツールを1つ試すだけで、確実に最初の一歩を踏み出せます。夏の前にもう一押し、ぜひ動いてみてください。
+                    </p>
+                    <p style="margin:0; font-size:14px; color:#92400e;">📌 来週は、AI×DXで「社内の情報共有」を劇的に改善した事例と実践ツールをお届け予定です。お楽しみに！</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 📚 Weeklyライブラリへのリンク（編集者コメント直後・フッター直前） -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
+            </td>
+          </tr>
+
+          <!-- フッター -->
+          <!-- ルール: 2行構成で固定。Vol番号・日付・注意書きは含めない -->
+          <!-- bgcolor属性はOutlook等グラデーション非対応メーラー向けフォールバック -->
+          <tr>
+            <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+              <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
