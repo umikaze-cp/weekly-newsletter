@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.15 — Claude Sonnet 5 登場 Opus級の推論をSonnet価格で / Visa、欧州でAIエージェント決済が本番稼働 / 「Stella AI for Biz」1,200社突破・ノーコードAIワークフロー追加](outputs/vol15/)（2026年7月6日号）
 - [Vol.14 — デジタル化・AI導入補助金2026 最大450万円・生成AIも対象に / Anthropic「Claude for Small Business」QuickBooks・PayPal連携 / 生成AI導入格差30ポイント（東京商工リサーチ調査）](outputs/vol14/)（2026年6月29日号）
 - [Vol.13 — 大塚商会、建設業向けAIアシスタントテンプレートを無料提供開始 / Adobe Creative Cloud全製品にAIエージェント機能を一斉導入 / 「現場の人がAIで自社システムを作る」実践型トレーニング「AI GYM」が始動](outputs/vol13/)（2026年6月22日号）
 - [Vol.12 — GeminiがGoogleマップを「経営の参謀」に変える / 「定着するAI」へ——中小企業専用AIエージェント伴走サービス始動 / 補助金申請もAIが支援——省力化補助事業の計画書をAIが自動生成](outputs/vol12/)（2026年6月15日号）
@@ -80,8 +81,10 @@ weekly-newsletter/
     │   └── index.html                 ← Vol.12
     ├── vol13/
     │   └── index.html                 ← Vol.13
-    └── vol14/
-        └── index.html                 ← Vol.14
+    ├── vol14/
+    │   └── index.html                 ← Vol.14
+    └── vol15/
+        └── index.html                 ← Vol.15
 ```
 
 ## 📱 レスポンシブ対応
@@ -153,6 +156,7 @@ Step 6  作業記録の更新（拡張機能版）
 | Vol.12 | 2026/06/15 | GeminiがGoogleマップを「経営の参謀」に変える / 中小企業専用AIエージェント伴走サービス始動 / 補助金申請もAIが支援 |
 | Vol.13 | 2026/06/22 | 大塚商会・建設業向けAIアシスタントテンプレート無料提供 / Adobe Creative Cloud全製品にAIエージェント機能導入 / AI GYM始動 |
 | Vol.14 | 2026/06/29 | デジタル化・AI導入補助金2026（最大450万円・生成AI対象） / Claude for Small Business（QuickBooks・PayPal連携） / 生成AI導入格差30ポイント |
+| Vol.15 | 2026/07/06 | Claude Sonnet 5 登場（Opus級推論をSonnet価格で） / Visa AIエージェント決済が欧州で本番稼働 / Stella AI for Biz 1,200社突破・ノーコードワークフロー追加 |
 
 ## 📝 作成者
 
