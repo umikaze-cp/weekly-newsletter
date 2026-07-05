@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+  <title>AI×DX Weekly - Vol.15（2026年7月6日号）</title>
+  <style>
+    /* ======================
+       タブレット対応（681px〜840px）
+       ====================== */
+    @media only screen and (min-width: 681px) and (max-width: 840px) {
+      .email-container { width: 94% !important; max-width: 800px !important; }
+      .content-cell { padding-left: 28px !important; padding-right: 28px !important; }
+      .card-cell { padding: 18px 20px !important; }
+      .body-text { font-size: 15px !important; line-height: 1.8 !important; }
+      .header-title { font-size: 28px !important; }
+      .section-heading { font-size: 21px !important; }
+    }
+
+    /* ======================
+       スマートフォン対応（680px以下）
+       ====================== */
+    @media only screen and (max-width: 680px) {
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .header-title { font-size: 22px !important; }
+      .content-cell { padding-left: 16px !important; padding-right: 16px !important; }
+      .card-cell { padding: 14px 14px !important; }
+      .section-heading { font-size: 18px !important; }
+      .body-text { font-size: 14px !important; line-height: 1.8 !important; }
+      .source-link { display: inline-block !important; padding: 4px 0 !important; }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family:system-ui,-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <!--[if mso]><table role="presentation" width="800" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" class="email-container" width="800" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:8px; overflow:hidden; max-width:800px; width:100%;">
+
+          <!-- ヘッダー -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:30px; text-align:center; color:#ffffff;">
+              <div style="display:inline-flex; align-items:center; gap:8px;">
+                <img src="../../images/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:6px; width:32px; height:32px;">
+                <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px;">AI×DX Weekly</h1>
+              </div>
+              <p style="margin:8px 0 0; font-size:14px; opacity:0.9;">Vol.15 ｜ 2026年7月6日号</p>
+              <p style="margin:12px 0 0; font-size:13px; opacity:0.75;">AIが、自律的に動く時代へ。</p>
+            </td>
+          </tr>
+
+          <!-- イントロ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                今週は「AIエージェント」という言葉が、ニュースの随所に登場しました。AnthropicはOpus級の性能を手頃な価格で実現する新モデルを発表し、VisaはAIが自律的に買い物を完結させる決済を欧州で本番稼働させました。日本でも法人向けAIサービスの普及が着々と進んでいます。「AIに指示を出す」時代から「AIが最後までやり切る」時代への転換を、今週のニュースから体感してください。
+              </p>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- ★ 配置順序 ★                               -->
+          <!-- 1. 📰 今週のニュース TOP3                    -->
+          <!-- 2. 🛠️ 今週のおすすめツール                   -->
+          <!-- 3. 📖 用語解説                              -->
+          <!-- 4. 💬 編集者コメント                        -->
+          <!-- 5. 📚 Weeklyライブラリへリンク（フッター直前） -->
+          <!-- 6. フッター                                  -->
+          <!-- ============================================ -->
+
+          <!-- ========================================== -->
+          <!-- 📰 セクション1: 今週のAI×DXニュース TOP3    -->
+          <!-- ========================================== -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📰 今週のAI×DXニュース TOP3</h2>
+            </td>
+          </tr>
+
+          <!-- NEWS 01: 薄青カード -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0f6ff; border:1px solid #bfdbfe; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 01</p>
+                    <h3 style="margin:0 0 6px; font-size:17px; color:#1e3a5f; line-height:1.4;">Claude Sonnet 5 登場 — Opus級の推論をSonnet価格で、エージェント性能が大幅向上</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Claude Sonnet 5 / Agentic AI / Anthropic</span></p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      Anthropicが6月30日、新モデル「Claude Sonnet 5」を発表しました。上位モデルのOpus 4.8に迫る推論・コーディング・ツール利用能力を、入力$2/MTok・出力$10/MTokというSonnet価格帯（2026年8月31日まで）で提供開始しています。最大の特徴は<strong>エージェント性能の飛躍的な強化</strong>で、ブラウザ操作や複数ステップにわたる業務フローを前世代のSonnet 4.6より大幅に安定して自律実行できるようになりました。中小企業にとって注目すべきは、Azure AI Foundryでも7月1日に一般提供が開始された点です。既存のAzureサブスクリプションのままAnthropicとの個別契約なしで利用でき、IT部門の調達・ガバナンスの壁が一気に下がります。法人向けサービスへの採用も相次いでおり、日本の「Stella AI for Biz」「exaBase AI」でも7月2〜3日から利用可能になりました。
+                    </p>
+                    <p style="margin:0;"><a href="https://www.anthropic.com/news/claude-sonnet-5" class="source-link" style="color:#2563eb; font-size:14px;">出典: Anthropic公式ブログ「Introducing Claude Sonnet 5」→</a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 02: 薄緑カード -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 02</p>
+                    <h3 style="margin:0 0 6px; font-size:17px; color:#1e3a5f; line-height:1.4;">Visa、欧州でAIエージェント決済が本番稼働 — 「AIが買い物する」時代が現実に</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Agentic Commerce / Visa TAP / AI Payment Agent</span></p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      Visaはパリで開催されたVisa Payments Forum（7月2日）で、AIエージェントが自律的に商品を選択して決済まで完結させる取引が欧州の実店舗・EC環境で本番稼働中と発表しました。Visa独自の「Trusted Agent Protocol（TAP）」によってAIエージェントを認証し、消費者が事前に設定した上限・条件の範囲内でエージェントが購入を完了させる仕組みです。現在は消費者向けですが、今後はBtoB購買にも展開予定とされており、企業間の発注・在庫補充なども自動化される可能性があります。日本でのEC事業を手掛ける中小企業にとっては「AIエージェントが顧客の代わりに購入を決定する」未来に備えた商品情報の整備や対応決済インフラの検討が、近い将来に必要になるサインと言えます。
+                    </p>
+                    <p style="margin:0;"><a href="https://www.visa.co.uk/about-visa/newsroom/press-releases.3457328.html" class="source-link" style="color:#2563eb; font-size:14px;">出典: Visa プレスリリース「Visa and Banks Across Europe Reach the Next Phase of Agentic Commerce」→</a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 03: 薄黄カード -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 8px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 03</p>
+                    <h3 style="margin:0 0 6px; font-size:17px; color:#1e3a5f; line-height:1.4;">「Stella AI for Biz」1,200社突破 — ノーコードAIワークフロー「Stella Craft」で業務自動化が身近に</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">No-code AI Workflow / SME AI Adoption / Stella AI for Biz</span></p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      日本の法人向け生成AIサービス「Stella AI for Biz」（SUPERNOVA社）がサービス開始1年で導入企業1,200社を突破し、7月1日に4つの新機能を追加しました。注目は<strong>ノーコードのAIワークフロービルダー「Stella Craft」</strong>です。スケジュール起動や外部連携をトリガーに、調査・文書生成・クラウド保存・メール通知まで一連の業務をプログラミングなしで自動化でき、IT部門がなくても中小企業が導入できます。また、最適なAIモデルを自動選択する「Autoモード」も追加され、GeminiやGPT・Claudeなど複数のモデルから入力内容に合わせてAIが最適なモデルを自動判断します。「どのモデルを使えばよいかわからない」という中小企業の悩みを解消する機能です。
+                    </p>
+                    <p style="margin:0;"><a href="https://prtimes.jp/main/html/rd/p/000000083.000138218.html" class="source-link" style="color:#2563eb; font-size:14px;">出典: PR TIMES「Stella AI for Biz 導入企業1,200社突破」→</a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- 🛠️ セクション2: 今週のおすすめツール         -->
+          <!-- ============================================ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">🛠️ 今週のおすすめツール・リソース</h2>
+            </td>
+          </tr>
+
+          <!-- TOOL 01 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; padding:24px; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+                    <p style="margin:0 0 10px;">
+                      <span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 01</span>
+                    </p>
+                    <h3 style="margin:0 0 6px; font-size:17px; color:#1e3a5f;">Zanderio <span style="color:#6b7280; font-size:0.9em; font-weight:normal;">— AIウェブセールスエージェント</span></h3>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      ウェブサイトに設置するだけで、24時間リアルタイムで訪問者に対応するAIセールスエージェントです。サービス・料金の案内から、デモや相談の予約誘導、見込み客の情報収集まで自動で行います。WordPressやShopifyなど主要プラットフォームに対応し、ノーコードプラグインで10分以内に設置可能。取得したリード情報はCRM・カレンダー・メールと連携し、人手なしで素早いフォローアップ体制を整えられます。
+                    </p>
+                    <p class="body-text" style="margin:0 0 8px; font-size:15px; line-height:1.8; color:#374151;"><strong>こんな人におすすめ：</strong>問い合わせ対応や予約受付を自動化したい士業・クリニック・EC事業者・コンサルタント</p>
+                    <p style="margin:0 0 8px; font-size:14px; color:#374151;"><strong>料金目安：</strong>フリーミアム（無料プランあり）</p>
+                    <p style="margin:0;"><a href="https://www.zanderio.com/" class="source-link" style="color:#2563eb; font-size:14px;">Zanderio 公式サイト →</a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- TOOL 02 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 8px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; padding:24px; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+                    <p style="margin:0 0 10px;">
+                      <span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 02</span>
+                    </p>
+                    <h3 style="margin:0 0 6px; font-size:17px; color:#1e3a5f;">Claude.ai <span style="color:#6b7280; font-size:0.9em; font-weight:normal;">— Claude Sonnet 5 搭載の業務AIアシスタント</span></h3>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      Anthropicのチャット型AIサービスで、今週発表の「Claude Sonnet 5」が無料・有料全プランで利用可能になりました。資料作成・議事録要約・メール文面の生成・市場調査など幅広い業務に対応し、長い文書でも文脈を正確に把握した返答が特徴です。エージェント機能（Projects・ファイルアップロード・Web検索）を使えば、複数の業務をまとめて任せることもできます。日本語での精度も高く、導入のハードルが低い点が中小企業向けの入門ツールとして適しています。
+                    </p>
+                    <p class="body-text" style="margin:0 0 8px; font-size:15px; line-height:1.8; color:#374151;"><strong>こんな人におすすめ：</strong>生成AIを日常業務に取り入れたいDX担当者・経営者・個人事業主</p>
+                    <p style="margin:0 0 8px; font-size:14px; color:#374151;"><strong>料金目安：</strong>無料プランあり（Pro月額$20〜）</p>
+                    <p style="margin:0;"><a href="https://claude.ai/" class="source-link" style="color:#2563eb; font-size:14px;">Claude.ai 公式サイト →</a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- 📖 セクション3: 用語解説                     -->
+          <!-- ============================================ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📖 用語解説・学習コーナー</h2>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 8px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px; padding:24px;">
+                    <h3 style="margin:0 0 10px; font-size:18px; color:#1e3a5f;">AIエージェント <span style="color:#6b7280; font-size:0.85em; font-weight:normal;">AI Agent / Agentic AI</span></h3>
+                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">一言でいうと：「指示を受けて答えるだけでなく、自分で計画を立てて最後まで実行するAIのこと。」</p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      従来のAI（ChatGPTやClaude）は「質問に答える」「文章を書く」という<em>反応型</em>のAIでした。これに対してAIエージェントは、「ゴールを与えると、そこに至るための手順を自分で考え、ツールを操作して実行まで行う」<em>能動型</em>のAIです。例えば「先月の受注データをまとめてレポートにしてSlackに送って」という指示一つで、データベースへのアクセス→集計→レポート生成→Slack送信まで一連の作業を人の介在なしに完結させます。今週のニュースで登場した「Claude Sonnet 5のエージェント性能強化」や「VisaのAI自律決済」は、まさにこのAIエージェントが社会実装される動きです。
+                    </p>
+                    <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>ビジネスでの使いどころ：</strong>毎日の受注メール確認→在庫照会→受注確認返信の自動実行、週次レポートの自動収集・集計・送付、問い合わせ対応から見積書作成まで一連の流れを無人化するといった活用が現実的になっています。IT部門がなくても「Stella AI for Biz」のようなノーコードツールで試せる時代です。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- 💬 セクション4: 編集者コメント               -->
+          <!-- ============================================ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">💬 編集者コメント</h2>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 28px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="column-box-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p class="body-text" style="margin:0 0 16px; font-size:15px; line-height:1.8; color:#374151;">
+                      今週のニュースを並べると、「AIが指示を受けて動く」段階から「AIが自分で考えて動き切る」段階への移行が、いよいよ本番を迎えつつあることがわかります。Claude Sonnet 5のエージェント機能強化、VisaのAI自律決済の本番稼働、ノーコードAIワークフロー——これらは一見バラバラなニュースですが、すべて同じ方向を向いています。中小企業にとって、この変化は「追いかけるもの」ではなく「今すぐ使えるもの」になってきました。まず1つの繰り返し業務を選んで、AIエージェントに任せてみることから始めてみませんか？
+                    </p>
+                    <p style="margin:0; font-size:14px; color:#92400e;">📌 来週は「AI×製造業・サプライチェーン最新動向」をお届け予定です。お楽しみに！</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 📚 Weeklyライブラリへのリンク（編集者コメント直後・フッター直前） -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
+            </td>
+          </tr>
+
+          <!-- フッター -->
+          <tr>
+            <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+              <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
