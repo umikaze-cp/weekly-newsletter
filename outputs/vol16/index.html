@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+  <title>AI×DX Weekly - Vol.16（2026年7月13日号）</title>
+  <style>
+    /* ======================
+       タブレット対応（681px〜840px）
+       iPad縦向き768px をカバー
+       ====================== */
+    @media only screen and (min-width: 681px) and (max-width: 840px) {
+      .email-container { width: 94% !important; max-width: 800px !important; }
+      .content-cell { padding-left: 28px !important; padding-right: 28px !important; }
+      .card-cell { padding: 18px 20px !important; }
+      .body-text { font-size: 15px !important; line-height: 1.8 !important; }
+      .header-title { font-size: 28px !important; }
+      .section-heading { font-size: 21px !important; }
+    }
+
+    /* ======================
+       スマートフォン対応（680px以下）
+       iPhone / Android をカバー
+       ====================== */
+    @media only screen and (max-width: 680px) {
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .header-title { font-size: 22px !important; }
+      .content-cell { padding-left: 16px !important; padding-right: 16px !important; }
+      .card-cell { padding: 14px 14px !important; }
+      .section-heading { font-size: 18px !important; }
+      .body-text { font-size: 14px !important; line-height: 1.8 !important; }
+      .source-link { display: inline-block !important; padding: 4px 0 !important; }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family:system-ui,-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <!--[if mso]><table role="presentation" width="800" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" class="email-container" width="800" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:8px; overflow:hidden; max-width:800px; width:100%;">
+
+          <!-- ヘッダー -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:30px; text-align:center; color:#ffffff;">
+              <div style="display:inline-flex; align-items:center; gap:8px;">
+                <img src="../../images/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:6px; width:32px; height:32px;">
+                <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px;">AI×DX Weekly</h1>
+              </div>
+              <p style="margin:8px 0 0; font-size:14px; opacity:0.9;">Vol.16 ｜ 2026年7月13日号</p>
+              <p style="margin:12px 0 0; font-size:13px; opacity:0.75;">AIが、自分で動いて仕事を完遂する時代へ。</p>
+            </td>
+          </tr>
+
+          <!-- イントロ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                今週はAIが「答える」から「実行する」へと大きく進化した一週間でした。OpenAIはGPT-5.6と「ChatGPT Work」を発表し、AnthropicはClaude CoworkをWebとモバイルに展開。どちらも「AIが人間の代わりに業務を自律的に遂行する」エージェント時代の本格到来を告げています。一方で、中小企業のAI活用実態調査では、経営層がAIを使わない企業の85.7%が方針も体制も整っていない現実も浮き彫りになりました。「AIをどう使うか」から「AIに何を任せるか」へ——今週号でそのヒントを探ります。
+              </p>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- セクション1: 📰 今週のAI×DXニュース TOP3        -->
+          <!-- ============================================ -->
+
+          <!-- セクション見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📰 今週のAI×DXニュース TOP3</h2>
+            </td>
+          </tr>
+
+          <!-- NEWS 01: GPT-5.6 + ChatGPT Work -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f0f6ff; border:1px solid #bfdbfe; border-radius:8px;">
+                <tr>
+                  <td class="card-cell" style="padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 01</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">OpenAI、GPT-5.6と「ChatGPT Work」を一般公開——MicrosoftのWordやExcelにも搭載</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">GPT-5.6 / ChatGPT Work / Agentic AI / Microsoft 365 Copilot</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      OpenAIは2026年7月9日、最新モデル「GPT-5.6」と業務自動化機能「ChatGPT Work」を一般公開しました。GPT-5.6は用途に応じて「Sol（高性能）」「Terra（バランス型）」「Luna（高速・低コスト）」の3種類が選べ、同日よりMicrosoft 365 Copilot（Word・Excel・PowerPoint）の標準モデルとしても採用されています。
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      「ChatGPT Work」はユーザーの指示をもとに、ファイル横断のデータ分析・スライド作成・リード管理など、複数ステップにわたる複雑な業務を自律的に遂行します。AIがチャットへの回答役から「実行役」へと移行した象徴的な発表です。
+                    </p>
+                    <p class="body-text" style="margin:0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      中小企業にとっての影響：普段使っているWordやExcelが最新AIでパワーアップします。追加料金なしで恩恵を受けられるケースも多く、まずは「Copilotが使えるプランかどうか」を確認するところから始めてみましょう。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.sbbit.jp/article/cont1/186074" class="source-link" style="color:#2563eb; font-size:14px;">→ ソース: ビジネス+IT（2026年7月10日）</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 02: Claude Cowork Web・モバイル展開 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px;">
+                <tr>
+                  <td class="card-cell" style="padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 02</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">Claude Cowork、Web・モバイルで利用可能に——AIが「ビジネス業務の実行役」へ</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Claude Cowork / Anthropic / Knowledge Work Automation / Mobile Agent</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      Anthropicは7月7日、デスクトップ版限定だったビジネス向けAIエージェント「Claude Cowork」をWebブラウザとスマートフォン（iOS・Android）でも利用できるようにしました。これにより、デスクトップアプリなしでも、ブラウザやスマホから業務タスクをAIに依頼・確認できるようになります。
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      Anthropicが公開した利用データによると、Coworkで処理されるタスクの90%以上がコーディング以外——最大カテゴリはビジネス業務（33%：報告書作成・スプレッドシート集計など）で、次いでコンテンツ制作（17%）でした。AIエージェントは開発者だけのものではなく、一般業務担当者のツールになっていることが証明された形です。
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      中小企業への影響：「スマホからAIに依頼→帰宅後にPCで結果確認」という使い方が現実的になりました。Maxプランから順次展開中で、8月5日まで利用枠が2倍に拡張されています。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://claude.com/blog/cowork-web-mobile" class="source-link" style="color:#2563eb; font-size:14px;">→ ソース: Anthropic公式ブログ（2026年7月7日）</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 03: 中小企業AI活用実態調査 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px;">
+                <tr>
+                  <td class="card-cell" style="padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 03</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">「経営層がAIを使わない中小企業の85.7%が方針・体制なし」——実態調査が示す課題</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">SMB AI Adoption / AI Strategy Gap / Digital Transformation Survey</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      中小企業300社を対象にした最新の調査（2026年7月9日公表）で、AIに関する重要な実態が明らかになりました。全体の73.3%がAI活用経験を持つ一方、積極的に活用できているのは31%にとどまっています。そして、代表・役員がAIを「全く使っていない」企業では、85.7%がAI活用の「方針も推進体制もない」と回答しました。
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      一方、経営層が積極的にAIを活用している企業では「方針・体制なし」はわずか4%。また、ECを実施する中小企業の約7割がAIを導入しているにもかかわらず、87.1%が「業務の属人化」や「導入前の業務整理不足」などの課題を抱えています。
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      経営層が率先してAIを使い始めることが、組織全体のAI活用の鍵であることを示しています。「まず経営者が1週間、ChatGPTを使い倒してみる」だけで組織の雰囲気が変わる——そんな地道な一歩が重要です。
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.sankei.com/pressrelease/prtimes/ZHBN5F3O7ZPBBOWGZ4CFEUTZXI/" class="source-link" style="color:#2563eb; font-size:14px;">→ ソース: 産経ニュース（2026年7月9日）</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- セクション2: 🛠️ 今週のおすすめツール・リソース  -->
+          <!-- ============================================ -->
+
+          <!-- セクション見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">🛠️ 今週のおすすめツール・リソース</h2>
+            </td>
+          </tr>
+
+          <!-- TOOL 01: Wrike Conversational AI Agent Builder -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+                <tr>
+                  <td class="card-cell" style="padding:24px;">
+                    <p style="margin:0 0 10px;">
+                      <span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 01</span>
+                    </p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">Wrike Conversational AI Agent Builder — 会話するだけでAI自動化を作れるツール</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">No-Code AI Agent / Workflow Automation / Task Management</span></p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong style="color:#1e3a5f;">何ができるか：</strong>プロジェクト管理ツールWrikeが7月9日にリリース。「毎月末に進捗報告をSlackに送って」などと自然な言葉で入力するだけで、AIエージェントが業務フローを自動化します。Slack・Gmail・Outlook・Microsoft Teamsとも連携でき、タスクの更新・承認フローの開始・メール送信まで自律実行します。AI導入企業での利用はYoY3倍増で、業務時間を最大93%削減した事例も報告されています。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong style="color:#1e3a5f;">こんな人におすすめ：</strong>定例報告・承認ワークフロー・タスク管理の自動化を考えているプロジェクトマネージャーや業務改善担当者。プログラミング不要でAIエージェントを構築できます。
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong style="color:#1e3a5f;">料金目安：</strong>有料（Wrikeのビジネスプランに含まれる。無料トライアルあり）
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.wrike.com/newsroom/wrike-introduces-conversational-ai-agent-builder-alongside-a-series-of-platform-updates/" class="source-link" style="color:#2563eb; font-size:14px;">→ 詳細: Wrike公式ニュースルーム</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- TOOL 02: Clockwork.ai Mira -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+                <tr>
+                  <td class="card-cell" style="padding:24px;">
+                    <p style="margin:0 0 10px;">
+                      <span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 02</span>
+                    </p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">Clockwork.ai（Mira） — 中小企業に「AI版CFO」を届けるキャッシュフロー分析ツール</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">AI CFO / FP&A Agent / QuickBooks / Cash Flow Forecast</span></p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong style="color:#1e3a5f;">何ができるか：</strong>7月8日に発表された「Mira」は、QuickBooksまたはXeroと3分で連携するだけで、キャッシュフロー予測・シナリオ分析・損益の変動を自動的に監視してくれるAIエージェントです。数字が動いた瞬間にアラートを通知し、「今月の利益率が下がっている理由」を平易な言葉で解説。月次決算を待たずにリアルタイムで財務状況を把握できます。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong style="color:#1e3a5f;">こんな人におすすめ：</strong>CFO・経理専任がいない中小企業の経営者・財務担当者。Excelでの手作業キャッシュフロー管理から卒業したい方。
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong style="color:#1e3a5f;">料金目安：</strong>フリーミアム（初回予測・最初のインサイトは無料。有料プランあり）
+                    </p>
+                    <p style="margin:0;">
+                      <a href="https://www.clockwork.ai" class="source-link" style="color:#2563eb; font-size:14px;">→ 詳細: clockwork.ai</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- セクション3: 📖 用語解説・学習コーナー          -->
+          <!-- ============================================ -->
+
+          <!-- セクション見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📖 用語解説・学習コーナー</h2>
+            </td>
+          </tr>
+
+          <!-- 用語解説カード -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px;">
+                <tr>
+                  <td class="card-cell" style="padding:24px;">
+                    <h3 style="margin:0 0 10px; font-size:17px; color:#1e3a5f;">AIエージェント <span style="color:#6b7280; font-size:0.85em; font-weight:normal;">/ AI Agent</span></h3>
+                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">
+                      一言でいうと：「目標を与えれば、自分で考えながら複数の手順をこなして仕事を完遂するAI」
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong style="color:#1e3a5f;">もう少し詳しく：</strong>従来のAIは「質問に答えるだけ」でしたが、AIエージェントは「目標を達成するために自ら行動を計画・実行」します。たとえば「先月の売上データをまとめて報告書を作って」と依頼すると、ファイルを開いてデータを集計し、グラフを作成して文書にまとめるまでを自律的にこなします。ChatGPT Work、Claude Cowork、Wrike AI Agentなど、今週のニュースに登場したサービスはすべてこの「エージェント」機能を搭載した製品です。人間の役割は「指示を出す」と「結果を確認・承認する」だけになりつつあります。
+                    </p>
+                    <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong style="color:#1e3a5f;">ビジネスでの使いどころ：</strong>毎月の定例報告書の自動作成、問い合わせメールへの初回返信下書き、新規取引先のリサーチと提案書の下書き作成など。特に「入力元と成果物が明確な繰り返し業務」から試すのがおすすめです。最初は結果を必ず人間がチェックする運用から始め、精度が確認できたら徐々に自動化の範囲を広げていきましょう。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- セクション4: 💬 編集者コメント・コラム           -->
+          <!-- ============================================ -->
+
+          <!-- セクション見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">💬 編集者コメント</h2>
+            </td>
+          </tr>
+
+          <!-- 編集者コメントカード -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 20px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px;">
+                <tr>
+                  <td class="column-box-cell" style="padding:24px;">
+                    <p class="body-text" style="margin:0 0 16px; font-size:15px; line-height:1.8; color:#374151;">
+                      今週印象的だったのは、OpenAIとAnthropicが同じ週に「AIが自律的に業務を実行する」機能をリリースしたことです。偶然ではなく、業界全体が「エージェント化」という同じ方向に向かって走っているサインだと思います。
+                    </p>
+                    <p class="body-text" style="margin:0 0 16px; font-size:15px; line-height:1.8; color:#374151;">
+                      ただ、調査が示した「経営層がAIを使わない企業は体制も整っていない」という現実も重くのしかかります。ツールがどれだけ進化しても、使う人・組織が変わらなければ宝の持ち腐れです。エージェント時代に必要なのは「どのAIを使うか」の選択より、「社内のどの業務をAIに任せるか」を決める設計力かもしれません。まずは自社の「繰り返し作業リスト」を5つ書き出してみませんか。
+                    </p>
+                    <p style="margin:0; font-size:14px; color:#92400e;">📌 来週は「AIエージェントに任せる仕事の選び方——中小企業のタスク設計入門」をお届け予定です。お楽しみに！</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 📚 Weeklyライブラリへのリンク（編集者コメント直後・フッター直前） -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
+            </td>
+          </tr>
+
+          <!-- フッター -->
+          <!-- ルール: 2行構成で固定。Vol番号・日付・注意書きは含めない -->
+          <!-- bgcolor属性はOutlook等グラデーション非対応メーラー向けフォールバック -->
+          <tr>
+            <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+              <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

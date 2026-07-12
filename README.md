@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.16 — GPT-5.6 + ChatGPT Work 一般公開 AIが「実行役」へ / Claude CoworkがWeb・モバイルへ展開 / 経営層がAIを使わない中小企業の85.7%が方針・体制なし](outputs/vol16/)（2026年7月13日号）
 - [Vol.15 — Claude Sonnet 5 登場 Opus級の推論をSonnet価格で / Visa、欧州でAIエージェント決済が本番稼働 / 「Stella AI for Biz」1,200社突破・ノーコードAIワークフロー追加](outputs/vol15/)（2026年7月6日号）
 - [Vol.14 — デジタル化・AI導入補助金2026 最大450万円・生成AIも対象に / Anthropic「Claude for Small Business」QuickBooks・PayPal連携 / 生成AI導入格差30ポイント（東京商工リサーチ調査）](outputs/vol14/)（2026年6月29日号）
 - [Vol.13 — 大塚商会、建設業向けAIアシスタントテンプレートを無料提供開始 / Adobe Creative Cloud全製品にAIエージェント機能を一斉導入 / 「現場の人がAIで自社システムを作る」実践型トレーニング「AI GYM」が始動](outputs/vol13/)（2026年6月22日号）
@@ -83,8 +84,10 @@ weekly-newsletter/
     │   └── index.html                 ← Vol.13
     ├── vol14/
     │   └── index.html                 ← Vol.14
-    └── vol15/
-        └── index.html                 ← Vol.15
+    ├── vol15/
+    │   └── index.html                 ← Vol.15
+    └── vol16/
+        └── index.html                 ← Vol.16
 ```
 
 ## 📱 レスポンシブ対応
