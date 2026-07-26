@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.18 — IPA「DX動向2026」AI効率化91.6% vs 売上向上3.9%の断層 / OpenAI、中小企業向けChatGPT Workプログラム始動 / 大塚商会、バイブコーディングで業務自動化30万円〜](outputs/vol18/)（2026年7月27日号）
 - [Vol.17 — デジタル化・AI導入補助金2026 第3次締切（7/21） / ソフトバンク×SierraのAIエージェントが日本展開 / 弥生「ZEXT AIエージェント」β版無償提供開始](outputs/vol17/)（2026年7月20日号）
 - [Vol.16 — GPT-5.6 + ChatGPT Work 一般公開 AIが「実行役」へ / Claude CoworkがWeb・モバイルへ展開 / 経営層がAIを使わない中小企業の85.7%が方針・体制なし](outputs/vol16/)（2026年7月13日号）
 - [Vol.15 — Claude Sonnet 5 登場 Opus級の推論をSonnet価格で / Visa、欧州でAIエージェント決済が本番稼働 / 「Stella AI for Biz」1,200社突破・ノーコードAIワークフロー追加](outputs/vol15/)（2026年7月6日号）
