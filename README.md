@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.21 — Amazon Quick、Microsoft 365アプリへ統合 / Google「Sheets Canvas」でスプレッドシートがミニアプリに / 創業155年の老舗漬物店がClaude活用で梅干し職人向けUIを自社開発](outputs/vol21/)（2026年8月17日号）
 - [Vol.20 — JAPAN AI×大塚商会が資本業務提携でSMBへのAI導入を全国展開 / 弥生「記帳代行AI」β版——領収書100枚を数分で処理 / 楽天「Rakuten AI for Business」がClaude活用でリサーチ・データ分析機能を追加](outputs/vol20/)（2026年8月10日号）
 - [Vol.19 — 中小企業の生成AI利用率2年で96%に急上昇 / GMO天秤AI「自律実行型チャット」β版開始 / AI活用「相談難民」問題に「みんなのAI相談室」スタート](outputs/vol19/)（2026年8月3日号）
 - [Vol.18 — IPA「DX動向2026」AI効率化91.6% vs 売上向上3.9%の断層 / OpenAI、中小企業向けChatGPT Workプログラム始動 / 大塚商会、バイブコーディングで業務自動化30万円〜](outputs/vol18/)（2026年7月27日号）
