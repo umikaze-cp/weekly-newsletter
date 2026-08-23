@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+  <title>AI×DX Weekly - Vol.22（2026年8月24日号）</title>
+  <style>
+    /* ======================
+       タブレット対応（681px〜840px）
+       iPad縦向き768px をカバー
+       ====================== */
+    @media only screen and (min-width: 681px) and (max-width: 840px) {
+      .email-container { width: 94% !important; max-width: 800px !important; }
+      .content-cell { padding-left: 28px !important; padding-right: 28px !important; }
+      .card-cell { padding: 18px 20px !important; }
+      .body-text { font-size: 15px !important; line-height: 1.8 !important; }
+      .header-title { font-size: 28px !important; }
+      .section-heading { font-size: 21px !important; }
+    }
+
+    /* ======================
+       スマートフォン対応（680px以下）
+       iPhone / Android をカバー
+       ====================== */
+    @media only screen and (max-width: 680px) {
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .header-title { font-size: 22px !important; }
+      .content-cell { padding-left: 16px !important; padding-right: 16px !important; }
+      .card-cell { padding: 14px 14px !important; }
+      .section-heading { font-size: 18px !important; }
+      .body-text { font-size: 14px !important; line-height: 1.8 !important; }
+      .source-link { display: inline-block !important; padding: 4px 0 !important; }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family:system-ui,-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <!--[if mso]><table role="presentation" width="800" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" class="email-container" width="800" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:8px; overflow:hidden; max-width:800px; width:100%;">
+
+          <!-- ヘッダー -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:30px; text-align:center; color:#ffffff;">
+              <div style="display:inline-flex; align-items:center; gap:8px;">
+                <img src="../../images/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:6px; width:32px; height:32px;">
+                <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px;">AI×DX Weekly</h1>
+              </div>
+              <p style="margin:8px 0 0; font-size:14px; opacity:0.9;">Vol.22 ｜ 2026年8月24日号</p>
+              <p style="margin:12px 0 0; font-size:13px; opacity:0.75;">AIが、考えて動く時代が来た。</p>
+            </td>
+          </tr>
+
+          <!-- イントロ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                今週は「AIエージェント」という言葉が、大企業の発表から現場の調査データまであらゆる場所に登場した週でした。OpenAIが日本の中小企業向けAI導入支援を大幅強化し、MetaはSNS広告をAIが丸ごと分析・最適化できる機能を中小事業者向けに無料公開。国内の調査では経営者の9割近くが「自分の思考を学習したAIエージェント」に強い関心を示しました。AIが質問に答えるだけの存在から、自律的に業務を動かす「エージェント」へと進化しつつあることを実感できる1週間です。
+              </p>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- セクション順序: ニュース → ツール → 用語解説 → 編集者コメント → ライブラリリンク → フッター -->
+          <!-- ============================================ -->
+
+          <!-- 📰 セクション1: 今週のAI×DXニュース TOP3 -->
+          <tr>
+            <td class="content-cell" style="padding:32px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 24px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📰 今週のAI×DXニュース TOP3</h2>
+            </td>
+          </tr>
+
+          <!-- NEWS 01 — 薄青 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0f6ff; border:1px solid #bfdbfe; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 01</p>
+                    <h3 style="margin:0 0 12px; font-size:17px; color:#1e3a5f; line-height:1.5;">
+                      OpenAI Partner Network、日本で大幅拡充
+                      <span style="color:#6b7280; font-size:0.9em;"> / OpenAI Partner Network Japan</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      OpenAIが「OpenAI Partner Network」を世界規模で拡充し、日本を含むグローバルで約240億円（1.5億ドル）を投じて2026年末までに30万人の認定コンサルタントを育成すると発表しました。日本ではこれまで大手SIerが中心でしたが、今回の拡充で地方の中堅・中小企業を支える専門家も参加しやすくなります。現場で多く聞かれる「うちの会社にAIなんて」という謙遜を覆す好機で、業種・業務の知見を持つパートナーが増えることで、AIを業務プロセスに組み込む支援が受けやすくなります。中小企業がAI導入を検討する際は、地元の認定パートナーを探すことが近道になりそうです。
+                    </p>
+                    <a class="source-link" href="https://www.itmedia.co.jp/aiplus/article/2608/19/2000000615/" style="color:#2563eb; font-size:14px; text-decoration:underline;" target="_blank">出典: ITmedia AI＋（2026年8月19日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 02 — 薄緑 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 02</p>
+                    <h3 style="margin:0 0 12px; font-size:17px; color:#1e3a5f; line-height:1.5;">
+                      MetaがSMB向けAIアシスタントを大幅強化、広告データと Google Workspace を一元分析
+                      <span style="color:#6b7280; font-size:0.9em;"> / Meta AI for Small Business</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      MetaがMeta AIと中小事業者向けビジネスツールを統合し、FacebookとInstagramの広告データ、Google Workspace（Gmail・Docs・Sheets・Slides）をAIが横断的に分析できるようになりました。広告の成果確認やクリエイティブ改善の提案、競合動向のリサーチまで、会話形式で質問するだけで実行できます。さらに分析結果を提案資料やスプレッドシートに自動変換する機能も追加され、マーケティング担当者が手動でこなしてきた作業を大幅に削減できます。まずは無料で利用でき、利用量が増えた段階で有料プラン（Meta One）へ移行する仕組みのため、費用を気にせず試せます。
+                    </p>
+                    <a class="source-link" href="https://www.socialmediatoday.com/news/meta-adds-ai-powered-assistant-for-smb-owners/828344/" style="color:#2563eb; font-size:14px; text-decoration:underline;" target="_blank">出典: Social Media Today（2026年8月19日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 03 — 薄黄 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 03</p>
+                    <h3 style="margin:0 0 12px; font-size:17px; color:#1e3a5f; line-height:1.5;">
+                      中小企業経営者の約9割がAIエージェントに関心、でも導入の壁は「経営陣の思考の言語化」
+                      <span style="color:#6b7280; font-size:0.9em;"> / AI Agent Adoption Survey</span>
+                    </h3>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      株式会社YAYが中小企業経営者1,015名に実施した調査で、「自分の思考・判断基準を学習したAIエージェント」への関心が「非常にある」37.9%・「ややある」49.1%と約9割に上ることが明らかになりました。期待用途の1位は「社員が経営者の判断基準を参照できるようにするため」（63.7%）で、確認待ちによる業務停滞を解消したいニーズが高いことが見えます。一方で導入の最大の壁は「経営陣の思考や価値観を言語化・構造化するのが難しい」（47.3%）。社内のノウハウをAIに教えるための整理が先決であり、まずは判断基準や業務フローを文書化することが近道だと、専門家は指摘しています。
+                    </p>
+                    <a class="source-link" href="https://www.sankei.com/pressrelease/prtimes/UZQCZXB2ZFLXJMYQIOZ7XUIQDE/" style="color:#2563eb; font-size:14px; text-decoration:underline;" target="_blank">出典: 産経ニュース（2026年8月19日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- 🛠️ セクション2: 今週のおすすめツール -->
+          <tr>
+            <td class="content-cell" style="padding:32px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 24px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">🛠️ 今週のおすすめツール・リソース</h2>
+            </td>
+          </tr>
+
+          <!-- TOOL 01 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); padding:24px;">
+                    <p style="margin:0 0 10px;">
+                      <span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 01</span>
+                    </p>
+                    <h3 style="margin:0 0 10px; font-size:17px; color:#1e3a5f;">Calendly Notetaker &amp; Callie <span style="color:#6b7280; font-size:0.9em;">— 会議の準備〜フォローアップを丸ごと自動化</span></h3>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      スケジュール管理ツールの定番「Calendly」が、AIノートテイカー「Notetaker」とAIアシスタント「Callie」を新たに追加しました。Notetakerは会議を自動録音・文字起こしして要点と次のアクションをまとめ、Callieは事前準備のリサーチから参加者の過去履歴確認、会議後のフォローアップメール作成まで代行します。Zoom・Google Meet・Microsoft Teams のいずれにも対応しており、Calendlyで予約していない会議にも使えます。
+                    </p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>こんな人におすすめ：</strong> 外部との打ち合わせが週に数回以上あり、議事録作成や事後フォローに時間を取られている営業・経営企画担当者
+                    </p>
+                    <p style="margin:0 0 10px; font-size:14px; color:#374151;"><strong>料金目安：</strong> Standard Plusプラン（有料）から利用可能。無料トライアルあり</p>
+                    <a class="source-link" href="https://calendly.com/blog/new-calendly" style="color:#2563eb; font-size:14px; text-decoration:underline;" target="_blank">🔗 Calendly公式ブログ（2026年8月19日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- TOOL 02 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); padding:24px;">
+                    <p style="margin:0 0 10px;">
+                      <span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 02</span>
+                    </p>
+                    <h3 style="margin:0 0 10px; font-size:17px; color:#1e3a5f;">Stella AI for Biz「Notebook機能」 <span style="color:#6b7280; font-size:0.9em;">— 社内資料だけを根拠にAIが回答、ハルシネーション低減</span></h3>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      株式会社SUPERNOVAが提供する企業向け生成AIサービス「Stella AI for Biz」に「Notebook機能」が追加されました。社内に散らばる規程・マニュアル・議事録・PDFなどをNotebookとして整理し、AIに質問する際に参照するNotebookを指定することで、指定した資料だけを根拠に回答が生成されます。「一般的なAIの回答が社内ルールと食い違う」「誤情報が混じる」という課題を解消しやすくなります。Google Drive・SharePoint・Boxとの連携にも対応しており、すでにクラウドストレージを使っている企業でも導入しやすい設計です。
+                    </p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>こんな人におすすめ：</strong> 「社内規程や過去の契約事例をすぐ調べたい」「新人への問い合わせ対応を自動化したい」と考えている総務・法務・人事担当者
+                    </p>
+                    <p style="margin:0 0 10px; font-size:14px; color:#374151;"><strong>料金目安：</strong> 要問い合わせ（法人向けプラン）</p>
+                    <a class="source-link" href="https://supernova-inc.com/news/news-release/1627/" style="color:#2563eb; font-size:14px; text-decoration:underline;" target="_blank">🔗 SUPERNOVA公式（2026年8月18日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- 📖 セクション3: 用語解説 -->
+          <tr>
+            <td class="content-cell" style="padding:32px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 24px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📖 用語解説・学習コーナー</h2>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px; padding:24px;">
+                    <h3 style="margin:0 0 10px; font-size:18px; color:#1e3a5f;">AIエージェント <span style="color:#6b7280; font-size:0.85em;">/ AI Agent</span></h3>
+                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">
+                      一言でいうと：「指示を受けて自律的に考え、複数の手順を自分でこなすAI」
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      従来の生成AIは「質問したら答えが返ってくる」チャット形式でした。AIエージェントはそれとは異なり、目標を与えると自分でやるべきタスクを分解し、ツールを呼び出したり情報を調べたりしながら一連の作業を完了させます。たとえば「先月の売上レポートを作ってメールで送って」と頼むと、データを取得→集計→レポート文書を作成→指定の宛先にメール送信という一連の手順をAIが自力で実行します。ChatGPTの「o3」やAnthropicの「Claude」を使ったエージェント機能が急速に広がり、今週のニュースでも各社がエージェント対応を競うように発表しています。
+                    </p>
+                    <p class="body-text" style="margin:0 0 0; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>ビジネスでの使いどころ：</strong> 定型的な書類作成・社内Q&A対応・広告レポート生成など、「毎回同じ手順を踏む繰り返し業務」に向いています。社員が「AIに頼めば終わる業務」を明確にリストアップするところから始めるのが導入の第一歩です。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- 💬 セクション4: 編集者コメント -->
+          <tr>
+            <td class="content-cell" style="padding:32px 40px 8px;">
+              <h2 class="section-heading" style="margin:0 0 24px; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">💬 編集者コメント</h2>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="content-cell" style="padding:0 40px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="column-box-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      今週の調査結果を読んで、少しほっとしました。「AIエージェントへの関心は高いけど、自分の考えを言葉にするのが難しい」という壁——これはAIが苦手なのではなく、実は私たち人間側の課題なんですよね。「なんとなくこうしてきた」という暗黙知を文章化する作業は、AIと関係なく会社経営にとって本来やるべきことでもあります。
+                    </p>
+                    <p class="body-text" style="margin:0 0 16px; font-size:15px; line-height:1.8; color:#374151;">
+                      OpenAIが中小企業向けパートナー網を拡充したことで、「うちの規模だと相談できる人がいない」という状況も徐々に変わりそうです。まずは地域や業種に詳しいパートナー企業を探し、自社の課題を話してみることが最初の一歩になるでしょう。
+                    </p>
+                    <p style="margin:0; font-size:14px; color:#92400e;">📌 来週は、法務省が発表したAI活用の新指針や、企業のAIガバナンスについてお届け予定です。お楽しみに！</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 📚 Weeklyライブラリへのリンク（編集者コメント直後・フッター直前） -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
+            </td>
+          </tr>
+
+          <!-- フッター -->
+          <tr>
+            <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+              <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
