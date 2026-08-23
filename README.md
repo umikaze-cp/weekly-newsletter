@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.22 — OpenAI Partner Network、日本で大幅拡充 / MetaがSMB向けAIアシスタントを強化、広告データとGoogle Workspaceを一元分析 / 中小企業経営者の約9割がAIエージェントに関心、導入の壁は「経営陣の思考の言語化」](outputs/vol22/)（2026年8月24日号）
 - [Vol.21 — Amazon Quick、Microsoft 365アプリへ統合 / Google「Sheets Canvas」でスプレッドシートがミニアプリに / 創業155年の老舗漬物店がClaude活用で梅干し職人向けUIを自社開発](outputs/vol21/)（2026年8月17日号）
 - [Vol.20 — JAPAN AI×大塚商会が資本業務提携でSMBへのAI導入を全国展開 / 弥生「記帳代行AI」β版——領収書100枚を数分で処理 / 楽天「Rakuten AI for Business」がClaude活用でリサーチ・データ分析機能を追加](outputs/vol20/)（2026年8月10日号）
 - [Vol.19 — 中小企業の生成AI利用率2年で96%に急上昇 / GMO天秤AI「自律実行型チャット」β版開始 / AI活用「相談難民」問題に「みんなのAI相談室」スタート](outputs/vol19/)（2026年8月3日号）
@@ -165,6 +166,13 @@ Step 6  作業記録の更新（拡張機能版）
 | Vol.13 | 2026/06/22 | 大塚商会・建設業向けAIアシスタントテンプレート無料提供 / Adobe Creative Cloud全製品にAIエージェント機能導入 / AI GYM始動 |
 | Vol.14 | 2026/06/29 | デジタル化・AI導入補助金2026（最大450万円・生成AI対象） / Claude for Small Business（QuickBooks・PayPal連携） / 生成AI導入格差30ポイント |
 | Vol.15 | 2026/07/06 | Claude Sonnet 5 登場（Opus級推論をSonnet価格で） / Visa AIエージェント決済が欧州で本番稼働 / Stella AI for Biz 1,200社突破・ノーコードワークフロー追加 |
+| Vol.16 | 2026/07/13 | GPT-5.6 + ChatGPT Work 一般公開 AIが「実行役」へ / Claude CoworkがWeb・モバイルへ展開 / 経営層がAIを使わない中小企業の85.7%が方針・体制なし |
+| Vol.17 | 2026/07/20 | デジタル化・AI導入補助金2026 第3次締切（7/21） / ソフトバンク×SierraのAIエージェントが日本展開 / 弥生「ZEXT AIエージェント」β版無償提供開始 |
+| Vol.18 | 2026/07/27 | IPA「DX動向2026」AI効率化91.6% vs 売上向上3.9%の断層 / OpenAI、中小企業向けChatGPT Workプログラム始動 / 大塚商会、バイブコーディングで業務自動化30万円〜 |
+| Vol.19 | 2026/08/03 | 中小企業の生成AI利用率2年で96%に急上昇 / GMO天秤AI「自律実行型チャット」β版開始 / AI活用「相談難民」問題に「みんなのAI相談室」スタート |
+| Vol.20 | 2026/08/10 | JAPAN AI×大塚商会が資本業務提携でSMBへのAI導入を全国展開 / 弥生「記帳代行AI」β版——領収書100枚を数分で処理 / 楽天「Rakuten AI for Business」がClaude活用でリサーチ・データ分析機能を追加 |
+| Vol.21 | 2026/08/17 | Amazon Quick、Microsoft 365アプリへ統合 / Google「Sheets Canvas」でスプレッドシートがミニアプリに / 創業155年の老舗漬物店がClaude活用で梅干し職人向けUIを自社開発 |
+| Vol.22 | 2026/08/24 | OpenAI Partner Network、日本で大幅拡充 / MetaがSMB向けAIアシスタントを強化、広告データとGoogle Workspaceを一元分析 / 中小企業経営者の約9割がAIエージェントに関心、導入の壁は「経営陣の思考の言語化」 |
 
 ## 📝 作成者
 
