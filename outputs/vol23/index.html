@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+  <title>AI×DX Weekly - Vol.23（2026年8月31日号）</title>
+  <style>
+    /* ======================
+       タブレット対応（681px〜840px）
+       iPad縦向き768px をカバー
+       ====================== */
+    @media only screen and (min-width: 681px) and (max-width: 840px) {
+      .email-container { width: 94% !important; max-width: 800px !important; }
+      .content-cell { padding-left: 28px !important; padding-right: 28px !important; }
+      .card-cell { padding: 18px 20px !important; }
+      .body-text { font-size: 15px !important; line-height: 1.8 !important; }
+      .header-title { font-size: 28px !important; }
+      .section-heading { font-size: 21px !important; }
+    }
+
+    /* ======================
+       スマートフォン対応（680px以下）
+       iPhone / Android をカバー
+       ====================== */
+    @media only screen and (max-width: 680px) {
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .header-title { font-size: 22px !important; }
+      .content-cell { padding-left: 16px !important; padding-right: 16px !important; }
+      .card-cell { padding: 14px 14px !important; }
+      .section-heading { font-size: 18px !important; }
+      .body-text { font-size: 14px !important; line-height: 1.8 !important; }
+      .source-link { display: inline-block !important; padding: 4px 0 !important; }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family:system-ui,-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <!--[if mso]><table role="presentation" width="800" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" class="email-container" width="800" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:8px; overflow:hidden; max-width:800px; width:100%;">
+
+          <!-- ヘッダー -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:30px; text-align:center; color:#ffffff;">
+              <div style="display:inline-flex; align-items:center; gap:8px;">
+                <img src="../../images/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:6px; width:32px; height:32px;">
+                <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px;">AI×DX Weekly</h1>
+              </div>
+              <p style="margin:8px 0 0; font-size:14px; opacity:0.9;">Vol.23 ｜ 2026年8月31日号</p>
+              <p style="margin:12px 0 0; font-size:13px; opacity:0.75;">投資もデータも、本気の数字が揃った週。</p>
+            </td>
+          </tr>
+
+          <!-- イントロ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                今週は、日本の中小企業がAIに「本気」になったことを証明するデータが相次いで発表された。生成AIへの投資が初めて最重要分野となり、7割が100万円超を投資予定という実態調査が登場する一方、現場のバックオフィス担当者は「安定稼働」を最優先に着実なAI活用を選んでいる。そしてGoogleがGeminiに20以上のアプリを連携させ、普段使いのAIアシスタントを「業務実行エージェント」へと昇格させた。現場の覚悟とツールの進化が重なった一週間をお届けする。
+              </p>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- ★ 配置順序の厳守ルール ★                      -->
+          <!-- 1. 📰 今週のニュース TOP3                    -->
+          <!-- 2. 🛠️ 今週のおすすめツール                   -->
+          <!-- 3. 📖 用語解説                              -->
+          <!-- 4. 💬 編集者コメント                        -->
+          <!-- 5. 📚 Weeklyライブラリへリンク（フッター直前）-->
+          <!-- 6. フッター                                  -->
+          <!-- ============================================ -->
+
+          <!-- ============================================ -->
+          <!-- 📰 今週のAI×DXニュース TOP3                 -->
+          <!-- ============================================ -->
+
+          <!-- Section 1 見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px; margin:0;">📰 今週のAI×DXニュース TOP3</h2>
+            </td>
+          </tr>
+
+          <!-- NEWS 01: 薄青（公的・信頼度高） -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0f6ff; border:1px solid #bfdbfe; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 01</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">中小企業の68.1%が生成AIに100万円超を投資予定——AIがITの「標準投資」へ</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">AI Investment / SMB IT Spending Survey</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      デル・テクノロジーズが日本の中堅・中小企業を対象に実施した「IT投資動向調査2026」で、生成AIへの投資が調査開始以来初めて最重要分野に躍り出た。100万円以上の投資を予定する企業は68.1%に達し、AIがいよいよ「実験段階」を脱して企業ITの標準的な投資対象に昇格したとデルは分析している。また、IT担当者1人でこなす「ワンオペ情シス」の割合も22.4%まで低下し、IT人材への投資も着実に進んでいることが明らかになった。DX担当者にとっては「AI予算を確保することが当たり前になった」という証左であり、社内稟議や経営層への説得材料として活用できるデータだ。
+                    </p>
+                    <a href="https://japan.zdnet.com/article/35251801/" class="source-link" style="color:#2563eb; font-size:14px;">▶ 出典: ZDNET Japan（2026年8月21日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 02: 薄緑（革新・新機能） -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 02</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">GoogleがGeminiに20以上のアプリ連携を発表——AIが「答える道具」から「動く道具」へ</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Gemini Connected Apps / AI Integration</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      GoogleはMade by Googleイベントで、AIアシスタント「Gemini」に新たな外部アプリ連携を発表した。会議要約ツール（Otter.ai・Granola）、ウェブ制作（Wix）など業務系サービスとの統合が含まれており、Geminiひとつでミーティングの議事録からウェブサイト更新まで完結できる環境が整いつつある。Wix・Otter.aiはグローバル対応のため日本からも利用可能。AIアシスタントが「情報を調べる道具」から「外部ツールに指示して業務を実行するエージェント」へと変化する流れを象徴する発表だ。連携時はデータプライバシー設定の確認も忘れずに。
+                    </p>
+                    <a href="https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-services-gemini-august-2026/" class="source-link" style="color:#2563eb; font-size:14px;">▶ 出典: Google Blog（2026年8月12日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 03: 薄黄（成功事例・現場の声） -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 03</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">弥生調査：バックオフィスのAI活用、現場の本音は「安定稼働」と「法改正対応」最優先</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Back Office AI / SMB Accounting Software</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      弥生株式会社が中小企業のバックオフィス担当者951名を対象に実施した実態調査が公開された。AI活用への関心は60.3%に上る一方、製品選定で最重視される項目は「安定稼働（84.1%）」「法改正への自動対応（81.5%）」で、クラウド移行よりも「業務を止めないこと」が優先された。業務の全面刷新を望む企業は12.2%にとどまり、中小企業が求めているのは「派手な変革」ではなく「現場を崩さない段階的なAI活用」だということがデータで裏付けられた。AIブームの中でも現実的な経営感覚を持つ中小企業の本音が垣間見える調査結果だ。
+                    </p>
+                    <a href="https://prtimes.jp/main/html/rd/p/000000409.000015865.html" class="source-link" style="color:#2563eb; font-size:14px;">▶ 出典: PR TIMES / 弥生株式会社（2026年8月26日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- 🛠️ 今週のおすすめツール・リソース            -->
+          <!-- ============================================ -->
+
+          <!-- Section 2 見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px; margin:0;">🛠️ 今週のおすすめツール・リソース</h2>
+            </td>
+          </tr>
+
+          <!-- TOOL 01: Calendly AI Suite -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); padding:24px;">
+                    <p style="margin:0 0 10px;"><span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 01</span></p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">Calendly AI Suite（Callie + Notetaker）</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">会議の予約から議事録まで一気通貫で自動化するAI会議ツール</span></p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      Calendlyが2026年8月に発表した新しいAIツールスイート。AIアシスタント「Callie」はメールスレッドの中で複雑な日程調整を完結させ、「Notetaker」は会議の録画・文字起こし・要約・アクションアイテム抽出を自動処理する。Zoom・Google Meet・Microsoft Teamsに対応し、設定なしで参加できる。ベータユーザーは週3〜4時間の削減を実現したと報告されており、会議後のまとめ作業の手間から解放されたい担当者に特におすすめだ。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;"><strong>こんな人におすすめ：</strong>顧客との打ち合わせが多い営業・コンサル担当者、会議後の議事録作成に時間を取られているビジネスオーナー</p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;"><strong>料金目安：</strong>フリーミアム（基本機能は無料、AI機能は一部有料プランで提供）</p>
+                    <a href="https://calendly.com/newsroom/press-release/calendly-new-ai-product-suite" class="source-link" style="color:#2563eb; font-size:14px;">▶ Calendly AI Suite の詳細はこちら</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- TOOL 02: Otto by Workato -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); padding:24px;">
+                    <p style="margin:0 0 10px;"><span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 02</span></p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">Otto by Workato</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">プロジェクト全体を自律実行するAIスーパーエージェント</span></p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      質問に答えるだけの従来AIとは異なり、複数ステップにわたるプロジェクトを自律的に完遂するAIエージェント。Gmail・Google Drive・Shopify・Salesforceなど1,400以上のアプリと連携し、マーケティングキャンペーンの実施、案件進捗管理、毎朝のブリーフィング配信などを指示するだけで動かせる。Slack・Webブラウザ・SMSのいずれからも操作可能で、複数のOttoが互いに連携して業務を進める「マルチエージェント」機能も持つ。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;"><strong>こんな人におすすめ：</strong>複数のクラウドツールを横断しながら業務を管理している中小企業の責任者・経営者</p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;"><strong>料金目安：</strong>30日無料トライアル（500クレジット付き）、その後は有料プランあり</p>
+                    <a href="https://getotto.ai" class="source-link" style="color:#2563eb; font-size:14px;">▶ Otto by Workato の詳細はこちら</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- 📖 用語解説・学習コーナー                    -->
+          <!-- ============================================ -->
+
+          <!-- Section 3 見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px; margin:0;">📖 用語解説・学習コーナー</h2>
+            </td>
+          </tr>
+
+          <!-- 用語解説カード -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px; padding:24px;">
+                    <h3 style="margin:0 0 10px; font-size:18px; color:#1e3a5f;">AX（AIトランスフォーメーション）<span style="color:#6b7280; font-size:0.85em; font-weight:400;">/ AI Transformation</span></h3>
+                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">一言でいうと：「DXのAI版——AIを核に据えてビジネスモデルや業務プロセスを抜本的に変革すること」</p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      中小企業庁の2026年版「中小企業白書」で正式に提唱された概念。従来の「DX（デジタルトランスフォーメーション）」がIT全般のデジタル化を指すのに対し、AXはAIを活用した変革に特化している。単なる繰り返し業務の自動化にとどまらず、AIが意思決定を補佐し、新たな付加価値の創出へとつなげることを目指す。今週の調査が示すように、日本の中小企業はまさにDXからAXへの移行期にあり、今後の補助金・支援施策にも関連するキーワードとして注目されている。
+                    </p>
+                    <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>ビジネスでの使いどころ：</strong>「AI導入」という言葉にとどまらず「AX（AIトランスフォーメーション）」という表現を使うことで、技術導入だけでなく事業変革までを視野に入れた取り組みとして周囲に伝えられる。補助金申請書、社内稟議書、経営計画書など、AI活用への取り組みを対外的にアピールする文書で積極的に活用したい。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- 💬 編集者コメント・コラム                    -->
+          <!-- ============================================ -->
+
+          <!-- Section 4 見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px; margin:0;">💬 編集者コメント</h2>
+            </td>
+          </tr>
+
+          <!-- 編集者コメントカード -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 28px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="column-box-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p class="body-text" style="margin:0 0 16px; font-size:15px; line-height:1.8; color:#374151;">
+                      今週届いたデータには、ある共通点があった。どれも「AIに前向き」でありながら、「慎重に、確実に」という姿勢を示している。7割が100万円超の投資を予定しながらも、バックオフィスでは全面刷新を望む企業は12%止まり。役職が上がるほど生成AIを使うが、同じ経営者層の26%は「ほとんど使わない」と答える二極化。この分断こそが、今の中小企業のAIリアルだ。ツールは確実に賢くなっている——使うかどうかは、あなた次第の時代になってきた。
+                    </p>
+                    <p style="margin:0; font-size:14px; color:#92400e;">📌 来週は「AI×営業」——生成AIを商談準備・顧客フォローに活かす最前線事例をお届け予定です。お楽しみに！</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 📚 Weeklyライブラリへのリンク（編集者コメント直後・フッター直前） -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
+            </td>
+          </tr>
+
+          <!-- フッター -->
+          <!-- ルール: 2行構成で固定。Vol番号・日付・注意書きは含めない -->
+          <!-- bgcolor属性はOutlook等グラデーション非対応メーラー向けフォールバック -->
+          <tr>
+            <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+              <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
