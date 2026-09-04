@@ -2096,6 +2096,9 @@ Google AdSense 申請を視野に入れた際、SKILL.md Step 1 の「大手メ�
 - Vol.16 NEWS 02 — 出典URL変更なし（claude.com/blog 公式）。要約内の未確認パーセンテージ「ビジネス業務（33%）」「コンテンツ制作（17%）」を削除し、公式ブログの記述「事業業務とコンテンツ制作が最大カテゴリで合わせて約半数」に書き直し（2026年9月5日）
 - Vol.16 NEWS 03 — `sankei.com/pressrelease/prtimes/`（産経ニュース中継）→ `prtimes.jp/main/html/rd/p/000000544.000010550.html`（ラクスル株式会社公式発表、2026年7月9日）に差し替え。要約内の別調査データ（PayPal調査「ECを実施する中小企業の約7割・87.1%が課題」）をラクスル調査と混入していたため削除。ラクスル調査確認済み数値（73.3%・31%・85.7%・4%）は保持（2026年9月5日）
 - Vol.15 — 全5リンクが一次情報（anthropic.com公式・visa.co.uk公式プレスリリース・prtimes.jp・zanderio.com公式・claude.ai）。修正不要（2026年9月5日）
+- Vol.14 NEWS 01 — `hojyokin-portal.jp`（補助金情報メディアコラム）→ `it-shien.smrj.go.jp/download/grantdecision_list/`（中小企業基盤整備機構 .go.jp 公式・2026年6月18日）に差し替え。通常枠 申請2,028件・交付891件・採択率43.9% は公式サイトで全確認済み（2026年9月5日）
+- Vol.14 NEWS 02 — `tech-noisy.com`（テックブログ）→ `anthropic.com/news/claude-for-small-business`（Anthropic公式・2026年5月13日）に差し替え。QuickBooks・PayPal・HubSpot連携は公式確認済み。公式ページに明示のない「追加費用はかからず」を削除し「Claude Cowork内でトグルONするだけで有効化」に書き直し（2026年9月5日）
+- Vol.14 NEWS 03 — `ai-native.jp/blog/`（AIメディアブログ）→ `tsr-net.co.jp/data/detail/1202766_1527.html`（東京商工リサーチ公式調査・2026年4月27日）に差し替え。大企業59.1%・中小企業32.3%（「30%前後」）は公式データで確認済み（2026年9月5日）
 
 ---
 
