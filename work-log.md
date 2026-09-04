@@ -2092,6 +2092,9 @@ Google AdSense 申請を視野に入れた際、SKILL.md Step 1 の「大手メ�
 - Vol.18 NEWS 02 — `archyworldys.com`（非公式ブログ）→ `openai.com/index/introducing-chatgpt-small-business-program/`（OpenAI公式）に差し替え。プログラム名を公式名称「ChatGPT for small businesses」に修正。公式未確認の価格「$25/ユーザー」と未確認の連携先「Google Drive・Microsoft Teams」を削除し、公式確認済みパートナー（Dropbox・Shopify・Slack・Atlassian）に書き直し（2026年9月5日）
 - Vol.18 NEWS 03 — `innovatopia.jp`（メディアサイト）→ `prtimes.jp/main/.../000001259.000009712.html`（大塚商会 PR TIMES）に差し替え。要約内容は全事実 PR Times で確認済み、変更なし（2026年9月5日）
 - Vol.17 — 全5リンクが一次情報（smrj.go.jp・softbank.jp公式・prtimes.jp・企業公式サイト×2）。修正不要（2026年9月5日）
+- Vol.16 NEWS 01 — `sbbit.jp`（ビジネス+ITメディア）→ `openai.com/index/gpt-5-6/`（OpenAI公式発表、2026年7月9日）に差し替え。Sol/Terra/Luna・ChatGPT Work・Microsoft 365 Copilot連携は一次情報で確認済み、要約変更なし（2026年9月5日）
+- Vol.16 NEWS 02 — 出典URL変更なし（claude.com/blog 公式）。要約内の未確認パーセンテージ「ビジネス業務（33%）」「コンテンツ制作（17%）」を削除し、公式ブログの記述「事業業務とコンテンツ制作が最大カテゴリで合わせて約半数」に書き直し（2026年9月5日）
+- Vol.16 NEWS 03 — `sankei.com/pressrelease/prtimes/`（産経ニュース中継）→ `prtimes.jp/main/html/rd/p/000000544.000010550.html`（ラクスル株式会社公式発表、2026年7月9日）に差し替え。要約内の別調査データ（PayPal調査「ECを実施する中小企業の約7割・87.1%が課題」）をラクスル調査と混入していたため削除。ラクスル調査確認済み数値（73.3%・31%・85.7%・4%）は保持（2026年9月5日）
 
 ---
 
