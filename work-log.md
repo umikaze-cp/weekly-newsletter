@@ -2121,6 +2121,7 @@ Google AdSense 申請を視野に入れた際、SKILL.md Step 1 の「大手メ�
 - Vol.3 NEWS 02 — `jinrai.co.jp/blog`（AI系メディアブログ）→ `blog.google/innovation-and-ai/technology/developers-tools/gemma-4/`（Google 公式ブログ・2026年4月2日）に差し替え。4月2日公開・Apache 2.0・256Kトークン・140言語以上は公式確認済み、要約変更なし（2026年9月5日）
 - Vol.3 NEWS 03 — `itmedia.co.jp`（NG ドメイン）→ `chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260310001.html`（中小企業庁 公式・2026年3月10日）に差し替え。補助率の誤記「1/2〜1/4」→「1/2〜2/3」（実際は通常枠1/2・複数者連携/生成AI活用促進枠2/3）に修正（2026年9月5日）
 - Vol.2 NEWS 03 — `hojokin-dx.com`（補助金情報メディア）→ `chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260310001.html`（中小企業庁 公式・2026年3月10日）に差し替え。GビズID2週間・SECURITY ACTION必須は公式フローページで確認済み、要約変更なし（2026年9月5日）
+- Vol.1 NEWS 01 — `note.com/yasuhitoo`（個人noteブログ）→ `hitachi.com/ja-jp/press/articles/2026/03/0326/`（日立製作所 公式発表・2026年3月26日）に差し替え。通勤届40%短縮・年間約10,000件・4ユースケース・2026年度以降全庁展開はいずれも公式発表で確認済み、要約変更なし（2026年9月5日）
 
 ---
 
