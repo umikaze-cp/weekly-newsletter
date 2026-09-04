@@ -110,11 +110,13 @@ VSCodeのエクスプローラーで `outputs/volX/index.html` を開く。
 
 - ニュースは3件あるか
 - 各ニュースに出典リンクがあるか（リンク切れがないか）
+- **出典リンクがすべて一次情報か（メディア記事ドメインが混ざっていないか）**
+  - NG 例: itmedia.co.jp / nikkei.com / techcrunch.com 等のニュースメディア
+  - OK 例: prtimes.jp / 企業公式サイト / go.jp 等
 - ツール紹介は2件あるか
 - 用語解説が1つあるか
 - 編集者コラムがあるか
 - 英語キーワードが各所に併記されているか
-- 戻るボタンが `</body>` 直前にあるか
 - レスポンシブ用class（content-cell, card-cell, section-heading, body-text, source-link）が付与されているか
 
 ### 修正が必要な場合
@@ -167,13 +169,14 @@ open outputs/volX/index.html
 ブラウザプレビューで視覚確認が終わったら、Claude Code に構造監査を実行させる。
 
 `docs/pre-publish-audit-prompt.md` の内容をそのまま Claude Code に貼り付けて実行する。
+監査は **Step 1〜8** を実行する（Step 8 は出典監査。Phase 34 で追加）。
 
 ### 監査レポートの見方
 
 | 判定 | 意味 | 対応 |
 |-----|------|------|
-| ✅ GO | 構造に問題なし | 次の Step へ進む |
-| ⛔ NO-GO | 構造ミスあり | Claude Code が提示する修正コードを承認して修正後、次へ |
+| ✅ GO | 構造・出典に問題なし | 次の Step へ進む |
+| ⛔ NO-GO | 構造ミスまたは NG ドメインリンクあり | Claude Code が提示する修正内容を承認して修正後、次へ |
 
 ### 特に注意するポイント
 

@@ -118,8 +118,42 @@ Step 4 で存在が確認された要素について、**スタイルが SKILL.m
 - NO-GOの場合: [str_replaceで実行可能な修正コード]
 ```
 
+## Step 8: 出典監査
+
+判定基準は SKILL.md の「出典ポリシー」準拠を第一とする。
+
+### 手順
+
+1. 生成した `outputs/volX/index.html` 内のすべての外部リンク（`a href` の外部 URL）を抽出する
+2. 各リンクのドメインを以下の基準で判定する：
+   - **一次情報（OK）**: 企業公式サイト・公式ブログ、prtimes.jp・atpress.ne.jp 等のリリース配信、go.jp・ipa.go.jp 等の官公庁・公的機関
+   - **NG ドメイン（⛔ NO-GO）**: itmedia.co.jp / zdnet.com・japan.zdnet.com / xtech.nikkei.com・nikkei.com / techcrunch.com / watch.impress.co.jp / ascii.jp / cnet.com・japan.cnet.com / gigazine.net / techable.jp / ledge.ai、およびリスト外でも「記者が取材・編集した記事」
+   - **判定不能**: ユーザーに確認を求める
+3. NO-GO の場合は該当リンクと、差し替え候補（発表元企業名での再検索方針）を提示する
+
+### レポート出力（Step 7 に続けて出力）
+
+```
+### 出典監査（Step 8）
+- 抽出した外部リンク数: X 件
+
+| URL | ドメイン | 判定 |
+|-----|---------|------|
+| https://... | example.com | ✅ 一次情報 |
+| https://... | itmedia.co.jp | ⛔ NG ドメイン |
+| https://... | unknown.jp | ❓ 要確認 |
+
+- NG リンクの差し替え方針: [発表元企業名と再検索クエリの提示]
+- 出典監査: [GO / ⛔ NO-GO]
+```
+
+NO-GO の場合、NG リンクを修正するまで発行手順に進まないこと。
+
+---
+
 ## 重要な制約
 - 自己判断で「些細な違い」と判定して見逃さないこと
 - 「Web標準ではこちらが望ましい」という一般論で順序を変えないこと
 - 順序ルールはSKILL.mdの「構造順序の不変ルール」が唯一の正本
 - 修正提案はするが、ユーザー承認なしに実行しないこと
+- 出典ポリシーの判定基準は SKILL.md の「出典ポリシー」セクションが正本
