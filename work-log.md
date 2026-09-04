@@ -2116,6 +2116,8 @@ Google AdSense 申請を視野に入れた際、SKILL.md Step 1 の「大手メ�
 - Vol.6 TOOL 02 — `ai-wave.jp`（AIメディア）→ `deepseek.com/en/news/v4-preview/`（DeepSeek 公式発表・2026年4月24日）に差し替え。公式未確認の「他社比1/7〜1/9」を削除し「競合他社と比べて大幅に低いAPI利用料」に書き直し。100万トークンコンテキスト・オープンソースは公式確認済み（2026年9月5日）
 - Vol.6 編集者コメント — NEWS 03差し替えに伴い、削除されたデータへの言及（「39%が前向き」「72%がテスト止まり」）を削除し、新しいNEWS 03（Saturn）との整合性を保つよう書き直し（2026年9月5日）
 - Vol.5 NEWS 02 — `note.com/integral_dev`（法人noteブログ）→ `microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/`（Microsoft 公式ブログ・2026年3月9日）に差し替え。Copilot Cowork = Claude Cowork技術統合・Frontierプログラム・マルチステップ自動実行は公式で全確認済み、要約変更なし（2026年9月5日）
+- Vol.4 NEWS 01 — `chusho-dx.bcnretail.com`（BCN Retail系メディア）→ `chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260310001.html`（中小企業庁 公式・2026年3月10日）に差し替え。3月30日申請受付開始・最大450万円・補助率1/2〜2/3・名称変更（旧IT導入補助金）は公式確認済み、要約変更なし（2026年9月5日）
+- Vol.4 NEWS 02 — `techcrunch.com`（NG ドメイン）→ `blog.adobe.com/en/publish/2026/04/15/introducing-firefly-ai-assistant-new-way-create-with-our-creative-agent`（Adobe 公式ブログ・2026年4月15日）に差し替え。Photoshop/Premiere/Lightroom/Illustrator横断・自然言語指示・4月27日パブリックベータは公式確認済み、要約変更なし（2026年9月5日）
 
 ---
 
