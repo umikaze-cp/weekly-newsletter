@@ -2091,6 +2091,7 @@ Google AdSense 申請を視野に入れた際、SKILL.md Step 1 の「大手メ�
 - Vol.18 NEWS 01 — `techtarget.itmedia.co.jp`（itmedia.co.jp NG ドメイン）→ `ipa.go.jp/digital/chousa/dx-trend/dx-trend-2026.html`（IPA公式報告書、官公庁・公的機関）に差し替え。91.6%・3.9%・1799社は IPA PDF で確認済み（2026年9月5日）
 - Vol.18 NEWS 02 — `archyworldys.com`（非公式ブログ）→ `openai.com/index/introducing-chatgpt-small-business-program/`（OpenAI公式）に差し替え。プログラム名を公式名称「ChatGPT for small businesses」に修正。公式未確認の価格「$25/ユーザー」と未確認の連携先「Google Drive・Microsoft Teams」を削除し、公式確認済みパートナー（Dropbox・Shopify・Slack・Atlassian）に書き直し（2026年9月5日）
 - Vol.18 NEWS 03 — `innovatopia.jp`（メディアサイト）→ `prtimes.jp/main/.../000001259.000009712.html`（大塚商会 PR TIMES）に差し替え。要約内容は全事実 PR Times で確認済み、変更なし（2026年9月5日）
+- Vol.17 — 全5リンクが一次情報（smrj.go.jp・softbank.jp公式・prtimes.jp・企業公式サイト×2）。修正不要（2026年9月5日）
 
 ---
 
