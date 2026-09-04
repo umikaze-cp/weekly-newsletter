@@ -2085,6 +2085,9 @@ Google AdSense 申請を視野に入れた際、SKILL.md Step 1 の「大手メ�
 - Vol.21 NEWS 03 — itmedia.co.jp（独自取材記事）の一次情報未発見のためニュース差し替え。「ちん里う本店」→「ブンカ電帳法AI-OCR事例（prtimes.jp）」に変更。イントロ・編集者コメントも整合性のため更新（2026年9月5日）
 - Vol.20 NEWS 03 — webtan.impress.co.jp（watch.impress.co.jp系 NG ドメイン）→ `prtimes.jp/main/.../000002673.000005889.html`（楽天グループ公式発表）に差し替え。「音声＋データ無制限プラン」の料金条件（一次情報未確認）を要約から削除し、確認済み事実（リサーチ機能・データ分析機能の追加、対象部門）に書き直し（2026年9月5日）
 - Vol.20 TOOL 02 — smallbiztrends.com（NG ドメイン）→ `blog.adobe.com`（Adobe公式ブログ）に差し替え。要約内容は公式ブログ確認済み事実と一致のため変更なし（2026年9月5日）
+- Vol.19 NEWS 01 — `jiji.com`（PR Times 中継）→ `prtimes.jp/main/.../000000008.000108242.html`（株式会社オプティアス公式発表、2026年7月28日）に差し替え。要約内容は PR Times 確認済み事実と一致のため変更なし（2026年9月5日）
+- Vol.19 NEWS 02 — `bizaidea.com`（プレスリリース集約サイト）→ `prtimes.jp/main/.../000005466.000000136.html`（GMO天秤AI株式会社公式発表、2026年7月31日）に差し替え。要約内容は PR Times 確認済み事実と一致のため変更なし（2026年9月5日）
+- Vol.19 TOOL 01 — `smallbiztrends.com`（NG ドメイン）→ `hubspot.com/company-news/meet-agent-hub-and-agent-builder`（HubSpot 公式発表、2026年7月23日）に差し替え。学区カレンダー事例（350時間削減）は公式ページで確認済み（2026年9月5日）
 
 ---
 
