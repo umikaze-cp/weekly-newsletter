@@ -2115,6 +2115,7 @@ Google AdSense 申請を視野に入れた際、SKILL.md Step 1 の「大手メ�
 - Vol.6 NEWS 03 — ニュース差し替え。「ITmedia×ノークリサーチ 2026年4月調査」として記載されていた内容が複数の問題を含むため（20.4%・39%はSMRJ調査の数値を誤帰属、ChatGPT 45.5%等の数値は一次情報未確認、ノークリサーチ実際の調査時期は2025年7〜8月）。新たに「Saturn正式リリース」（株式会社Leach、2026年4月24日、prtimes.jp）に差し替え。転記自動化（1日8時間→5分）・14サービス連携・18テンプレートは公式発表で確認済み（2026年9月5日）
 - Vol.6 TOOL 02 — `ai-wave.jp`（AIメディア）→ `deepseek.com/en/news/v4-preview/`（DeepSeek 公式発表・2026年4月24日）に差し替え。公式未確認の「他社比1/7〜1/9」を削除し「競合他社と比べて大幅に低いAPI利用料」に書き直し。100万トークンコンテキスト・オープンソースは公式確認済み（2026年9月5日）
 - Vol.6 編集者コメント — NEWS 03差し替えに伴い、削除されたデータへの言及（「39%が前向き」「72%がテスト止まり」）を削除し、新しいNEWS 03（Saturn）との整合性を保つよう書き直し（2026年9月5日）
+- Vol.5 NEWS 02 — `note.com/integral_dev`（法人noteブログ）→ `microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/`（Microsoft 公式ブログ・2026年3月9日）に差し替え。Copilot Cowork = Claude Cowork技術統合・Frontierプログラム・マルチステップ自動実行は公式で全確認済み、要約変更なし（2026年9月5日）
 
 ---
 
