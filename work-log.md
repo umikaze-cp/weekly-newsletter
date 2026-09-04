@@ -2101,6 +2101,7 @@ Google AdSense 申請を視野に入れた際、SKILL.md Step 1 の「大手メ�
 - Vol.14 NEWS 03 — `ai-native.jp/blog/`（AIメディアブログ）→ `tsr-net.co.jp/data/detail/1202766_1527.html`（東京商工リサーチ公式調査・2026年4月27日）に差し替え。大企業59.1%・中小企業32.3%（「30%前後」）は公式データで確認済み（2026年9月5日）
 - Vol.13 NEWS 01 — `it.impress.co.jp`（impress系メディア）の補助リンクを削除。一次情報（大塚商会公式プレスリリース otsuka-shokai.co.jp）は既存リンクとして保持（2026年9月5日）
 - Vol.13 NEWS 03 — `jiji.com?g=prt&k=000000029.000109775`（時事ドットコム PR中継）→ `prtimes.jp/main/html/rd/p/000000029.000109775.html`（セルプロモート株式会社公式発表・2026年6月16日）に差し替え。AI GYM公式サイトリンク（aigym.cellpromote.biz）は一次情報のため保持（2026年9月5日）
+- Vol.12 NEWS 02 — `jiji.com?g=prt&k=000000005.000125433`（時事ドットコム PR中継）→ `prtimes.jp/main/html/rd/p/000000005.000125433.html`（marutto株式会社公式発表・2026年6月11日）に差し替え。要約内容（伴走モデル・運用設計哲学）はPR Times確認済み事実と整合、変更なし（2026年9月5日）
 
 ---
 
