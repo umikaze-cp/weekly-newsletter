@@ -2095,6 +2095,7 @@ Google AdSense 申請を視野に入れた際、SKILL.md Step 1 の「大手メ�
 - Vol.16 NEWS 01 — `sbbit.jp`（ビジネス+ITメディア）→ `openai.com/index/gpt-5-6/`（OpenAI公式発表、2026年7月9日）に差し替え。Sol/Terra/Luna・ChatGPT Work・Microsoft 365 Copilot連携は一次情報で確認済み、要約変更なし（2026年9月5日）
 - Vol.16 NEWS 02 — 出典URL変更なし（claude.com/blog 公式）。要約内の未確認パーセンテージ「ビジネス業務（33%）」「コンテンツ制作（17%）」を削除し、公式ブログの記述「事業業務とコンテンツ制作が最大カテゴリで合わせて約半数」に書き直し（2026年9月5日）
 - Vol.16 NEWS 03 — `sankei.com/pressrelease/prtimes/`（産経ニュース中継）→ `prtimes.jp/main/html/rd/p/000000544.000010550.html`（ラクスル株式会社公式発表、2026年7月9日）に差し替え。要約内の別調査データ（PayPal調査「ECを実施する中小企業の約7割・87.1%が課題」）をラクスル調査と混入していたため削除。ラクスル調査確認済み数値（73.3%・31%・85.7%・4%）は保持（2026年9月5日）
+- Vol.15 — 全5リンクが一次情報（anthropic.com公式・visa.co.uk公式プレスリリース・prtimes.jp・zanderio.com公式・claude.ai）。修正不要（2026年9月5日）
 
 ---
 
