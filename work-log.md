@@ -2106,6 +2106,10 @@ Google AdSense 申請を視野に入れた際、SKILL.md Step 1 の「大手メ�
 - Vol.10 NEWS 02 — `ca.pcmag.com`（PCMag メディア）→ `blog.google/.../next-evolution-gemini-app/`（Google 公式発表・2026年5月19日）に差し替え。24時間動作・AI Ultra $100/月・US限定は公式確認済み。要約の「5月30日」は公式発表5月19日（Google I/O）と差異あり（幅広い展開時期の可能性）のため保留（2026年9月5日）
 - Vol.10 NEWS 03 — `aismiley.co.jp`（AI系メディア）→ `tdb.co.jp/report/economic/20260514-genai/`（帝国データバンク公式調査・2026年5月14日）に差し替え。要約数値（2万3千社・86.7%・中小企業32.4%）は公式確認済み、変更なし（2026年9月5日）
 - Vol.9 NEWS 03 — `jiji.com?g=prt&k=000000200.000019209`（時事ドットコム PR中継）→ `prtimes.jp/main/html/rd/p/000000200.000019209.html`（ZEALS公式発表・2026年5月21日）に差し替え。Omakase AI補助金認定・初年度50%オフはPR Times確認済み。「中小企業最大75%」はPR Times（通常枠50%・特定要件2/3）と不一致のため保留（2026年9月5日）
+- Vol.8 NEWS 01 — `aismiley.co.jp`（AI系メディア）→ `otsuka-shokai.co.jp/corporate/release/2026/260512.html`（大塚商会 公式プレスリリース・2026年5月12日）に差し替え。要約内容は公式確認済み事実と整合、変更なし（2026年9月5日）
+- Vol.8 NEWS 03 — `zept7.com/Information/2026/05/11/post-423/`（メディア・情報サイト）→ `prtimes.jp/main/html/rd/p/000000043.000153712.html`（Zept合同会社 公式発表・2026年4月27日）に差し替え。要約内の地名誤記「北海道・日高食品工業」→「日高食品工業（兵庫県姫路市）」に修正（2026年9月5日）
+- Vol.8 TOOL 01 — `news.3rd-in.co.jp`（サードニュース・AI生成サマリーサイト）→ `prtimes.jp/main/html/rd/p/000000005.000153132.html`（株式会社Metrics 公式発表・2026年5月11日）に差し替え（2026年9月5日）
+- Vol.8 TOOL 02 — `news.3rd-in.co.jp`（サードニュース・AI生成サマリーサイト）→ `prtimes.jp/main/html/rd/p/000000309.000073671.html`（ナレッジセンス 公式発表・2026年5月12日）に差し替え（2026年9月5日）
 
 ---
 
