@@ -2081,6 +2081,7 @@ Google AdSense 申請を視野に入れた際、SKILL.md Step 1 の「大手メ�
 ## PHASE 1-B 進行中：既存記事の出典差し替え（2026年9月5日〜）
 
 - Vol.23 NEWS 01 — `japan.zdnet.com` → `dell.com/ja-jp/blog/it-2026/`（デル公式発表）に差し替え完了。調査名を「中堅中小企業向けIT投資動向調査2026」に正式化（2026年9月5日）
+- Vol.22 NEWS 01〜03 — NG ドメイン3件（itmedia.co.jp・socialmediatoday.com・sankei.com中継）を一次情報（openai.com・facebook.com/business・prtimes.jp）に差し替え完了。要約も一次情報で確認できない記述を削除・独自解説構成に書き直し（2026年9月5日）
 
 ---
 
