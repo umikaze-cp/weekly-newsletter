@@ -2110,6 +2110,8 @@ Google AdSense 申請を視野に入れた際、SKILL.md Step 1 の「大手メ�
 - Vol.8 NEWS 03 — `zept7.com/Information/2026/05/11/post-423/`（メディア・情報サイト）→ `prtimes.jp/main/html/rd/p/000000043.000153712.html`（Zept合同会社 公式発表・2026年4月27日）に差し替え。要約内の地名誤記「北海道・日高食品工業」→「日高食品工業（兵庫県姫路市）」に修正（2026年9月5日）
 - Vol.8 TOOL 01 — `news.3rd-in.co.jp`（サードニュース・AI生成サマリーサイト）→ `prtimes.jp/main/html/rd/p/000000005.000153132.html`（株式会社Metrics 公式発表・2026年5月11日）に差し替え（2026年9月5日）
 - Vol.8 TOOL 02 — `news.3rd-in.co.jp`（サードニュース・AI生成サマリーサイト）→ `prtimes.jp/main/html/rd/p/000000309.000073671.html`（ナレッジセンス 公式発表・2026年5月12日）に差し替え（2026年9月5日）
+- Vol.7 NEWS 01 — `ai-mikata.com`（メディアサイト）→ `smrj.go.jp/research_case/questionnaire/`（中小機構「中小企業のAI等利活用に係る実態調査」2026年3月 公式ページ）に差し替え。20.4%・18.6%・39.0%はPDF原本で確認済み（2026年9月5日）
+- Vol.7 NEWS 03 — `sbbit.jp`（ビジネス+IT・NG ドメイン）→ `openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/`（OpenAI 公式発表・2026年5月7日）に差し替え。GPT-5クラス・70言語・$0.034/分は公式確認済み。見出し「1分3.4円」($0.034を円表記と誤認)→「1分約5円」（$0.034×¥150 ≈ ¥5）に修正（2026年9月5日）
 
 ---
 
