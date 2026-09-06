@@ -188,7 +188,7 @@ open outputs/volX/index.html
 
 ## Step 5：Git commit & push（所要時間：3分）
 
-**使用：Sourcetree**（琉誠さんの通常ワークフロー：VSCode → Sourcetree → GitHub）
+**使用：Sourcetree**（運営者の通常ワークフロー：VSCode → Sourcetree → GitHub）
 
 ### 4-1. Sourcetreeを開く
 

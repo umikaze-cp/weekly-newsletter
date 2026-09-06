@@ -1,7 +1,7 @@
 # 📋 AI×DX Weekly ニュースレタースキル — 作業ログ
 
 **作成日**: 2026年4月3日  
-**作成者**: 大井琉誠 × Claude Opus 4.6
+**作成者**: 倉田　律 × Claude Opus 4.6
 
 ---
 
@@ -2351,6 +2351,71 @@ NEWS 3件のうち最低1件は統計・調査型／制度・政策型を目標�
 - 監査プロンプト側は GO/NO-GO の判定基準を増やさず「参考情報」として追加した。出典ポリシー
   （適格性）は発行を止める理由になるが、多様性は発行を止める理由にしない、という線引きを
   Step 8 の記述で明確にした
+
+---
+
+## Phase 38: 運営名義の統一とサイト配信設定の修正（2026年9月6日）
+
+### 課題の整理
+
+サイトを筆名「倉田　律（くらた りつ / Kurata Ritsu）」名義で運営する方針への変更にあたり、
+リポジトリ内に旧表記（実名・在籍先）が残存していることと、GitHub Pages が Markdown ファイル
+（`work-log.md` 等）をそのまま公開してしまい運営ドキュメントが閲覧可能な状態にあることの
+2点を是正した。あわせて、独自ドメイン移行後も `manifest.json` の `start_url` が旧 GitHub
+Pages パス（`/weekly-newsletter/`）のままだった不整合も修正した。
+
+### 修正内容
+
+**① 運営名義の統一**
+
+全文検索で該当箇所を洗い出し、作成者・運営者表記を筆名「倉田　律」に統一した。
+
+| ファイル | 修正内容 |
+|---------|---------|
+| `README.md`（作成者セクション） | 筆名「倉田　律（くらた りつ / Kurata Ritsu）」のみの表記に統一（旧表記・所属先の記載は削除） |
+| `work-log.md`（冒頭・作成者行） | 筆名「倉田　律」に統一 |
+| `weekly-newsletter-workflow.md`（Step 5） | 個人名表現を「運営者の通常ワークフロー」に統一 |
+
+`SKILL.md` / `CLAUDE.md` / `audit-final-report.md` / `weekly-newsletter.skill` /
+`manifest.json` / `.cspell.json` / `docs/` / `evals/` / `outputs/` 配下の全HTML /
+`index.html`（meta authorタグ含む）は横断チェックの結果、該当なし（元々個人名の記載なし）。
+
+**② Markdownファイルの配信除外**
+
+`_config.yml` を新規作成し、GitHub Pages のビルド対象から運営用ドキュメント
+（`README.md`／`work-log.md`／`SKILL.md`／`CLAUDE.md`／`audit-final-report.md`／
+`weekly-newsletter-workflow.md`／`weekly-newsletter.skill`／`.cspell.json`／`docs/`／
+`evals/`）を除外した。`index.html`・`outputs/`・`images/`・`manifest.json`・`CNAME` は
+配信対象として維持。
+
+**③ manifest.json の start_url 修正**
+
+独自ドメイン移行後の構成に合わせ、`start_url` を `/weekly-newsletter/` から `/` に修正。
+`name`／`short_name`／`display`／`theme_color`／`icons` は変更なし。
+
+### 対象ファイル
+
+| ファイル | 変更種別 |
+|---------|---------|
+| `README.md` | 作成者セクションを筆名に統一 |
+| `work-log.md` | 冒頭の作成者行を筆名に統一・本Phase記録を追加 |
+| `weekly-newsletter-workflow.md` | Step 5 の個人名表現を「運営者」に変更 |
+| `.cspell.json` | 筆名のローマ字表記（Kurata／Ritsu）をスペルチェック辞書に追加 |
+| `_config.yml` | 新規作成。運営用Markdown等をGitHub Pages配信から除外 |
+| `manifest.json` | `start_url` を `/` に修正 |
+
+記事本文（要約・出典）および `outputs/` 配下の号ごとの内容は変更していない。
+
+### 🎓 今回の学び
+
+**タグ**: [運営名義][GitHub Pages][_config.yml][manifest.json][Phase38]
+
+**学んだこと**:
+- GitHub Pages はデフォルトで Jekyll ビルドが走り、拡張子を問わずリポジトリ内の全ファイルを
+  そのまま公開してしまう。運営用ドキュメント（work-log等）を非公開にするには `_config.yml`
+  の `exclude` で明示的に除外する必要があり、`.gitignore` とは別の仕組みである点に注意
+- PWAの `start_url` はホスティングパスの変更（GitHub Pages配下 → 独自ドメインルート）に
+  追従させる必要がある。放置するとホーム画面追加時の起動URLが404になる
 
 ---
 

@@ -30,7 +30,9 @@
     "macOS",
     "HVAC",
     "Realtime",
-    "volX"
+    "volX",
+    "Kurata",
+    "Ritsu"
   ],
   "ignorePaths": [
     "node_modules/**",
