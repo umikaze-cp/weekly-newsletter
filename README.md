@@ -15,6 +15,7 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
+- [Vol.24 — デジタル化・AI導入補助金2026、次回締切9/29に接近 / 「FanVoice AI開拓部」が新規開拓営業を自動化 / エクスペリサス、Claude Code全社導入で非エンジニア職の53%が日常活用](outputs/vol24/)（2026年9月7日号）
 - [Vol.23 — 中小企業の68.1%が生成AIに100万円超を投資予定、AIが標準化へ / GoogleがGeminiに20以上のアプリ連携を発表、業務AIが「実行者」へ / バックオフィスのAI活用、現場の本音は「安定稼働」と「法改正対応」最優先](outputs/vol23/)（2026年8月31日号）
 - [Vol.22 — OpenAI Partner Network、日本で大幅拡充 / MetaがSMB向けAIアシスタントを強化、広告データとGoogle Workspaceを一元分析 / 中小企業経営者の約9割がAIエージェントに関心、導入の壁は「経営陣の思考の言語化」](outputs/vol22/)（2026年8月24日号）
 - [Vol.21 — Amazon Quick、Microsoft 365アプリへ統合 / Google「Sheets Canvas」でスプレッドシートがミニアプリに / 創業155年の老舗漬物店がClaude活用で梅干し職人向けUIを自社開発](outputs/vol21/)（2026年8月17日号）
@@ -110,8 +111,10 @@ weekly-newsletter/
     │   └── index.html                 ← Vol.21
     ├── vol22/
     │   └── index.html                 ← Vol.22
-    └── vol23/
-        └── index.html                 ← Vol.23
+    ├── vol23/
+    │   └── index.html                 ← Vol.23
+    └── vol24/
+        └── index.html                 ← Vol.24
 ```
 
 ## 📱 レスポンシブ対応
@@ -194,6 +197,7 @@ Step 7  作業記録の更新（拡張機能版）
 | Vol.21 | 2026/08/17 | Amazon Quick、Microsoft 365アプリへ統合 / Google「Sheets Canvas」でスプレッドシートがミニアプリに / 創業155年の老舗漬物店がClaude活用で梅干し職人向けUIを自社開発 |
 | Vol.22 | 2026/08/24 | OpenAI Partner Network、日本で大幅拡充 / MetaがSMB向けAIアシスタントを強化、広告データとGoogle Workspaceを一元分析 / 中小企業経営者の約9割がAIエージェントに関心、導入の壁は「経営陣の思考の言語化」 |
 | Vol.23 | 2026/08/31 | 中小企業の68.1%が生成AIに100万円超を投資予定、AIが標準化へ / GoogleがGeminiに20以上のアプリ連携を発表、業務AIが「実行者」へ / バックオフィスのAI活用、現場の本音は「安定稼働」と「法改正対応」最優先 |
+| Vol.24 | 2026/09/07 | デジタル化・AI導入補助金2026、次回締切9/29に接近 / 「FanVoice AI開拓部」が新規開拓営業を自動化 / エクスペリサス、Claude Code全社導入で非エンジニア職の53%が日常活用 |
 
 ## 📝 作成者
 
