@@ -1,0 +1,11 @@
+exclude:
+  - README.md
+  - work-log.md
+  - SKILL.md
+  - CLAUDE.md
+  - audit-final-report.md
+  - weekly-newsletter-workflow.md
+  - weekly-newsletter.skill
+  - .cspell.json
+  - docs/
+  - evals/
