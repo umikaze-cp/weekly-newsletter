@@ -16,3 +16,7 @@ node_modules/
 
 # Claudeスキルパッケージ
 *.skill
+
+# Claude Code ローカル設定（settings.json のみ追跡対象として残す）
+.claude/*
+!.claude/settings.json

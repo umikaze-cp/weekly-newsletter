@@ -9,6 +9,7 @@
 | ファイル | 役割 |
 |---------|------|
 | **SKILL.md** | 仕様の正本（Single Source of Truth）。構造・デザイン・出典ポリシー |
+| README.md | プロジェクト概要・環境情報の正本 |
 | weekly-newsletter-workflow.md | 人間向けの週次作業手順書。仕様は書かない |
 | work-log.md | 作業履歴 |
 
@@ -62,7 +63,7 @@ SKILL.md の品質チェックリストは、**Step 6（出力）の直前**に�
   - **このファイルだけで仕様判断が完結する設計**
 
 ### 【参考情報(必要に応じて参照)】
-- **README.md**: プロジェクト概要
+- **README.md**: プロジェクト概要・環境情報の正本（開発環境・技術スタック等はここを参照）
 - **work-log.md**: 開発履歴・学習記録
   - 主に人間向けの記録で、Claude Code は主要参照しない
   - 過去Phaseのフォーマット確認時のみ参照可
@@ -73,6 +74,4 @@ SKILL.md の品質チェックリストは、**Step 6（出力）の直前**に�
 
 ## 💻 開発環境
 
-- macOS Ventura 13.7.8（MacBook Pro 2017 Intel）
-- Claude Code v2.1.114 + Exa MCP Server
-- Git管理（Sourcetree）
+詳細は [README.md](README.md) の「開発環境」「技術スタック」を参照。
