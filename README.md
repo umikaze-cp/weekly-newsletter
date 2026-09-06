@@ -47,11 +47,14 @@ weekly-newsletter/
 ├── README.md                          ← このファイル
 ├── CLAUDE.md                          ← Claude Code司令塔
 ├── SKILL.md                           ← Claudeスキル本体
-├── weekly-newsletter.skill            ← スキル登録カード
 ├── weekly-newsletter-workflow.md      ← 毎週月曜日の作業プロセス
 ├── index.html                         ← Weeklyライブラリページ
 ├── manifest.json                      ← PWA設定
 ├── work-log.md                        ← 作業ログ・学習メモ
+├── audit-final-report.md              ← 全号出典監査の最終レポート（Phase35）
+├── CNAME                              ← 独自ドメイン設定（www.aidx-weekly.com）
+├── _config.yml                        ← GitHub Pages配信設定（運営用Markdown等を除外）
+├── .cspell.json                       ← スペルチェック辞書設定
 ├── .gitignore
 ├── images/
 │   ├── apple-touch-icon.png
@@ -59,7 +62,7 @@ weekly-newsletter/
 ├── evals/
 │   └── evals.json                     ← テストケース定義
 ├── docs/
-│   └── pre-publish-audit-prompt.md    ← 発行前構造監査プロンプト（Step 1〜7）
+│   └── pre-publish-audit-prompt.md    ← 発行前構造監査プロンプト（Step 1〜8）
 └── outputs/                           ← 生成したニュースレター
     ├── vol1/
     │   └── index.html                 ← Vol.1 創刊号
@@ -93,8 +96,22 @@ weekly-newsletter/
     │   └── index.html                 ← Vol.14
     ├── vol15/
     │   └── index.html                 ← Vol.15
-    └── vol16/
-        └── index.html                 ← Vol.16
+    ├── vol16/
+    │   └── index.html                 ← Vol.16
+    ├── vol17/
+    │   └── index.html                 ← Vol.17
+    ├── vol18/
+    │   └── index.html                 ← Vol.18
+    ├── vol19/
+    │   └── index.html                 ← Vol.19
+    ├── vol20/
+    │   └── index.html                 ← Vol.20
+    ├── vol21/
+    │   └── index.html                 ← Vol.21
+    ├── vol22/
+    │   └── index.html                 ← Vol.22
+    └── vol23/
+        └── index.html                 ← Vol.23
 ```
 
 ## 📱 レスポンシブ対応
@@ -110,7 +127,7 @@ weekly-newsletter/
 - **HTML**: テーブルレイアウト（メールクライアント互換）
 - **CSS**: メディアクエリによるレスポンシブ対応
 - **ホスティング**: GitHub Pages
-- **コンテンツ生成**: Claude Sonnet 4.6（Claude Code CLI v2.1.114）
+- **コンテンツ生成**: Claude Sonnet 5（Claude Code CLI v2.1.261）
 - **Web検索**: Exa MCP Server（セマンティック検索 + 記事本文取得）
 - **バージョン管理**: Git（Sourcetree）
 
@@ -123,7 +140,7 @@ weekly-newsletter/
 | エディタ | Visual Studio Code |
 | Node.js | v24.15.0（LTS） |
 | npm | v11.12.1 |
-| Claude Code | v2.1.114（CLI版） |
+| Claude Code | v2.1.261（CLI版） |
 | MCP | Exa MCP Server（exa-mcp-server via npx） |
 | Git GUI | Sourcetree |
 
@@ -140,11 +157,13 @@ Step 2  生成物の確認・修正（拡張機能版）
   ↓
 Step 3  ブラウザプレビュー（手動）
   ↓
-Step 4  Git commit & push（Sourcetree）
+Step 4  発行前構造監査（ターミナル版）
   ↓
-Step 5  GitHub Pages 公開確認（手動）
+Step 5  Git commit & push（Sourcetree）
   ↓
-Step 6  作業記録の更新（拡張機能版）
+Step 6  GitHub Pages 公開確認（手動）
+  ↓
+Step 7  作業記録の更新（拡張機能版）
 ```
 
 ## 📊 発行履歴
@@ -174,6 +193,7 @@ Step 6  作業記録の更新（拡張機能版）
 | Vol.20 | 2026/08/10 | JAPAN AI×大塚商会が資本業務提携でSMBへのAI導入を全国展開 / 弥生「記帳代行AI」β版——領収書100枚を数分で処理 / 楽天「Rakuten AI for Business」がClaude活用でリサーチ・データ分析機能を追加 |
 | Vol.21 | 2026/08/17 | Amazon Quick、Microsoft 365アプリへ統合 / Google「Sheets Canvas」でスプレッドシートがミニアプリに / 創業155年の老舗漬物店がClaude活用で梅干し職人向けUIを自社開発 |
 | Vol.22 | 2026/08/24 | OpenAI Partner Network、日本で大幅拡充 / MetaがSMB向けAIアシスタントを強化、広告データとGoogle Workspaceを一元分析 / 中小企業経営者の約9割がAIエージェントに関心、導入の壁は「経営陣の思考の言語化」 |
+| Vol.23 | 2026/08/31 | 中小企業の68.1%が生成AIに100万円超を投資予定、AIが標準化へ / GoogleがGeminiに20以上のアプリ連携を発表、業務AIが「実行者」へ / バックオフィスのAI活用、現場の本音は「安定稼働」と「法改正対応」最優先 |
 
 ## 📝 作成者
 
