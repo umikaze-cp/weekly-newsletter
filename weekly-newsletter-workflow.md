@@ -13,7 +13,7 @@ Step 1  ニュースレター生成を指示（ターミナル版）
   ↓
   ┌──── Claude Codeが自動実行 ────┐
   │  Exa検索 → コンテンツ構成      │
-  │  → HTML生成 → 戻るボタン追加   │
+  │  → HTML生成                    │
   │  → Weeklyライブラリ更新        │
   └──────────────────────────────┘
   ↓
@@ -75,7 +75,6 @@ Claude Codeに以下のように指示する。
 | トピック収集 | Exa MCPでWeb検索を実行 |
 | コンテンツ構成 | ニュースTOP3、ツール2件、用語1件、コラムを構成 |
 | HTML生成 | テーブルレイアウト + レスポンシブ対応のHTML |
-| 戻るボタン追加 | `</body>` 直前にナビゲーションボタン |
 | Weeklyライブラリ更新 | ルートの `index.html` に新号エントリを追加 |
 | ファイル出力 | `outputs/volX/index.html` に保存 |
 
@@ -118,6 +117,7 @@ VSCodeのエクスプローラーで `outputs/volX/index.html` を開く。
 - 編集者コラムがあるか
 - 英語キーワードが各所に併記されているか
 - レスポンシブ用class（content-cell, card-cell, section-heading, body-text, source-link）が付与されているか
+- 運営者名が筆名（倉田　律）になっているか
 
 ### 修正が必要な場合
 
@@ -157,7 +157,7 @@ open outputs/volX/index.html
 
 - PC表示（通常幅）でレイアウトが崩れていないか
 - ブラウザのデベロッパーツール（F12）でスマホ表示を確認
-- 戻るボタンが右下に表示され、`index.html` に遷移するか
+- 末尾の「📚 Weeklyライブラリへ」リンク（library-link）から `index.html` に戻れるか
 - リンクが正しく開くか
 
 ---
@@ -219,7 +219,7 @@ Vol.X ニュースレター追加（YYYY年MM月DD日号）
 
 ### 4-5. プッシュ
 
-「プッシュ」ボタンで `origin/main` にプッシュ。
+「プッシュ」ボタンで `origin/master` にプッシュ。
 
 ---
 
@@ -227,15 +227,15 @@ Vol.X ニュースレター追加（YYYY年MM月DD日号）
 
 **使用：手動操作**
 
-push後、1〜2分待ってからGitHub PagesのURLにアクセスして確認する。
+push後、1〜2分待ってからGitHub PagesのURL（独自ドメイン）にアクセスして確認する。
 
 ```
-https://（ユーザー名）.github.io/weekly-newsletter/
+https://www.aidx-weekly.com/
 ```
 
 - Weeklyライブラリに新号が表示されているか
 - 新号をクリックして正しく表示されるか
-- 戻るボタンでWeeklyライブラリに戻れるか
+- 記事末尾の「📚 Weeklyライブラリへ」リンクでWeeklyライブラリに戻れるか
 
 ---
 

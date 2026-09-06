@@ -4,6 +4,18 @@
 中小企業のDX担当者向け、週刊AI×DXニュースレター（HTML）。
 毎週月曜日に Claude Code + Exa MCP で生成、GitHub Pagesで公開、メール配信兼用。
 
+## 📂 ファイルの役割と優先順位
+
+| ファイル | 役割 |
+|---------|------|
+| **SKILL.md** | 仕様の正本（Single Source of Truth）。構造・デザイン・出典ポリシー |
+| weekly-newsletter-workflow.md | 人間向けの週次作業手順書。仕様は書かない |
+| work-log.md | 作業履歴 |
+
+- 仕様の記述が矛盾した場合は常に **SKILL.md が優先**
+- SKILL.md と同名（`name: weekly-newsletter`）のスキル定義パッケージ（`.skill`ファイル等）を
+  他の場所・別ファイルに置かないこと（過去に同名衝突で古い仕様が誤読込された事故あり）
+
 ## 🎯 最重要ルール
 
 ニュースレター生成を依頼されたら、**まず SKILL.md を読み込み、
