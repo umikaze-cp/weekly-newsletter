@@ -2,7 +2,7 @@
   "name": "AI×DX Weekly",
   "short_name": "AI×DX Weekly",
   "description": "中小企業のDX推進を応援するニュースレター",
-  "start_url": "/weekly-newsletter/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#f5f5f5",
   "theme_color": "#1e3a5f",
