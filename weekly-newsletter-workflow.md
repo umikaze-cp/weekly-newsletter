@@ -108,7 +108,8 @@ VSCodeのエクスプローラーで `outputs/volX/index.html` を開く。
 ### 確認ポイント（SKILL.md 品質チェックリスト準拠）
 
 - ニュースは3件あるか
-- 各ニュースに出典リンクがあるか（リンク切れがないか）
+- 各ニュースに出典リンクがあるか
+  （リンク切れの自動チェックは Step 4 の監査 Step 8-10 で実施）
 - **出典リンクがすべて一次情報か（メディア記事ドメインが混ざっていないか）**
   - NG 例: itmedia.co.jp / nikkei.com / techcrunch.com 等のニュースメディア
   - OK 例: prtimes.jp / 企業公式サイト / go.jp 等
@@ -116,6 +117,7 @@ VSCodeのエクスプローラーで `outputs/volX/index.html` を開く。
 - 用語解説が1つあるか
 - 編集者コラムがあるか
 - 英語キーワードが各所に併記されているか
+- 英語ページへの出典リンクに「（英語）」が付記されているか（SKILL.md「英語ページへのリンク表記ルール」参照）
 - レスポンシブ用class（content-cell, card-cell, section-heading, body-text, source-link）が付与されているか
 - 運営者名が筆名（倉田　律）になっているか
 
