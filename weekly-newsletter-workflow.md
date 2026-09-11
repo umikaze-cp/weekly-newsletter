@@ -116,6 +116,7 @@ VSCodeのエクスプローラーで `outputs/volX/index.html` を開く。
 - 用語解説が1つあるか
 - 編集者コラムがあるか
 - 英語キーワードが各所に併記されているか
+- 英語ページへの出典リンクに「（英語）」が付記されているか（SKILL.md「英語ページへのリンク表記ルール」参照）
 - レスポンシブ用class（content-cell, card-cell, section-heading, body-text, source-link）が付与されているか
 - 運営者名が筆名（倉田　律）になっているか
 
