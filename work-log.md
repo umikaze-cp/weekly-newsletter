@@ -2747,6 +2747,97 @@ SKILL.mdの「出典ポリシー」直後に「英語ページへのリンク表
 
 ---
 
+## Phase 43: PHASE 2 Task 4 — sitemap.xml・robots.txtの設置（2026年9月12日）
+
+### 課題の整理
+
+Google Search Console登録・AdSense申請に向けて、検索エンジンのクロール制御に必要な
+`sitemap.xml`と`robots.txt`が未設置だった。設置前にURL形式や既存のビルド設定との
+整合性確認が必要だった。
+
+| # | 課題 | 状態 |
+|---|------|------|
+| ① | outputs配下のURL形式が未確認（`/outputs/volN/`か`/outputs/volN/index.html`か） | ✅ 事前調査で`/outputs/volN/`形式（末尾スラッシュ）と確認 |
+| ② | outputs配下の実ディレクトリ数・構成が未確認 | ✅ vol1〜vol24＋vol1-specialの25ディレクトリ、全てにindex.html存在を確認 |
+| ③ | `_config.yml`のexclude設定やJekyllプラグインがsitemap.xml/robots.txtに影響しないか未確認 | ✅ exclude対象は.md等のみでxml/txtは対象外。Gemfile不在でjekyll-sitemap等のプラグインも未使用のため衝突リスクなし |
+| ④ | vol5・vol6の`.DS_Store`がGit追跡下にありmacOSのフォルダ情報が公開リポジトリに露出していないか懸念 | ✅ `.gitignore`に`.DS_Store`登録済み、`git ls-files`で追跡ゼロを確認。対応不要 |
+| ⑤ | 各号・各固定ページのlastmod日付の根拠が必要 | ✅ 各号index.html本文の発行日、about/privacy/contactはgit log新規作成日（2026-09-11）＋privacy.html本文の「制定日」記載から確定 |
+
+### 修正内容
+
+**① URL構造・ディレクトリの事前調査**
+
+ルート`index.html`内の`outputs/`へのリンクを確認し、`outputs/volN/`形式（ディレクトリ形式）
+であることを確認。`ls`で実ディレクトリを列挙し、vol1〜vol24の24件に加えてvol1-specialが
+存在すること、全25ディレクトリに`index.html`が存在することを確認した。
+
+**② `_config.yml`とビルド設定の確認**
+
+`exclude:`リストは`.md`ファイルや`docs/`等のディレクトリのみを対象としており、
+`.xml`・`.txt`拡張子への言及は無いため、`sitemap.xml`・`robots.txt`は加工されずに
+そのまま配信される。`Gemfile`・`Gemfile.lock`が存在せず`jekyll-sitemap`等の自動生成
+プラグインも未導入のため、手動作成したsitemap.xmlが上書きされる懸念もない。
+
+**③ sitemap.xmlの作成（29件）**
+
+ルート直下に`sitemap.xml`を新規作成。ルートindex.html・about.html・privacy.html・
+contact.html・outputs配下25件（vol1〜vol24、vol1-special）の計29件のURLを、sitemaps.org
+0.9形式で記載。`changefreq`・`priority`は記載方針とし、`lastmod`のみ以下の基準で設定した。
+
+- ルートindex.html: 最新号vol24の発行日（2026-09-07）
+- about.html/privacy.html/contact.html: 作成日（2026-09-11、git log新規作成コミット日と
+  privacy.html本文「制定日：2026年9月11日」の記載で裏取り）
+- 各号: 各index.html本文に記載された発行日（vol1・vol1-specialの2026-04-03〜vol24の
+  2026-09-07）。Task 3の一括更新コミット日は使用していない
+
+**④ robots.txtの作成**
+
+ルート直下に`robots.txt`を新規作成。全クローラーに全ページを許可し、sitemap.xmlの
+場所を絶対URLで明記した。Markdownファイルは`_config.yml`の`exclude`で既にサイト配信
+から除外されているため、robots.txtでの`Disallow`の重複記載は行っていない。
+
+**⑤ CLAUDE.mdへの追記**
+
+「🔧 Git 運用ルール」セクションに、コミットメッセージ案に`Claude-Session:`行を
+含めない旨のルールを追記した（claude.aiの内部URLが公開リポジトリの履歴に残ることを防ぐため）。
+
+**⑥ 検証**
+
+- sitemap.xml内の`<loc>`件数が29件であることを`grep -c`で確認
+- xmllintでXMLとして整形式であることを確認
+- 全URLが`https://www.aidx-weekly.com/`始まりであり、`github.io`の混入が無いことを確認
+- 29件全URLについてローカルファイルパスとの突き合わせを行い、対応ファイルが
+  全て実在することをPythonスクリプトで確認
+- `git status`・`git diff --stat`で変更範囲が想定通り（CLAUDE.md更新2行＋新規2ファイル）
+  であることを確認。add/commitは実行していない
+
+### 対象ファイル
+
+| ファイル | 変更種別 |
+|---------|---------|
+| `sitemap.xml` | 新規作成 — 29件のURLを収録 |
+| `robots.txt` | 新規作成 — 全許可＋sitemap所在地明記 |
+| `CLAUDE.md` | 更新 — Git運用ルールに`Claude-Session`行の除外ルールを追記 |
+| `work-log.md` | 本Phase記録を追加 |
+
+### 🎓 今回の学び
+
+**タグ**: [AdSense対応][sitemap][robots.txt][GitHub Pages][Jekyll設定確認][Phase43]
+
+**学んだこと**:
+- sitemap.xml/robots.txtの設置前に`_config.yml`のexclude設定とプラグイン有無
+  （Gemfile確認）を先にチェックしたことで、「せっかく作ったsitemapがビルド時に
+  上書き・除外される」という事故を未然に防げた
+- lastmodは「ファイルを最後にいじった日（コミット日）」ではなく「内容が実質的に
+  更新された日（発行日・制定日）」を使うべきという指示は、Task 3のような一括機械的
+  更新（英語付記など）がコミット履歴に残る場合に特に重要。git logだけを機械的に
+  信用すると誤ったlastmodを付けてしまう
+- `.gitignore`が正しく機能していても、ローカルにOS生成ファイル（.DS_Store）が
+  残っていると「公開リポジトリへの露出」という誤検知的な懸念が発生しうる。
+  `git ls-files`での実際の追跡状況確認が、懸念を素早く解消する最短経路だった
+
+---
+
 ## 💡 学んだこと・メモ
 
 - **メディアクエリ**: 画面サイズに応じてCSSを切り替える仕組み。タブレット用を追加するとテスト工数が増えるトレードオフがある
