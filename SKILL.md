@@ -227,11 +227,20 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
           </tr>
 
           <!-- フッター -->
-          <!-- ルール: 2行構成で固定。Vol番号・日付・注意書きは含めない -->
+          <!-- ルール: 3行構成（タグライン／フッターナビ／著作権）で固定。Vol番号・日付・注意書きは含めない -->
           <!-- bgcolor属性はOutlook等グラデーション非対応メーラー向けフォールバック -->
           <tr>
             <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
               <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0 0 10px;">
+                <a href="../../index.html" style="color:#ffffff; text-decoration:underline;">バックナンバー一覧</a>
+                <span style="opacity:0.5;"> ｜ </span>
+                <a href="../../about.html" style="color:#ffffff; text-decoration:underline;">運営者情報</a>
+                <span style="opacity:0.5;"> ｜ </span>
+                <a href="../../privacy.html" style="color:#ffffff; text-decoration:underline;">プライバシーポリシー</a>
+                <span style="opacity:0.5;"> ｜ </span>
+                <a href="../../contact.html" style="color:#ffffff; text-decoration:underline;">お問い合わせ</a>
+              </p>
               <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
             </td>
           </tr>
@@ -897,3 +906,11 @@ HTMLを出力する前に、以下を確認する：
   3. `background:linear-gradient(135deg,#1e3a5f,#2563eb)` インラインスタイル（対応ブラウザ用グラデーション）
 - 今後新規作成するVol号も同じフッター仕様を踏襲する
 - padding/text-align/color/font-size 等の他プロパティはVol号ごとの値を維持する
+- フッターは3行構成とする（タグライン／フッターナビ／著作権表記）
+- フッターナビは4リンク固定: バックナンバー一覧 / 運営者情報 / プライバシーポリシー / お問い合わせ
+- リンク先パスは outputs配下からは ../../ の2階層上、ルート直下は同階層
+- リンク色は color:#ffffff + text-decoration:underline をインラインで明示する
+  （紺グラデーション背景のため本文の #2563eb は使用しない）
+- ナビの<p>には font-size を指定しない（親<td>からの継承により Vol号ごとの 12px/13px 差を維持するため）
+- 区切り文字は全角の「｜」
+- このナビは Google AdSense の要件（全ページからの必須ページ到達）に基づくため、削除・省略しないこと
