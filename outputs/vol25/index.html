@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+  <title>AI×DX Weekly - Vol.25（2026年9月14日号）</title>
+  <style>
+    /* ======================
+       タブレット対応（681px〜840px）
+       iPad縦向き768px をカバー
+       ====================== */
+    @media only screen and (min-width: 681px) and (max-width: 840px) {
+      .email-container { width: 94% !important; max-width: 800px !important; }
+      .content-cell { padding-left: 28px !important; padding-right: 28px !important; }
+      .card-cell { padding: 18px 20px !important; }
+      .body-text { font-size: 15px !important; line-height: 1.8 !important; }
+      .header-title { font-size: 28px !important; }
+      .section-heading { font-size: 21px !important; }
+    }
+
+    /* ======================
+       スマートフォン対応（680px以下）
+       iPhone / Android をカバー
+       ====================== */
+    @media only screen and (max-width: 680px) {
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .header-title { font-size: 22px !important; }
+      .content-cell { padding-left: 16px !important; padding-right: 16px !important; }
+      .card-cell { padding: 14px 14px !important; }
+      .section-heading { font-size: 18px !important; }
+      .body-text { font-size: 14px !important; line-height: 1.8 !important; }
+      .source-link { display: inline-block !important; padding: 4px 0 !important; }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family:system-ui,-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <!--[if mso]><table role="presentation" width="800" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" class="email-container" width="800" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:8px; overflow:hidden; max-width:800px; width:100%;">
+
+          <!-- ヘッダー -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:30px; text-align:center; color:#ffffff;">
+              <div style="display:inline-flex; align-items:center; gap:8px;">
+                <img src="../../images/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:6px; width:32px; height:32px;">
+                <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px;">AI×DX Weekly</h1>
+              </div>
+              <p style="margin:8px 0 0; font-size:14px; opacity:0.9;">Vol.25 ｜ 2026年9月14日号</p>
+              <p style="margin:12px 0 0; font-size:13px; opacity:0.75;">AIエージェント、「任せる」が始まった。</p>
+            </td>
+          </tr>
+
+          <!-- イントロ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                今週は、AIが「答える」だけでなく「実行する」段階に入ったことを印象づける発表が相次いだ一週間だった。大塚商会は基幹システムと直結するAIエージェントの提供を始め、クラウドワークスは企業のAI化を丸ごと請け負う新プランで工数84%削減の実績を示した。日本商工会議所の調査では、生成AIを活用する中小企業が54.4%まで伸びている。普及のスピードと、社内の受け入れ態勢づくり——両方を押さえておきたい一週間の動きをまとめた。
+              </p>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- ★ 配置順序の厳守ルール ★                      -->
+          <!-- 1. 📰 今週のニュース TOP3                    -->
+          <!-- 2. 🛠️ 今週のおすすめツール                   -->
+          <!-- 3. 📖 用語解説                              -->
+          <!-- 4. 💬 編集者コメント                        -->
+          <!-- 5. 📚 Weeklyライブラリへリンク（フッター直前）-->
+          <!-- 6. フッター                                  -->
+          <!-- ============================================ -->
+
+          <!-- ============================================ -->
+          <!-- 📰 今週のAI×DXニュース TOP3                 -->
+          <!-- ============================================ -->
+
+          <!-- Section 1 見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px; margin:0;">📰 今週のAI×DXニュース TOP3</h2>
+            </td>
+          </tr>
+
+          <!-- NEWS 01: 薄青（公的・信頼度高） -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0f6ff; border:1px solid #bfdbfe; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 01</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">中小企業の生成AI活用が54.4%に急伸、日本商工会議所調査</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Generative AI Adoption Survey / Japan Chamber of Commerce</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      日本商工会議所は、全国321商工会議所の会員中小企業を対象に2026年8月14日〜20日に実施した早期景気観測調査（LOBO調査）の結果を公表した。生成AIを「活用している」企業は54.4%となり、2025年11月の前回調査から18.4ポイントの大幅増となった。活用業務は「文書作成・要約」（81.7%）が最多で、「情報収集・アイデア出し」（57.1%）、「デザイン・画像生成」（39.6%）が続く。一方で、社内ルール・ガイドラインを整備できていない企業は53.2%にのぼり、活用の広がりに社内体制の整備が追いついていない実態も明らかになった。急速に普及が進む今だからこそ、自社のルール作りを後回しにしないことが重要だ。
+                    </p>
+                    <a href="https://cci-lobo.jcci.or.jp/wp-content/uploads/2026/08/LOBO202608.pdf" class="source-link" style="color:#2563eb; font-size:14px;">▶ 出典: 日本商工会議所「早期景気観測調査（LOBO調査）2026年8月調査」</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 02: 薄緑（革新・新機能） -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 02</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">大塚商会、基幹システムと直結するAIエージェントを提供開始</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">ERP-Connected AI Agent / Otsuka Corporation</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      株式会社大塚商会は2026年9月10日、AIエージェントサービス「たよれーるビジネスAIエージェント」の新機能『DX統合パッケージ連携AIエージェント』を発表し、2026年9月14日より提供を開始した。自社開発のMCPコネクターを通じて、基幹業務システム「DX統合パッケージ」が管理する受発注・売上・仕入・営業日報のデータにAIエージェントがリアルタイムでアクセスし、自然言語の質問だけで集計・分析・示唆を返す。複雑なSQLやレポート作成のスキルは不要で、専任の分析担当者がいない中堅・中小企業でも、現場担当者がチャット感覚でデータ活用を始められる点が実務的な価値だ。
+                    </p>
+                    <a href="https://prtimes.jp/main/html/rd/p/000001268.000009712.html" class="source-link" style="color:#2563eb; font-size:14px;">▶ 出典: 株式会社大塚商会 公式プレスリリース（2026年9月10日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 03: 薄黄（成功事例・現場の声） -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 03</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">クラウドワークス「マルっとAI」提供開始——先行導入で工数84%削減</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Full Business AI Automation / CrowdWorks</span></p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      株式会社クラウドワークスは2026年9月7日、企業のあらゆる業務のAI化を一括で請け負う新プラン「マルっとAI」の提供を開始したと発表した。提供開始に先立ちグループ会社シューマツワーカーと共同で実施した先行導入では、マーケティングから経理・人事労務まで8領域・14業務をAI化し、対象業務の工数を月434時間から68.6時間へ84%削減、外注費も月31万円からゼロにしたという。背景には帝国データバンクの調査で生成AIの業務活用企業が34.5%にとどまる現状があり、「社内にAI人材がいない」中小企業にとって、実装から定着までを外部に一括委託できる選択肢として注目に値する。
+                    </p>
+                    <a href="https://prtimes.jp/main/html/rd/p/000000323.000050142.html" class="source-link" style="color:#2563eb; font-size:14px;">▶ 出典: 株式会社クラウドワークス 公式プレスリリース（2026年9月7日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- 🛠️ 今週のおすすめツール・リソース            -->
+          <!-- ============================================ -->
+
+          <!-- Section 2 見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px; margin:0;">🛠️ 今週のおすすめツール・リソース</h2>
+            </td>
+          </tr>
+
+          <!-- TOOL 01: ChatSense -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); padding:24px;">
+                    <p style="margin:0 0 10px;"><span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 01</span></p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">ChatSense <span style="color:#6b7280; font-size:0.85em; font-weight:400;">/ Chat Sense</span></h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">セキュリティを強化した、法人向け生成AIチャットサービス</span></p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      セキュリティを強化した環境で複数の生成AIモデル（ChatGPTやOpenAIの新モデル「GPT-6 Astra」など）を業務に応じて使い分けられる。社内資料を検索・参照できる「Notebook」機能は、2026年9月に会話の文脈を踏まえて検索文を自動変換する機能が加わり、長い会話の後でも欲しい資料を探しやすくなった。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;"><strong>こんな人におすすめ：</strong>「ChatGPTを業務で使いたいが、セキュリティ要件で導入をためらっている」情報システム担当者や経営者</p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;"><strong>料金目安：</strong>初期費用無料、無料プランから利用可能（法人向け有料プランは要問い合わせ）</p>
+                    <a href="https://chatsense.jp/" class="source-link" style="color:#2563eb; font-size:14px;">▶ ChatSense の詳細はこちら</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- TOOL 02: Symphony by Wix -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); padding:24px;">
+                    <p style="margin:0 0 10px;"><span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 02</span></p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">Symphony by Wix <span style="color:#6b7280; font-size:0.85em; font-weight:400;">/ シンフォニー・バイ・ウィックス</span></h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">中小企業向け、独立型マルチAIエージェントシステム</span></p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      個人事業主・中小企業向けのAIエージェントプラットフォーム。導入するとまず自社のビジネス内容や業務の進め方を学習し、複数の専門AIエージェントのチームが編成されて業務を自律的に実行する。毎日の「朝礼（ブリーフィング）」で完了業務と要対応事項がまとめられ、重要な判断のみオーナーが承認する設計になっている。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;"><strong>こんな人におすすめ：</strong>一人で複数の業務を抱える個人事業主や、AIに使い方を教える時間すら取れない小規模チーム</p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;"><strong>料金目安：</strong>段階制のサブスクリプション（詳細は公式発表を参照）</p>
+                    <a href="https://prtimes.jp/main/html/rd/p/000000073.000025208.html" class="source-link" style="color:#2563eb; font-size:14px;">▶ Symphony by Wix の詳細はこちら（公式発表）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- 📖 用語解説・学習コーナー                    -->
+          <!-- ============================================ -->
+
+          <!-- Section 3 見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px; margin:0;">📖 用語解説・学習コーナー</h2>
+            </td>
+          </tr>
+
+          <!-- 用語解説カード -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px; padding:24px;">
+                    <h3 style="margin:0 0 10px; font-size:18px; color:#1e3a5f;">AIエージェント <span style="color:#6b7280; font-size:0.85em; font-weight:400;">/ AI Agent</span></h3>
+                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">一言でいうと：「指示を待つAI」から「目標に向けて自ら動くAI」へ</p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      従来のチャットAIは、都度指示を出さないと動かない「答えるAI」だった。AIエージェントは目標を与えられると、自ら計画を立て、複数のツールやデータベースと連携しながらタスクを実行する「動くAI」である。今週発表された大塚商会の分析AIエージェントも、Wixの「Symphony」も、この自律的な実行を核にしている。多くのサービスは、契約締結や支払いなど重要な判断の直前で人間の承認を挟む「承認ゲート」を設け、暴走を防ぐ設計を採用している。
+                    </p>
+                    <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>ビジネスでの使いどころ：</strong>毎回手順は同じなのに人手がかかる定型業務（経理の月次締め、営業日報の集計、見積書の比較など）から任せてみると、効果を実感しやすい。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- 💬 編集者コメント・コラム                    -->
+          <!-- ============================================ -->
+
+          <!-- Section 4 見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px; margin:0;">💬 編集者コメント</h2>
+            </td>
+          </tr>
+
+          <!-- 編集者コメントカード -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 28px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="column-box-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p class="body-text" style="margin:0 0 16px; font-size:15px; line-height:1.8; color:#374151;">
+                      今週は「使う」から「任せる」への転換を印象づける一週間だった。大塚商会は基幹システムと直結するAIエージェントを、クラウドワークスは業務まるごと代行する新プランを発表。商工会議所の調査でも活用企業は54.4%まで伸びている。とはいえ社内ルールが整っていない企業はまだ半数超だ。使い始めるなら、まずは定型業務から、承認の仕組みを決めてから。来週は、導入企業がつまずいたポイントをお届けしたい。
+                    </p>
+                    <p style="margin:0; font-size:14px; color:#92400e;">📌 来週は「AIエージェント導入でつまずいたポイント」を中小企業の実例からお届け予定です。お楽しみに！</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 📚 Weeklyライブラリへのリンク（編集者コメント直後・フッター直前） -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
+            </td>
+          </tr>
+
+          <!-- フッター -->
+          <!-- ルール: 3行構成（タグライン／フッターナビ／著作権）で固定。Vol番号・日付・注意書きは含めない -->
+          <!-- bgcolor属性はOutlook等グラデーション非対応メーラー向けフォールバック -->
+          <tr>
+            <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+              <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0 0 10px;">
+                <a href="../../index.html" style="color:#ffffff; text-decoration:underline;">バックナンバー一覧</a>
+                <span style="opacity:0.5;"> ｜ </span>
+                <a href="../../about.html" style="color:#ffffff; text-decoration:underline;">運営者情報</a>
+                <span style="opacity:0.5;"> ｜ </span>
+                <a href="../../privacy.html" style="color:#ffffff; text-decoration:underline;">プライバシーポリシー</a>
+                <span style="opacity:0.5;"> ｜ </span>
+                <a href="../../contact.html" style="color:#ffffff; text-decoration:underline;">お問い合わせ</a>
+              </p>
+              <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
