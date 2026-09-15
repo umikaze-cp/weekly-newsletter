@@ -247,13 +247,13 @@
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
                   <td class="card-cell" style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px; padding:24px;">
-                    <h3 style="margin:0 0 10px; font-size:18px; color:#1e3a5f;">AIエージェント <span style="color:#6b7280; font-size:0.85em; font-weight:400;">/ AI Agent</span></h3>
-                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">一言でいうと：「指示を待つAI」から「目標に向けて自ら動くAI」へ</p>
+                    <h3 style="margin:0 0 10px; font-size:18px; color:#1e3a5f;">承認ゲート <span style="color:#6b7280; font-size:0.85em; font-weight:400;">/ Human-in-the-Loop</span></h3>
+                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">一言でいうと：「AIエージェントが実行する前に、特定の場面だけ人間の承認を挟む仕組み」</p>
                     <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
-                      従来のチャットAIは、都度指示を出さないと動かない「答えるAI」だった。AIエージェントは目標を与えられると、自ら計画を立て、複数のツールやデータベースと連携しながらタスクを実行する「動くAI」である。今週発表された大塚商会の分析AIエージェントも、Wixの「Symphony」も、この自律的な実行を核にしている。多くのサービスは、契約締結や支払いなど重要な判断の直前で人間の承認を挟む「承認ゲート」を設け、暴走を防ぐ設計を採用している。
+                      AIエージェントは目標を与えると複数の作業を自律的に実行するが、実務で問われるのは実行力そのものより「どこに人の承認を挟むか」という設計である。今週紹介したWixの「Symphony」が重要な判断のみオーナーが承認する設計を採用しているように、承認ゲートを置くべき典型的な条件は、①一定額を超える支払いや契約などお金が動く操作、②メール送信や外部システムへの連携など社外に情報が出る操作、③個人情報や取引先の機密情報を扱う処理、④実行すると取り消せない操作（データ削除・送信済みメールなど）の4つに整理できる。逆に、社内向けの集計や下書き作成のように後から人が確認・修正できる作業は、承認を挟まずに任せたほうがAIエージェント導入の効果を得やすい。大塚商会のAIエージェントのように分析・閲覧にとどまる用途では承認ゲートの優先度は低く、実行系の機能を追加するタイミングで改めて設計すればよい。
                     </p>
                     <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
-                      <strong>ビジネスでの使いどころ：</strong>毎回手順は同じなのに人手がかかる定型業務（経理の月次締め、営業日報の集計、見積書の比較など）から任せてみると、効果を実感しやすい。
+                      <strong>ビジネスでの使いどころ：</strong>AIエージェント導入時は、まず社内の業務を「金額」「社外への影響」「個人情報の有無」「取り消し可否」の4つの軸で洗い出し、いずれかに該当する作業にだけ承認ステップを設定するとよい。該当しない作業は最初から任せてしまい、運用しながら承認ポイントを増減させていくのが現実的な進め方である。
                     </p>
                   </td>
                 </tr>
