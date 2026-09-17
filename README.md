@@ -39,7 +39,6 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 - [Vol.4 — デジタル化・AI導入補助金2026申請スタート / Adobe Firefly AI Assistant / 中小企業が2カ月で月40時間削減](outputs/vol4/)（2026年4月20日号）
 - [Vol.3 — Microsoft対日投資 / Gemma 4 / 補助金2026](outputs/vol3/)（2026年4月13日号）
 - [Vol.2 — Japan DX Week 春 / 関西DX戦略 / 補助金申請準備](outputs/vol2/)（2026年4月6日号）
-- [Vol.1 特集 — 生成AIの業務活用](outputs/vol1-special/)（2026年4月3日号）
 - [Vol.1 — 創刊号](outputs/vol1/)（2026年4月3日号）
 
 ## 📁 プロジェクト構成
@@ -68,8 +67,6 @@ weekly-newsletter/
 └── outputs/                           ← 生成したニュースレター
     ├── vol1/
     │   └── index.html                 ← Vol.1 創刊号
-    ├── vol1-special/
-    │   └── index.html                 ← Vol.1 特集号
     ├── vol2/
     │   └── index.html                 ← Vol.2
     ├── vol3/
