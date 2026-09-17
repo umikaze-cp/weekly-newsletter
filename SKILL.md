@@ -53,6 +53,35 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 
 ニュースレターは以下の4セクションで構成する。
 
+**セクション見出しの仕様（全4セクション共通）：**
+
+見出しの正式名は以下の4つで統一する。
+
+1. 📰 今週のAI×DXニュース TOP3
+2. 🛠️ 今週のおすすめツール・リソース
+3. 📖 用語解説・学習コーナー
+4. 💬 編集者コメント
+
+共通スタイル（プロパティの記述順も含めて統一。以下以外のプロパティは付けない）：
+
+```html
+<h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">
+```
+
+- 見出しtrとカードtrは別の`<tr>`に分ける（4セクション共通）
+
+**見出し行のHTML見本（Vol.25基準）：**
+
+見出しtrは以下の構造（class・paddingを含む）で統一する。`<h2>`の中身（文言）以外は4セクション共通。
+
+```html
+<tr>
+  <td class="content-cell" style="padding:28px 40px 16px;">
+    <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">見出し文言</h2>
+  </td>
+</tr>
+```
+
 #### セクション1: 📰 今週のAI×DXニュース TOP3
 - 今週最も重要なニュースを3本選定
 - 各ニュースは以下のフォーマットで記述：
@@ -204,9 +233,8 @@ Web検索ツールを使い、以下のカテゴリで今週の注目トピッ�
 
 用語選定の基準：ニュースセクションで出てきたキーワードや、最近バズワードになっているものを選ぶ。読者が会議で「それ知ってる」と言えるレベルの理解を目指す。
 
-**見出し表記（Vol.4〜確立）：**
-- 正式な見出し文言は「📖 用語解説・学習コーナー」で統一する
-- Vol.3・Vol.18は「📖 今週の用語解説」という別表記だが、遡って修正しない（過去号の表記揺れは今後の号から統一する方針。詳細は「設計思想」内の該当セクション参照）
+**見出し表記：**
+- Step 2 冒頭の「セクション見出しの仕様（全4セクション共通）」参照
 
 **用語名の英語併記フォーマット（Vol.4〜の多数派表記に統一）：**
 - `用語名 <span style="color:#6b7280; font-size:0.85em; font-weight:400;">/ English Name</span>` 形式（スラッシュ区切り）を標準とする
@@ -283,7 +311,7 @@ Vol.26〜は編集者コメントの締めで次号の内容を予告しない�
 - 締めに、今号を締めくくる一言を添える（次号の内容予告はしない）
 
 **スタイル仕様（全号統一、Vol.2基準）:**
-- 見出し：h2要素、`class="section-heading"`、`font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;`
+- 見出し：Step 2冒頭の「セクション見出しの仕様（全4セクション共通）」参照
 - カード背景色：`background:#fefce8; border:1px solid #fde68a; border-radius:8px;`
 - カードセル：`class="column-box-cell" style="padding:24px;"`
 - 本文：`class="body-text" style="font-size:15px; line-height:1.8;"`
@@ -291,7 +319,6 @@ Vol.26〜は編集者コメントの締めで次号の内容を予告しない�
   `style="font-size:14px; color:#92400e;"`（classなし）
   **次号の内容・テーマ・用語解説の題材を予告しない**
   （理由は「設計思想」内の「予告文を書かない理由」参照）
-- 見出しtrとカードtrは別の`<tr>`に分ける
 
 ### Step 3: HTML生成
 
@@ -1298,6 +1325,8 @@ HTMLを出力する前に、以下を確認する：
 - [ ] **【重複】** 用語解説の用語が既出用語台帳（Step 2 セクション3参照）にないか確認したか
 - [ ] Weeklyライブラリページに新号エントリが追加されているか
 - [ ] レスポンシブ用のclass属性（content-cell, card-cell, section-heading, body-text, source-link）が全要素に付与されているか
+- [ ] **【見出し】** 4つのh2が正式名・共通スタイル・`class="section-heading"`と一致しているか
+      （Step 2冒頭の「セクション見出しの仕様」参照）
 - [ ] フッターの `<td>` に `bgcolor="#1e3a5f"` 属性と `background:linear-gradient(135deg,#1e3a5f,#2563eb)` が設定されているか（Outlook等メーラー向けフォールバック含む）
 - [ ] **【構造順序】** 以下の順序で `<tr>` ブロックが配置されているか:
       ① ヘッダー → ② 📰 ニュースTOP3 → ③ 🛠️ ツール → ④ 📖 用語解説
