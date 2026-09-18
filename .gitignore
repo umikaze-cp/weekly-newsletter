@@ -20,3 +20,6 @@ node_modules/
 # Claude Code ローカル設定（settings.json のみ追跡対象として残す）
 .claude/*
 !.claude/settings.json
+
+# 作業用（Claude Code に渡すプロンプト）
+prompt.md
