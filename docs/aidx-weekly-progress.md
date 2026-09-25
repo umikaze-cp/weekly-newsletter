@@ -30,7 +30,7 @@
 - ファイルの役割と優先順位は `CLAUDE.md` に明記済み。
 - 本名は出さない。README・work-log・workflow等の表記はすべて筆名に統一済み。
 - Markdown類（work-log.md 等）は `_config.yml` でPages配信から除外している。
-- 作業はフェーズ単位で `work-log.md` に Phase番号 で記録する（直近：Phase 70）。
+- 作業はフェーズ単位で `work-log.md` に Phase番号 で記録する（直近：Phase 71）。
 - **運営ドキュメント（この進捗表・seo-metrics.md）はリポジトリの `/docs/` に置く。** `_config.yml` の除外対象なのでPages配信されない。**プロジェクトのナレッジは手動同期**のため、`/docs/` を更新したらナレッジ側も差し替える。
 
 ---
@@ -130,6 +130,12 @@
 - docs/editor-comment-rules.md は過去号の是正の判断基準と事例の記録として残す
 - 詳細は `work-log.md` Phase 70参照
 
+### 同名の旧版スキルの除去 ✅ 完了（2026-09-26）
+- 進捗表に記録していた `~/.claude/skills/weekly-newsletter/`（4月8日作成・392行）は、確認時点で既に存在しなかった
+- 代わりに、claude.ai のカスタムスキル weekly-newsletter（4月23日作成・331行、name と description は正本と同一）が `~/.claude/skills/synced/` に同期されていたため、claude.ai 側で削除した
+- claude.ai へのアップロードも同名衝突の対象になる旨を CLAUDE.md に追記
+- 詳細は `work-log.md` Phase 71参照
+
 ### その他
 - お問い合わせはGoogleフォーム埋め込みで運用（独自ドメインメールは当面作らない）
 - GitHub全体の本名棚卸し完了（git filter-repoで旧リポジトリの作者情報も書き換え済み）
@@ -142,7 +148,6 @@
 | # | 課題 | 内容 | 予定 |
 |---|---|---|---|
 | 1 | Google AdSense 申請 | インデックスの進捗を見て申請 | 9月下旬 |
-| 2 | ローカルの陳腐化SKILL.md | `~/.claude/skills/weekly-newsletter/SKILL.md`（2026年4月8日作成・392行の旧版）がgit管理外に残存。スキル誤読込のリスクあり | 未定 |
 | 4 | README.md の発行履歴に Vol.1特集号が残存 | Phase 53（2026-09-18）で特集号を削除し `outputs/vol1-special/` も削除済みだが、README.md の「📊 発行履歴」に「Vol.1特集」の行が残っている（README.md:177）。今回の変更で README.md が発行履歴の唯一の正本になったため、存在しない号がリストに載り続ける状態 | 未定 |
 | 5 | 過去号本文の食い違いの是正 | 編集者コメント巡回で見つかった過去号本文（見出し・イントロ・NEWS本文）の食い違い。docs/editor-comment-rules.md の「別作業の候補」表で未対応24件（2026-09-26時点。うち Vol.21〜24 で18件） | 未定 |
 
