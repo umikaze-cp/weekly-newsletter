@@ -30,7 +30,7 @@
 - ファイルの役割と優先順位は `CLAUDE.md` に明記済み。
 - 本名は出さない。README・work-log・workflow等の表記はすべて筆名に統一済み。
 - Markdown類（work-log.md 等）は `_config.yml` でPages配信から除外している。
-- 作業はフェーズ単位で `work-log.md` に Phase番号 で記録する（直近：Phase 66）。
+- 作業はフェーズ単位で `work-log.md` に Phase番号 で記録する（直近：Phase 67）。
 - **運営ドキュメント（この進捗表・seo-metrics.md）はリポジトリの `/docs/` に置く。** `_config.yml` の除外対象なのでPages配信されない。**プロジェクトのナレッジは手動同期**のため、`/docs/` を更新したらナレッジ側も差し替える。
 
 ---
@@ -137,7 +137,7 @@
 |---|---|---|---|
 | 1 | Google AdSense 申請 | インデックスの進捗を見て申請 | 9月下旬 |
 | 2 | ローカルの陳腐化SKILL.md | `~/.claude/skills/weekly-newsletter/SKILL.md`（2026年4月8日作成・392行の旧版）がgit管理外に残存。スキル誤読込のリスクあり | 未定 |
-| 3 | 編集者コメントの全号是正 | Vol.1〜21・Vol.25 完了。Vol.22〜24 が未着手。全25号の棚卸し（docs/editor-comment-audit.md、Phase 0時点のスナップショットとして凍結・以後は追従させない）をもとに巡回中。判断基準13項目・事実検証4観点は docs/editor-comment-rules.md に記録。同ファイルは作業文書であり、全号完了時に SKILL.md へ正式な仕様として反映する | 進行中 |
+| 3 | 編集者コメントの全号是正 | Vol.1〜22・Vol.25 完了。Vol.23〜24 が未着手。全25号の棚卸し（docs/editor-comment-audit.md、Phase 0時点のスナップショットとして凍結・以後は追従させない）をもとに巡回中。判断基準13項目・事実検証4観点は docs/editor-comment-rules.md に記録。同ファイルは作業文書であり、全号完了時に SKILL.md へ正式な仕様として反映する | 進行中 |
 | 4 | README.md の発行履歴に Vol.1特集号が残存 | Phase 53（2026-09-18）で特集号を削除し `outputs/vol1-special/` も削除済みだが、README.md の「📊 発行履歴」に「Vol.1特集」の行が残っている（README.md:177）。今回の変更で README.md が発行履歴の唯一の正本になったため、存在しない号がリストに載り続ける状態 | 未定 |
 
 ---
