@@ -15,20 +15,20 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 ## 🌐 公開URL（GitHub Pages）
 
 - **Weeklyライブラリ**: [index.html](index.html)
-- [Vol.26 — AI推進者「足りている」中小企業はわずか11.1%——クラウドワークス調査 / 相槌も割り込みも自然に——AIdeaLab、国内初のGPT-Live採用AI受電サービス / 社員25名の印刷会社が磨いたAI運用ノウハウ、クロスウイングが中小企業向けに外販](outputs/vol26/)（2026年9月21日号）
+- [Vol.26 — AI推進者「足りている」中小企業はわずか11.1%——クラウドワークス調査 / 相槌も割り込みも自然に——AIdeaLab、国内初のGPT-Live採用AI受電サービス / 社員25名の印刷会社が培ったAI運用ノウハウ、クロスウイングが中小企業向けに外販](outputs/vol26/)（2026年9月21日号）
 - [Vol.25 — 中小企業の生成AI活用が54.4%に急伸、日本商工会議所調査 / 大塚商会、基幹システムと直結するAIエージェントを提供開始 / クラウドワークス「マルっとAI」提供開始——先行導入の一部業務で工数84%削減](outputs/vol25/)（2026年9月14日号）
 - [Vol.24 — デジタル化・AI導入補助金2026、次回締切9/29に接近 / 「FanVoice AI開拓部」が新規開拓営業を自動化 / エクスペリサス、Claude Code全社導入で非エンジニア職の53%が日常活用](outputs/vol24/)（2026年9月7日号）
 - [Vol.23 — 中堅中小企業のIT投資、AI／生成AIが初のトップに——100万円以上の投資予定は68.1% / GoogleがGeminiに新たな外部アプリ連携を発表、業務AIが「実行者」へ / バックオフィスのAI活用、現場の本音は「安定稼働」と「法改正対応」最優先](outputs/vol23/)（2026年8月31日号）
 - [Vol.22 — OpenAI、AI導入を伴走支援する「OpenAI Partner Network」を正式発表 / MetaがSMB向けAIアシスタントを強化、広告データとGoogle Workspaceを一元分析 / 中小企業経営者の約9割がAIエージェントに関心、導入の壁は「経営陣の思考の言語化」](outputs/vol22/)（2026年8月24日号）
-- [Vol.21 — Amazon Quick、Microsoft 365アプリへ統合 / Google「Sheets Canvas」でスプレッドシートがミニアプリに / 創業155年の老舗漬物店がClaude活用で梅干し職人向けUIを自社開発](outputs/vol21/)（2026年8月17日号）
+- [Vol.21 — Amazon Quick、Microsoft 365アプリへ統合 / Google「Sheets Canvas」でスプレッドシートがミニアプリに / 電帳法の書類処理、Google Drive × AI-OCRで工数が約1/10に](outputs/vol21/)（2026年8月17日号）
 - [Vol.20 — JAPAN AI×大塚商会が資本業務提携でSMBへのAI導入を全国展開 / 弥生「記帳代行AI」β版——領収書100枚を数分で処理 / 楽天「Rakuten AI for Business」がClaude活用でリサーチ・データ分析機能を追加](outputs/vol20/)（2026年8月10日号）
 - [Vol.19 — 中小企業の生成AI利用率2年で96%に急上昇 / GMO天秤AI「自律実行型チャット」β版開始 / AI活用「相談難民」問題に「みんなのAI相談室」スタート](outputs/vol19/)（2026年8月3日号）
 - [Vol.18 — IPA「DX動向2026」AI効率化91.6% vs 売上向上3.9%の断層 / OpenAI、中小企業向けChatGPT Workプログラム始動 / 大塚商会、バイブコーディングで業務自動化30万円〜](outputs/vol18/)（2026年7月27日号）
 - [Vol.17 — デジタル化・AI導入補助金2026 第3次締切（7/21） / ソフトバンク×SierraのAIエージェントが日本展開 / 弥生「ZEXT AIエージェント」β版無償提供開始](outputs/vol17/)（2026年7月20日号）
 - [Vol.16 — GPT-5.6 + ChatGPT Work 一般公開 AIが「実行役」へ / Claude CoworkがWeb・モバイルへ展開 / 経営層がAIを使わない中小企業の85.7%が方針・体制なし](outputs/vol16/)（2026年7月13日号）
 - [Vol.15 — Claude Sonnet 5 登場 Opus級の推論をSonnet価格で / Visa、欧州でAIエージェント決済が本番稼働 / 「Stella AI for Biz」1,200社突破・ノーコードAIワークフロー追加](outputs/vol15/)（2026年7月6日号）
-- [Vol.14 — デジタル化・AI導入補助金2026 最大450万円・生成AIも対象に / Anthropic「Claude for Small Business」QuickBooks・PayPal連携 / 生成AI導入格差30ポイント（東京商工リサーチ調査）](outputs/vol14/)（2026年6月29日号）
-- [Vol.13 — 大塚商会、建設業向けAIアシスタントテンプレートを無料提供開始 / Adobe Creative Cloud全製品にAIエージェント機能を一斉導入 / 「現場の人がAIで自社システムを作る」実践型トレーニング「AI GYM」が始動](outputs/vol13/)（2026年6月22日号）
+- [Vol.14 — デジタル化・AI導入補助金2026 最大450万円・生成AIも対象に / Anthropic「Claude for Small Business」QuickBooks・PayPal連携 / 生成AI導入格差約30ポイント（東京商工リサーチ調査）](outputs/vol14/)（2026年6月29日号）
+- [Vol.13 — 大塚商会、建設業向けAIアシスタントテンプレートを無料提供開始 / Adobe Creative Cloudの主要製品でAIエージェント機能のパブリックベータを発表 / 「現場の人がAIで自社システムを作る」実践型トレーニング「AI GYM」が始動](outputs/vol13/)（2026年6月22日号）
 - [Vol.12 — GeminiがGoogleマップを「経営の参謀」に変える / 「定着するAI」へ——中小企業専用AIエージェント伴走サービス始動 / 補助金申請もAIが支援——省力化補助事業の計画書をAIが自動生成](outputs/vol12/)（2026年6月15日号）
 - [Vol.11 — MetaがWhatsApp・InstagramにAIエージェント全世界公開 / ZoomがAI Productivity Suite発表 / 国内企業の34.5%が生成AI業務活用](outputs/vol11/)（2026年6月8日号）
 - [Vol.10 — Microsoft 365にCopilot標準搭載へ / Googleが24時間AIエージェント「Gemini Spark」公開 / AI活用企業の86.7%が業務効果を実感](outputs/vol10/)（2026年6月1日号）
@@ -189,20 +189,20 @@ Step 7  作業記録の更新（拡張機能版）
 | Vol.10 | 2026/06/01 | Microsoft 365にCopilot標準搭載へ / Googleが24時間AIエージェント「Gemini Spark」公開 / AI活用企業の86.7%が業務効果を実感 |
 | Vol.11 | 2026/06/08 | MetaがWhatsApp・InstagramにAIエージェント全世界公開 / ZoomがAI Productivity Suite発表 / 国内企業34.5%が生成AI業務活用（帝国データバンク調査） |
 | Vol.12 | 2026/06/15 | GeminiがGoogleマップを「経営の参謀」に変える / 中小企業専用AIエージェント伴走サービス始動 / 補助金申請もAIが支援 |
-| Vol.13 | 2026/06/22 | 大塚商会・建設業向けAIアシスタントテンプレート無料提供 / Adobe Creative Cloud全製品にAIエージェント機能導入 / AI GYM始動 |
-| Vol.14 | 2026/06/29 | デジタル化・AI導入補助金2026（最大450万円・生成AI対象） / Claude for Small Business（QuickBooks・PayPal連携） / 生成AI導入格差30ポイント |
+| Vol.13 | 2026/06/22 | 大塚商会・建設業向けAIアシスタントテンプレート無料提供 / Adobe Creative Cloud主要製品のAIエージェント機能ベータ発表 / AI GYM始動 |
+| Vol.14 | 2026/06/29 | デジタル化・AI導入補助金2026（最大450万円・生成AI対象） / Claude for Small Business（QuickBooks・PayPal連携） / 生成AI導入格差約30ポイント |
 | Vol.15 | 2026/07/06 | Claude Sonnet 5 登場（Opus級推論をSonnet価格で） / Visa AIエージェント決済が欧州で本番稼働 / Stella AI for Biz 1,200社突破・ノーコードワークフロー追加 |
 | Vol.16 | 2026/07/13 | GPT-5.6 + ChatGPT Work 一般公開 AIが「実行役」へ / Claude CoworkがWeb・モバイルへ展開 / 経営層がAIを使わない中小企業の85.7%が方針・体制なし |
 | Vol.17 | 2026/07/20 | デジタル化・AI導入補助金2026 第3次締切（7/21） / ソフトバンク×SierraのAIエージェントが日本展開 / 弥生「ZEXT AIエージェント」β版無償提供開始 |
 | Vol.18 | 2026/07/27 | IPA「DX動向2026」AI効率化91.6% vs 売上向上3.9%の断層 / OpenAI、中小企業向けChatGPT Workプログラム始動 / 大塚商会、バイブコーディングで業務自動化30万円〜 |
 | Vol.19 | 2026/08/03 | 中小企業の生成AI利用率2年で96%に急上昇 / GMO天秤AI「自律実行型チャット」β版開始 / AI活用「相談難民」問題に「みんなのAI相談室」スタート |
 | Vol.20 | 2026/08/10 | JAPAN AI×大塚商会が資本業務提携でSMBへのAI導入を全国展開 / 弥生「記帳代行AI」β版——領収書100枚を数分で処理 / 楽天「Rakuten AI for Business」がClaude活用でリサーチ・データ分析機能を追加 |
-| Vol.21 | 2026/08/17 | Amazon Quick、Microsoft 365アプリへ統合 / Google「Sheets Canvas」でスプレッドシートがミニアプリに / 創業155年の老舗漬物店がClaude活用で梅干し職人向けUIを自社開発 |
+| Vol.21 | 2026/08/17 | Amazon Quick、Microsoft 365アプリへ統合 / Google「Sheets Canvas」でスプレッドシートがミニアプリに / 電帳法の書類処理、Google Drive × AI-OCRで工数が約1/10に |
 | Vol.22 | 2026/08/24 | OpenAI、AI導入を伴走支援する「OpenAI Partner Network」を正式発表 / MetaがSMB向けAIアシスタントを強化、広告データとGoogle Workspaceを一元分析 / 中小企業経営者の約9割がAIエージェントに関心、導入の壁は「経営陣の思考の言語化」 |
 | Vol.23 | 2026/08/31 | 中堅中小企業のIT投資、AI／生成AIが初のトップに——100万円以上の投資予定は68.1% / GoogleがGeminiに新たな外部アプリ連携を発表、業務AIが「実行者」へ / バックオフィスのAI活用、現場の本音は「安定稼働」と「法改正対応」最優先 |
 | Vol.24 | 2026/09/07 | デジタル化・AI導入補助金2026、次回締切9/29に接近 / 「FanVoice AI開拓部」が新規開拓営業を自動化 / エクスペリサス、Claude Code全社導入で非エンジニア職の53%が日常活用 |
 | Vol.25 | 2026/09/14 | 中小企業の生成AI活用が54.4%に急伸、日本商工会議所調査 / 大塚商会、基幹システムと直結するAIエージェントを提供開始 / クラウドワークス「マルっとAI」提供開始——先行導入の一部業務で工数84%削減 |
-| Vol.26 | 2026/09/21 | AI推進者「足りている」中小企業はわずか11.1%——クラウドワークス調査 / 相槌も割り込みも自然に——AIdeaLab、国内初のGPT-Live採用AI受電サービス / 社員25名の印刷会社が磨いたAI運用ノウハウ、クロスウイングが中小企業向けに外販 |
+| Vol.26 | 2026/09/21 | AI推進者「足りている」中小企業はわずか11.1%——クラウドワークス調査 / 相槌も割り込みも自然に——AIdeaLab、国内初のGPT-Live採用AI受電サービス / 社員25名の印刷会社が培ったAI運用ノウハウ、クロスウイングが中小企業向けに外販 |
 
 ## 📝 作成者
 
