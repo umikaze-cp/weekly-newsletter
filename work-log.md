@@ -5019,3 +5019,56 @@ editor-comment-rules.md（状態の更新9行・新規5行・進め方の例の�
 ② Phase 0 のプロンプトでファイル作成を一律に禁止したため、報告がターミナルにしか残らなかった。報告はリポジトリ外の ~/Downloads に Markdown で保存させる（リポジトリ内の編集は引き続き禁止）
 
 ---
+
+## Phase 73: 残課題 #5 サイクルB1（Vol.22・23の見出し・イントロとREADME・ルートの転記是正）（2026年9月26日）
+
+### 課題の整理
+
+残課題 #5 のうちサイクルB1（Vol.22・23 の見出し・イントロと、README.md・ルート index.html への転記、9件）の是正。
+
+### Phase 0 報告（Claude Code）で判明したこと
+
+① README.md・ルート index.html のエントリは、NEWS 見出しをそのまま、または機械的に短縮して転記しており、9d0aeca・e8f17a0 で本文を差し替えたときにも変更されていなかった
+② Vol.22 NEWS02見出しの「大幅強化」が、本文 N2-1 では「大幅拡充」と語が異なる
+
+### Phase 0 報告を検証した段階（claude.ai）で判明したこと
+
+① 報告が残り11行の内訳を「B2 9行・C 2行」としていたが、952行目は Vol.18 NEWS01 出典の日付で C の行。正しくは B2 8行・C 3行（B2 の Phase 0 で取り直す）
+② Vol.22 NEWS01 の英語キーワード行「OpenAI Partner Network Japan」の「Japan」を見落としていた。grep の検索語が「日本」だけだったため
+
+### 修正案の確定段階（claude.ai）で決めたこと
+
+① Vol.22 NEWS01見出しは「日本」「大幅」に加え「拡充」も本文になく（本文は新規の正式発表）、見出し全体を本文 N1-1 の文で作り直した
+② Vol.23 本文 N1-2 は100万円以上の投資の対象を AI と書いていないため、見出し・イントロで「AIに100万円」とつながる形を避けた
+③ Vol.22 NEWS02見出しの「大幅強化」は対応不要と判断した
+④ README.md・ルート index.html は、Phase 0 報告の G で確認した転記の慣例に合わせ、変更する部分だけを置き換えた
+
+### 修正内容
+
+Vol.22・23 の HTML と README.md・ルート index.html の4ファイル16箇所（詳細は editor-comment-rules.md の表の状態列）
+
+### ドキュメント更新
+
+editor-comment-rules.md（状態の更新9行・進め方の例の追加）、aidx-weekly-progress.md（残課題 #5・直近 Phase）
+
+### 対象ファイル
+
+| ファイル | 変更種別 |
+|---------|---------|
+| `outputs/vol22/index.html` | 更新 — イントロ I-2・NEWS01見出し・英語キーワード行を修正 |
+| `outputs/vol23/index.html` | 更新 — イントロ I-2・I-3・NEWS01見出し・NEWS02見出しを修正 |
+| `README.md` | 更新 — Vol.22・23のエントリ（公開URL・発行履歴）を修正 |
+| `index.html` | 更新 — Vol.22・23のエントリ（title）を修正 |
+| `docs/editor-comment-rules.md` | 更新 — 状態列9行の更新、「指摘された箇所だけを直すと」節への追記 |
+| `docs/aidx-weekly-progress.md` | 更新 — 直近Phase番号・残課題#5の内容と予定を更新 |
+| `work-log.md` | 本Phase記録 |
+
+### 🎓 今回の学び
+
+**タグ**: [Phase73][残課題5][サイクルB1][editor-comment-rules][README転記][grep言語別]
+
+**学んだこと**:
+① 見出しを README.md・ルート index.html に転記する方式では、本文を差し替えても転記は追従しない。本文の差し替えでは、見出しと転記先まで同じコミットで照合する
+② grep の検索語は、対象語の言語ごとに用意する（「日本」だけで検索し、英語キーワード行の「Japan」を見落とした）
+
+---
