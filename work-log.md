@@ -2444,7 +2444,7 @@ Pages パス（`/weekly-newsletter/`）のままだった不整合も修正し�
 
 パッケージ内SKILL.mdと現行SKILL.mdを全文diffし、独自の記述が「廃止済みの戻るボタン仕様」
 「劣化版の文言」のみであることを確認した上で `weekly-newsletter.skill` を削除した。同梱の
-README.md／work-log.md／evals.jsonも旧筆名（大井琉誠）時代の初期ドラフトで、現行ファイルの
+README.md／work-log.md／evals.jsonも筆名に統一する前の初期ドラフトで、現行ファイルの
 下位互換であることを確認済み。`.gitignore` には `*.skill` が既に設定されていたため追加変更なし。
 
 **② CLAUDE.mdへの役割・優先順位の明記**
