@@ -247,6 +247,7 @@ README.md（公開URL・発行履歴）・ルート index.html の転記を照�
 | Kari（GotoAI） | Vol.26 |
 | 生成AI利用ガイドライン ジェネレーター（WHITE／AISAKU） | Vol.27 |
 | SD補助金（ストラテジーデザイン） | Vol.27 |
+| Chattus（オプティソース） | Vol.28 |
 
 運用ルール：
 - 直近5号以内に紹介したツールは再掲しない
@@ -299,6 +300,7 @@ README.md（公開URL・発行履歴）・ルート index.html の転記を照�
 | 承認ゲート／Human-in-the-Loop | Vol.25 |
 | シャドーAI | Vol.26 |
 | PoC（概念実証） | Vol.27 |
+| 公開ベータ（パブリックベータ） | Vol.28 |
 | BPM（ビジネスプロセスマネジメント） | Vol.10 |
 | デジタルデバイド | Vol.11 |
 | 業務棚卸し | Vol.12 |
