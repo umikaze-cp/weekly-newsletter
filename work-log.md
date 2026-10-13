@@ -5494,3 +5494,66 @@ TOOL は Chattus の1件構成。ITツール検索サイトは Vol.3 で既出�
 | ③ | 再監査で GO（外部リンク6件はすべて HTTP 200、要出典・裏付けなしは0件） |
 
 ---
+
+## Phase 81: 全ページに canonical を追加（Search Console の「重複」判定への対応）
+
+### 課題の整理
+
+| # | 課題 | 状態 |
+|---|------|------|
+| ① | 2026-10-05 に Search Console が `https://www.aidx-weekly.com/index.html` を「重複しています。ユーザーにより、正規ページとして選択されていません」と判定した | ✅ 対応 |
+| ② | 原因：同じHTMLが `/` と `/index.html`（各号も `/outputs/volN/` と `/outputs/volN/index.html`）の2つのURLで届くのに、正規URLを示す `<link rel="canonical">` が全32ファイルのどこにもなかった | ✅ 調査で確認（Phase 0） |
+| ③ | 正規URLの形式は sitemap.xml 準拠（ルート `/`、固定3ページ `.html` 付き、各号 `/outputs/volN/`）で確定。sitemap.xml の `<loc>` と食い違うと Google に矛盾した指示を出すため | ✅ 確定 |
+| ④ | 今後の新号・ライブラリページに canonical が入らない状態に戻らない仕組みが必要 | ✅ SKILL.md に反映 |
+
+### 修正内容
+
+3段階で実施した。HTMLの変更は SKILL.md のコミット後に行い、種類の違う変更を同じコミットに混ぜていない。
+
+| # | 段階 | 内容 |
+|---|------|------|
+| ① | Phase 0（調査のみ） | sitemap.xml の32URLの形式を確認。32ファイルの canonical 不在、viewport が全ファイル5行目にあること、SKILL.md の2テンプレートの `<head>` を確認。sitemap 未掲載の公開HTMLは `googlecb920f92e6823fa1.html` のみ（対象外）。レポート：~/Downloads/phase0-canonical-report.md |
+| ② | Phase 1（SKILL.md） | Step 3 と Step 5 のテンプレートの viewport 直後に canonical を追加。品質チェックリストに【canonical】を追加。設計思想セクションに「canonical を入れる理由」を追記。レポート：~/Downloads/phase1-canonical-report.md |
+| ③ | Phase 2（HTML） | 全32ファイル（ルート index.html、about／privacy／contact.html、outputs/vol1〜28/index.html）の viewport 直後に canonical を1行追加。レポート：~/Downloads/phase2-canonical-report.md |
+
+Phase 1 の途中で、設計思想の記述の `/volN/` を `/outputs/volN/` に直した（実際のURL構造と合わせるため）。
+
+### 機械検証（Phase 2）
+
+| # | 検証 | 結果 |
+|---|------|------|
+| ① | canonical を含む HTML がちょうど32件（重複挿入なし） | ✅ |
+| ② | 各 href が sitemap.xml の `<loc>` と完全一致 | ✅ 不一致0件 |
+| ③ | git diff が各ファイル +1行・削除0行 | ✅ |
+| ④ | 変更ファイルが対応表の32件だけ（sitemap.xml・CNAME・googlecb920f92e6823fa1.html は未変更） | ✅ |
+
+### 対象ファイル
+
+| ファイル | 変更種別 |
+|---------|---------|
+| `SKILL.md` | 更新 — テンプレート2箇所に canonical、品質チェック項目、設計思想の追記 |
+| `index.html`、`about.html`、`privacy.html`、`contact.html` | 更新 — canonical を1行追加 |
+| `outputs/vol1/index.html` 〜 `outputs/vol28/index.html`（28ファイル） | 更新 — canonical を1行追加 |
+| `work-log.md` | 本 Phase 記録 |
+
+### ドキュメント更新
+
+| ファイル | 更新内容 |
+|---------|---------|
+| `SKILL.md` | 上記のとおり（仕様の正本に反映済み） |
+| `README.md` | 更新なし。発行履歴・公開URL・プロジェクト構成のいずれも今回変わっていないため |
+
+### 🎓 今回の学び
+
+**タグ**: [canonical][Search Console][重複][sitemap.xml][Phase81]
+
+**学んだこと**:
+- GitHub Pages では、同じHTMLが `/` と `/index.html` の2つのURLで届く。正規URLは、sitemap.xml に載せているURL（ディレクトリ形式なら末尾スラッシュ）に合わせる。canonical と sitemap が食い違うと、Google に矛盾した指示を出すことになる
+- 全ファイルに同じ種類の変更を入れるときは、先に仕様の正本（SKILL.md）を直してから、機械検証つき（件数・URL一致・+1行／削除0行・変更ファイルの範囲）で実施する。今後の新号にも同じ変更が自動で入る
+- 内部リンク（`../../index.html` 等）は canonical で足りるため、変更しない
+
+### 今後の確認
+
+- 公開後、Search Console で `/index.html` を URL検査し、再クロールを依頼する。インデックス登録レポートの「重複」の推移を数週間見る
+
+---

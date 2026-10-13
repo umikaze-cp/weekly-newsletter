@@ -2,7 +2,7 @@
 
 > このファイルはClaudeプロジェクトのナレッジに登録する「現状の正本」です。
 > 会話のたびに経緯を説明しなくて済むよう、ここを読めば現状が分かる状態を維持します。
-> **最終更新：2026-10-03**
+> **最終更新：2026-10-13**
 
 ---
 
@@ -30,7 +30,7 @@
 - ファイルの役割と優先順位は `CLAUDE.md` に明記済み。
 - 本名は出さない。README・work-log・workflow等の表記はすべて筆名に統一済み。
 - Markdown類（work-log.md 等）は `_config.yml` でPages配信から除外している。
-- 作業はフェーズ単位で `work-log.md` に Phase番号 で記録する（直近：Phase 80）。
+- 作業はフェーズ単位で `work-log.md` に Phase番号 で記録する（直近：Phase 81）。
 - **運営ドキュメント（この進捗表・seo-metrics.md）はリポジトリの `/docs/` に置く。** `_config.yml` の除外対象なのでPages配信されない。**プロジェクトのナレッジは手動同期**のため、`/docs/` を更新したらナレッジ側も差し替える。
 
 ---
@@ -66,6 +66,7 @@
   - ルートindex.htmlは毎週自動更新されるため、メタタグ方式は不採用
 - sitemap.xml 送信済み／主要3ページのインデックス申請済み
 - **sitemap.xml**：2026-09-12の設置時は固定4ページ＋vol1〜24＋vol1-special＝29URL。Vol.25追加で30URLになった後、Phase 53（2026-09-17/18）のVol.1特集号削除でvol1-specialのURLを削除し29URLに戻った。Vol.26のURL追加で30URL（2026-09-21）、Vol.27のURL追加で31URL（2026-09-28）、Vol.28のURL追加で**全32URL**（固定4ページ＋vol1〜28）に更新済み（2026-10-12）
+- 2026-10-05 にインデックス未登録の新しい要因を通知。404 は vol1-special（削除済みのため意図どおり）、重複は `/index.html`（canonical で対処。`work-log.md` Phase 81参照）
 
 ### 運営ドキュメントの整備 ✅ 完了（2026-09-14）
 - `/docs/aidx-weekly-progress.md`（この進捗表）を配置
@@ -157,6 +158,11 @@
 - sitemap.xml への URL 追加は、prompt.md の指示で制作手順に含めた（残課題 #7 の SKILL.md・CLAUDE.md への反映は未実施）
 - 詳細は `work-log.md` Phase 80参照
 
+### 全ページへの canonical 追加 ✅ 完了（2026-10-13）
+- Search Console が `/index.html` を「重複・正規ページ未選択」と判定した（2026-10-05）ことへの対応。同じHTMLが `/` と `/index.html`（各号も `/outputs/volN/` と `/outputs/volN/index.html`）の2つのURLで届くため、正規URLを明示した
+- SKILL.md のテンプレート2種・品質チェックリスト・設計思想を更新し、全32ファイル（ルート、固定3ページ、vol1〜28）に追加。href は sitemap.xml の `<loc>` と完全一致を機械検証済み
+- 詳細は `work-log.md` Phase 81参照
+
 ### その他
 - お問い合わせはGoogleフォーム埋め込みで運用（独自ドメインメールは当面作らない）
 - GitHub全体の本名棚卸し完了（git filter-repoで旧リポジトリの作者情報も書き換え済み）
@@ -168,13 +174,15 @@
 
 | # | 課題 | 内容 | 予定 |
 |---|---|---|---|
-| 1 | Google AdSense 申請 | インデックスの進捗を見て申請 | 9月下旬 |
+| 1 | Google AdSense 申請 | インデックスの進捗を見て申請。2026-10-09 時点のインデックス登録状況：登録済み10件・未登録23件（うち「検出 - インデックス未登録」21件） | 9月下旬 |
 | 4 | README.md の発行履歴に Vol.1特集号が残存 | Phase 53（2026-09-18）で特集号を削除し `outputs/vol1-special/` も削除済みだが、README.md の「📊 発行履歴」に「Vol.1特集」の行が残っている（README.md:177）。今回の変更で README.md が発行履歴の唯一の正本になったため、存在しない号がリストに載り続ける状態 | 未定 |
 | 6 | ニュースの対象期間の規定 | SKILL.md に、ニュースの対象期間（発行日から何日以内の発表を扱うか）と、イントロで「今週」を使う条件の規定がない。Vol.22 では約2か月前の発表が「今週のAI×DXニュース」に入っていた（残課題 #5 サイクルC で判明、work-log.md Phase 75）。Vol.27 では対象期間内に統計・制度型の新規発表が見つからず、前号 Vol.26 の期間中（9/15）に発表され Vol.26 で扱われなかった中小企業庁の制度を、編集責任者の判断で期間外の例外として採用した（work-log.md Phase 76） | 未定 |
 | 7 | 新号発行時の sitemap.xml 更新が手順にない | SKILL.md（Step 5・6）にも CLAUDE.md の「作業終了時の必須アクション」にも、sitemap.xml への新号URLの追加が含まれていない。Vol.27 では発行後に追加漏れが見つかり、別コミットで追加した（2026-09-28） | Vol.28 制作前 |
 | 8 | 手順書 weekly-newsletter-workflow.md の更新 | 正本との食い違い4点（Step 2「ツール紹介は2件あるか」／Step 7 の work-log 追記と CLAUDE.md の必須アクションの重複／Step 5 のコミットメッセージ例の形式／Step 2・4 の監査 Step 番号の不一致）と、Step 1 の声掛け（号数・日付・対象期間・2段階の進め方を指定する形）の反映。確認ポイントは品質チェックリストの書き写しをやめ、SKILL.md への参照にする | Vol.28 制作前 |
 | 9 | SKILL.md の記述の見直し | Step 6 に claude.ai 用の記述（保存先 /mnt/user-data/outputs/・present_files）が残っている | 未定 |
 | 10 | editor-comment-rules.md の未反映分の整理 | SKILL.md に未反映の2点と rules.md の古い記述1点。①編集者コメントの文体（です・ます調か、だ・である調か）の規定がない（Vol.1〜22 はです・ます調、Vol.23〜25 はだ・である調。Vol.26・27 は未確認）／②用語解説の「来週予告」確認ルールの「予告文は遡って削除しない」が、「予告文を書かない理由」の「予告の枠を残す」と表現がそろっていない／③editor-comment-rules.md の進捗欄の注記に「次の作業は Vol.21 の…是正」という古い記述が残っている | 未定 |
+| 11 | SKILL.md の Weeklyライブラリテンプレートに icon・apple-touch-icon の行がない | Step 5 のテンプレート `<head>` には `<link rel="icon">` と `<link rel="apple-touch-icon">` がないが、実ファイルのルート index.html にはある（Phase 0 で判明、work-log.md Phase 81）。テンプレートから再生成すると2行が欠落する | 未定 |
+| 12 | SKILL.md の manifest.json 設定値の start_url が実ファイルと食い違う | SKILL.md の「manifest.json の管理ルール」は `"start_url": "/weekly-newsletter/"`、実ファイルの manifest.json は `"start_url": "/"`（2026-10-13 に確認）。独自ドメイン（`/` 直下）で公開しているため実ファイルの値が実態に合う。SKILL.md は「変更しないこと」と書いているので、どちらを正とするか決めて揃える | 未定 |
 
 ---
 
