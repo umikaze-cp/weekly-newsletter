@@ -422,6 +422,7 @@ Vol.26〜は編集者コメントの締めで次号の内容を予告しない�
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://www.aidx-weekly.com/outputs/volXX/">
   <link rel="manifest" href="../../manifest.json">
   <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
@@ -632,6 +633,7 @@ Vol.26〜は編集者コメントの締めで次号の内容を予告しない�
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://www.aidx-weekly.com/">
   <title>AI×DX Weekly</title>
   <link rel="manifest" href="manifest.json">
   <style>
@@ -1427,6 +1429,15 @@ Phase 16 で全Vol号から削除した。
 
 **末尾**: 「📚 Weeklyライブラリへ」(末尾の「→」は不要、Phase 13で削除)
 
+### canonical を入れる理由（2026年10月確立）
+
+- 2026-10-05 に Search Console が `/index.html` を「重複・正規ページ未選択」と判定した
+- 同じHTMLが `/` と `/index.html`（各号も `/outputs/volN/` と `/outputs/volN/index.html`）の2つのURLで届くため、
+  `<link rel="canonical">` で正規URLを明示する
+- 正規URLは sitemap.xml の `<loc>` と一致させる（食い違うと Google に矛盾した指示を出すことになる）
+  - ルートは `https://www.aidx-weekly.com/`、各号は `https://www.aidx-weekly.com/outputs/volN/`
+- 内部リンク（`../../index.html` 等）は変更しない。canonical で足りるため
+
 ## manifest.json の管理ルール
 
 プロジェクトルート（`index.html` と同じ階層）に `manifest.json` を1つ配置する。
@@ -1533,6 +1544,10 @@ HTMLを出力する前に、以下を確認する：
       （割付設計・集計除外層・因果を否定する注記に特に注意）
 - [ ] **【重複】** 用語解説の用語が既出用語台帳（Step 2 セクション3参照）にないか確認したか
 - [ ] Weeklyライブラリページに新号エントリが追加されているか
+- [ ] **【canonical】** `<link rel="canonical">` の href が sitemap.xml の
+      当該号の `<loc>` と完全一致しているか
+      （`https://www.aidx-weekly.com/outputs/volN/`。N は号数でゼロ埋めしない。
+      テンプレートのプレースホルダ `volXX` が残っていないこと）
 - [ ] レスポンシブ用のclass属性（content-cell, card-cell, section-heading, body-text, source-link）が全要素に付与されているか
 - [ ] **【見出し】** 4つのh2が正式名・共通スタイル・`class="section-heading"`と一致しているか
       （Step 2冒頭の「セクション見出しの仕様」参照）
