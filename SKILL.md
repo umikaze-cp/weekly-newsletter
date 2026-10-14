@@ -625,6 +625,25 @@ Vol.26〜は編集者コメントの締めで次号の内容を予告しない�
 
 3. ニュースレターHTML本体と一緒にWeeklyライブラリページも出力する
 
+**sitemap.xml の更新ルール：**
+1. 新号の `<url>` を、`contact.html` の `<url>` の直後（号の URL 群の先頭）に追加する
+2. 書式：
+
+```xml
+  <url>
+    <loc>https://www.aidx-weekly.com/outputs/volN/</loc>
+    <lastmod>YYYY-MM-DD</lastmod>
+  </url>
+```
+
+   - `<loc>`：N はゼロ埋めしない。canonical の href と完全一致させる
+   - `<lastmod>`：その号の発行日
+3. トップページ（`https://www.aidx-weekly.com/`）の `<lastmod>` も、同じ発行日に更新する
+   （ライブラリページに新号へのリンクを追加したため）
+4. 過去号の本文・見出し・リンクを変更した場合は、その号の `<lastmod>` を変更日に更新する。
+   `<head>` の変更（canonical 等）や見た目だけの調整は対象外。
+   2026-10-14 以前の是正分は遡及しない
+
 **Weeklyライブラリページのテンプレート：** 初回作成時は以下の構造で生成する。
 
 ```html
@@ -696,6 +715,7 @@ Vol.26〜は編集者コメントの締めで次号の内容を予告しない�
 **出力ファイル：**
 - ニュースレター本体: `outputs/volX/index.html`（GitHub Pages用のディレクトリ構造）
 - Weeklyライブラリページ: `index.html`（新号エントリ追加済み）
+- sitemap.xml（新号の URL 追加・トップページの lastmod 更新済み。Step 5 参照）
 
 保存後、`present_files` ツールでユーザーに提示する。
 
@@ -1438,6 +1458,17 @@ Phase 16 で全Vol号から削除した。
   - ルートは `https://www.aidx-weekly.com/`、各号は `https://www.aidx-weekly.com/outputs/volN/`
 - 内部リンク（`../../index.html` 等）は変更しない。canonical で足りるため
 
+### sitemap.xml の更新を手順に入れる理由（2026年10月確立）
+
+- Vol.27 で sitemap.xml への追加漏れが発行後に見つかり、別コミットで後追いした（2026-09-28）。
+  Vol.28 は prompt.md の個別指示で対応したが、仕様としては未規定だった
+- 新号が sitemap.xml にないと、Google による新号の発見が遅れる。
+  canonical の href を照合する先（sitemap.xml の `<loc>`）も失われる
+- `<lastmod>` は「重要な更新」を反映させる。ライブラリへの新号リンクの追加（トップページ）や
+  過去号の本文修正はこれにあたる。実態とずれた `<lastmod>` は Google に使われなくなるおそれがある
+- 2026-10-14 以前の過去号の是正分に lastmod を遡及しないのは、どの号をいつ直したかの洗い出しに
+  時間がかかる一方、効果が小さいため。今後の変更から正確にする
+
 ## manifest.json の管理ルール
 
 プロジェクトルート（`index.html` と同じ階層）に `manifest.json` を1つ配置する。
@@ -1544,6 +1575,8 @@ HTMLを出力する前に、以下を確認する：
       （割付設計・集計除外層・因果を否定する注記に特に注意）
 - [ ] **【重複】** 用語解説の用語が既出用語台帳（Step 2 セクション3参照）にないか確認したか
 - [ ] Weeklyライブラリページに新号エントリが追加されているか
+- [ ] **【sitemap】** sitemap.xml に新号の `<url>` が追加され（位置・書式は Step 5 参照）、
+      トップページの `<lastmod>` が新号の発行日になっているか
 - [ ] **【canonical】** `<link rel="canonical">` の href が sitemap.xml の
       当該号の `<loc>` と完全一致しているか
       （`https://www.aidx-weekly.com/outputs/volN/`。N は号数でゼロ埋めしない。
