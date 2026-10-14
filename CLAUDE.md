@@ -77,7 +77,8 @@ CLAUDE.md は SKILL.md の内容を再記述しない。
 
 SKILL.md Step 1 に従いつつ、以下を追加で守る:
 
-1. **期間指定**: 必ず直近7日間に絞る（startPublishedDateを設定）
+1. **期間指定**: 検索期間は SKILL.md Step 2 セクション1「ニュースの対象期間」に合わせる
+   （通常は7日間。休刊明けの号は期間が延びる）。startPublishedDate を設定する
 2. **クエリの言語**: 日本語クエリと英語クエリを併用
    - 日本語: 中小企業視点（SKILL.md記載の例を踏襲）
    - 英語: グローバル1次ソース取得用（例: "AI tools small business 2026"）
