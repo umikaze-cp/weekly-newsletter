@@ -213,7 +213,7 @@ open outputs/volX/index.html
 **使用：Claude Code**
 
 ブラウザプレビューが終わったら、`docs/pre-publish-audit-prompt.md` の内容をそのまま Claude Code に貼り付けて実行する。
-監査の範囲（構造・出典・リンク疎通・注記と母数など）と GO / NO-GO の判定基準は、同ファイルが正本。
+監査の範囲（構造・出典・出典の日付・リンク疎通・注記と母数など）と GO / NO-GO の判定基準は、同ファイルが正本。
 
 ### 監査レポートの見方
 
