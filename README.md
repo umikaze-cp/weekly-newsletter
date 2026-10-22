@@ -163,24 +163,6 @@ weekly-newsletter/
 
 詳細は [weekly-newsletter-workflow.md](weekly-newsletter-workflow.md) を参照。
 
-```
-Step 0  準備・MCP確認（ターミナル版）
-  ↓
-Step 1  ニュースレター生成指示（ターミナル版 + Exa MCP）
-  ↓
-Step 2  生成物の確認・修正（拡張機能版）
-  ↓
-Step 3  ブラウザプレビュー（手動）
-  ↓
-Step 4  発行前構造監査（ターミナル版）
-  ↓
-Step 5  Git commit & push（Sourcetree）
-  ↓
-Step 6  GitHub Pages 公開確認（手動）
-  ↓
-Step 7  作業記録の更新（拡張機能版）
-```
-
 ## 📊 発行履歴
 
 | 号数 | 発行日 | テーマ |
