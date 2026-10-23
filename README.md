@@ -8,9 +8,9 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 
 **4セクション構成：**
 1. 📰 今週のAI×DXニュース TOP3
-2. 🛠️ おすすめツール・リソース紹介
+2. 🛠️ 今週のおすすめツール・リソース
 3. 📖 用語解説・学習コーナー
-4. 💬 編集者コメント・コラム
+4. 💬 編集者コメント
 
 ## 🌐 公開URL（GitHub Pages）
 
@@ -49,84 +49,37 @@ Web検索で最新のAI×DXニュースを収集し、HTMLニュースレター�
 
 ```
 weekly-newsletter/
-├── README.md                          ← このファイル
+├── README.md                          ← このファイル（プロジェクト概要・環境情報・発行履歴）
 ├── CLAUDE.md                          ← Claude Code司令塔
-├── SKILL.md                           ← Claudeスキル本体
-├── weekly-newsletter-workflow.md      ← 毎週月曜日の作業プロセス
-├── index.html                         ← Weeklyライブラリページ
-├── manifest.json                      ← PWA設定
-├── work-log.md                        ← 作業ログ・学習メモ
+├── SKILL.md                           ← 仕様の正本
+├── weekly-newsletter-workflow.md      ← 人間向けの週次作業手順書
+├── work-log.md                        ← 作業履歴
 ├── audit-final-report.md              ← 全号出典監査の最終レポート（Phase35）
+├── index.html                         ← Weeklyライブラリページ
+├── about.html / privacy.html / contact.html  ← 固定ページ
+├── manifest.json                      ← PWA設定
+├── robots.txt                         ← クローラ向け設定
+├── sitemap.xml                        ← 公開URLの一覧
+├── googlecb920f92e6823fa1.html        ← Search Console の所有権確認用（削除しない）
 ├── CNAME                              ← 独自ドメイン設定（www.aidx-weekly.com）
 ├── _config.yml                        ← GitHub Pages配信設定（運営用Markdown等を除外）
 ├── .cspell.json                       ← スペルチェック辞書設定
 ├── .gitignore
+├── .claude/
+│   └── settings.json                  ← Claude Code プロジェクト設定
 ├── images/
 │   ├── apple-touch-icon.png
 │   └── favicon.ico
 ├── evals/
 │   └── evals.json                     ← テストケース定義
 ├── docs/
-│   └── pre-publish-audit-prompt.md    ← 発行前構造監査プロンプト（Step 1〜8）
+│   ├── aidx-weekly-progress.md        ← 運営進捗表（現状・残課題）
+│   ├── pre-publish-audit-prompt.md    ← 発行前監査プロンプト（構造監査・出典監査）
+│   ├── editor-comment-rules.md        ← 過去号是正の判断基準（作業文書）
+│   ├── editor-comment-audit.md        ← 編集者コメント棚卸しの記録
+│   └── seo-metrics.md                 ← SEO・収益メトリクスの記録簿
 └── outputs/                           ← 生成したニュースレター
-    ├── vol1/
-    │   └── index.html                 ← Vol.1 創刊号
-    ├── vol2/
-    │   └── index.html                 ← Vol.2
-    ├── vol3/
-    │   └── index.html                 ← Vol.3
-    ├── vol4/
-    │   └── index.html                 ← Vol.4
-    ├── vol5/
-    │   └── index.html                 ← Vol.5
-    ├── vol6/
-    │   └── index.html                 ← Vol.6
-    ├── vol7/
-    │   └── index.html                 ← Vol.7
-    ├── vol8/
-    │   └── index.html                 ← Vol.8
-    ├── vol9/
-    │   └── index.html                 ← Vol.9
-    ├── vol10/
-    │   └── index.html                 ← Vol.10
-    ├── vol11/
-    │   └── index.html                 ← Vol.11
-    ├── vol12/
-    │   └── index.html                 ← Vol.12
-    ├── vol13/
-    │   └── index.html                 ← Vol.13
-    ├── vol14/
-    │   └── index.html                 ← Vol.14
-    ├── vol15/
-    │   └── index.html                 ← Vol.15
-    ├── vol16/
-    │   └── index.html                 ← Vol.16
-    ├── vol17/
-    │   └── index.html                 ← Vol.17
-    ├── vol18/
-    │   └── index.html                 ← Vol.18
-    ├── vol19/
-    │   └── index.html                 ← Vol.19
-    ├── vol20/
-    │   └── index.html                 ← Vol.20
-    ├── vol21/
-    │   └── index.html                 ← Vol.21
-    ├── vol22/
-    │   └── index.html                 ← Vol.22
-    ├── vol23/
-    │   └── index.html                 ← Vol.23
-    ├── vol24/
-    │   └── index.html                 ← Vol.24
-    ├── vol25/
-    │   └── index.html                 ← Vol.25
-    ├── vol26/
-    │   └── index.html                 ← Vol.26
-    ├── vol27/
-    │   └── index.html                 ← Vol.27
-    ├── vol28/
-    │   └── index.html                 ← Vol.28
-    └── vol29/
-        └── index.html                 ← Vol.29
+    └── volN/index.html                ← 各号（1号1ディレクトリ。号の一覧は「公開URL」「発行履歴」）
 ```
 
 ## 📱 レスポンシブ対応
@@ -142,7 +95,7 @@ weekly-newsletter/
 - **HTML**: テーブルレイアウト（メールクライアント互換）
 - **CSS**: メディアクエリによるレスポンシブ対応
 - **ホスティング**: GitHub Pages
-- **コンテンツ生成**: Claude Sonnet 5（Claude Code CLI v2.1.261）
+- **コンテンツ生成**: Claude（Claude Code CLI）
 - **Web検索**: Exa MCP Server（セマンティック検索 + 記事本文取得）
 - **バージョン管理**: Git（Sourcetree）
 
@@ -155,7 +108,7 @@ weekly-newsletter/
 | エディタ | Visual Studio Code |
 | Node.js | v24.15.0（LTS） |
 | npm | v11.12.1 |
-| Claude Code | v2.1.261（CLI版） |
+| Claude Code | CLI版 |
 | MCP | Exa MCP Server（exa-mcp-server via npx） |
 | Git GUI | Sourcetree |
 
@@ -168,7 +121,6 @@ weekly-newsletter/
 | 号数 | 発行日 | テーマ |
 |------|--------|--------|
 | Vol.1 | 2026/04/03 | 創刊号（大阪市×日立AIエージェント / AWS自律型エージェント / 補助金） |
-| Vol.1特集 | 2026/04/03 | 生成AIの業務活用（パナソニック44.8万時間削減） |
 | Vol.2 | 2026/04/06 | Japan DX Week春 / 関西DX戦略Next / 補助金申請準備 |
 | Vol.3 | 2026/04/13 | Microsoft 1.6兆円対日投資 / Gemma 4 / 補助金2026 |
 | Vol.4 | 2026/04/20 | デジタル化・AI導入補助金2026申請スタート / Adobe Firefly AI Assistant / 中小企業が2カ月で月40時間削減 |
