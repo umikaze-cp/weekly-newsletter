@@ -77,6 +77,7 @@ weekly-newsletter/
 │   ├── pre-publish-audit-prompt.md    ← 発行前監査プロンプト（構造監査・出典監査）
 │   ├── editor-comment-rules.md        ← 過去号是正の判断基準（作業文書）
 │   ├── editor-comment-audit.md        ← 編集者コメント棚卸しの記録
+│   ├── commit-hash-map.md             ← 履歴の書き換え前後のコミットハッシュ対応表
 │   └── seo-metrics.md                 ← SEO・収益メトリクスの記録簿
 └── outputs/                           ← 生成したニュースレター
     └── volN/index.html                ← 各号（1号1ディレクトリ。号の一覧は「公開URL」「発行履歴」）
