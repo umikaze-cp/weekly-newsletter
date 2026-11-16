@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://www.aidx-weekly.com/outputs/vol33/">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+  <title>AI×DX Weekly - Vol.33（2026年11月16日号）</title>
+  <style>
+    /* ======================
+       タブレット対応（681px〜840px）
+       iPad縦向き768px をカバー
+       ====================== */
+    @media only screen and (min-width: 681px) and (max-width: 840px) {
+      .email-container { width: 94% !important; max-width: 800px !important; }
+      .content-cell { padding-left: 28px !important; padding-right: 28px !important; }
+      .card-cell { padding: 18px 20px !important; }
+      .body-text { font-size: 15px !important; line-height: 1.8 !important; }
+      .header-title { font-size: 28px !important; }
+      .section-heading { font-size: 21px !important; }
+    }
+
+    /* ======================
+       スマートフォン対応（680px以下）
+       iPhone / Android をカバー
+       ====================== */
+    @media only screen and (max-width: 680px) {
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .header-title { font-size: 22px !important; }
+      .content-cell { padding-left: 16px !important; padding-right: 16px !important; }
+      .card-cell { padding: 14px 14px !important; }
+      .section-heading { font-size: 18px !important; }
+      .body-text { font-size: 14px !important; line-height: 1.8 !important; }
+      .source-link { display: inline-block !important; padding: 4px 0 !important; }
+      .library-link { font-size: 13px !important; }
+    }
+    .library-link { transform-origin: right center; }
+    .library-link:hover { transform: scale(1.2); }
+    .library-link:hover .library-emoji {
+      display: inline-block;
+      animation: book-wiggle 0.4s ease-in-out;
+    }
+    @keyframes book-wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+      75% { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family:system-ui,-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" style="padding:20px 10px;">
+        <!--[if mso]><table role="presentation" width="800" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" class="email-container" width="800" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:8px; overflow:hidden; max-width:800px; width:100%;">
+
+          <!-- ヘッダー -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:30px; text-align:center; color:#ffffff;">
+              <div style="display:inline-flex; align-items:center; gap:8px;">
+                <img src="../../images/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:6px; width:32px; height:32px;">
+                <h1 class="header-title" style="margin:0; font-size:26px; letter-spacing:1px;">AI×DX Weekly</h1>
+              </div>
+              <p style="margin:8px 0 0; font-size:14px; opacity:0.9;">Vol.33 ｜ 2026年11月16日号</p>
+              <p style="margin:12px 0 0; font-size:13px; opacity:0.75;">メールにも会議にも、AIが入ってくる週。</p>
+            </td>
+          </tr>
+
+          <!-- イントロ -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 8px;">
+              <p class="body-text" style="margin:0; font-size:15px; line-height:1.8; color:#374151;">
+                今号は、11月10日から12日に出た発表を3本選んだ。AWSは11月12日、日本のビジネスリーダー1,000名へのAI活用の調査結果を公表した。Googleは11月10日、Gmailの要約と下書きの機能を使える人の範囲を広げると発表した。Anthropicは11月12日、Google Meetの会議にClaudeが参加する「Claude Meetings」のベータ版を発表した。
+              </p>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:20px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+  <!-- 広告枠A（AdSense承認後にコードを挿入） -->
+  <tr>
+    <td class="content-cell ad-slot" data-ad-slot="a" style="padding:0 40px;">
+      <!-- AdSense code goes here -->
+    </td>
+  </tr>
+
+
+          <!-- ============================================ -->
+          <!-- ★ 配置順序の厳守ルール ★                      -->
+          <!-- 1. 📰 今週のニュース TOP3                    -->
+          <!-- 2. 🛠️ 今週のおすすめツール                   -->
+          <!-- 3. 📖 用語解説                              -->
+          <!-- 4. 💬 編集者コメント                        -->
+          <!-- 5. 📚 Weeklyライブラリへリンク（フッター直前）-->
+          <!-- 6. フッター                                  -->
+          <!-- ============================================ -->
+
+          <!-- ============================================ -->
+          <!-- 📰 今週のAI×DXニュース TOP3                 -->
+          <!-- ============================================ -->
+
+          <!-- Section 1 見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📰 今週のAI×DXニュース TOP3</h2>
+            </td>
+          </tr>
+
+          <!-- NEWS 01 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0f6ff; border:1px solid #bfdbfe; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 01</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">AWS、日本のビジネスリーダー1,000名への調査結果を公表――AIを導入している企業は54%（前年43%）、導入企業の60%は基礎的な活用が中心（AWSがStrand Partnersに委託）</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">AI Adoption Survey / Japan / Business Leaders</span></p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      AWSは2026年11月12日、日本企業のAI活用を調べた調査「2026年、日本のAIの未来を切り拓く」の結果を、日本語のプレスリリースで公表した。調査はAWSが調査会社のStrand Partnersに委託したもので、対象は、企業規模・業種・地域の構成を反映した日本のビジネスリーダー1,000名と、全国の構成を反映した一般市民1,000名である。このあとの企業に関する数字は、前者のビジネスリーダーの回答にあたる。調査レポートの付録によると、ここでのビジネスリーダーは創業者・CEO・役員クラスを指し、オンラインのパネルで集めた回答を、あとから重みづけして補正している。
+                    </p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      リリースによると、AIを導入していると答えた企業は54%で、前年の43%から上がった。導入企業のうち、最も変革的な段階に達した企業の割合は、全体で19%（前年13%）で、中小企業については17%と書かれている（スタートアップは34%、大企業は24%）。この段階は、調査レポートでは、高度なAIシステムの利用、複数のモデルの組み合わせ、自社専用のAIの構築、自律的に動くAIの導入などを指すと説明されている。一方、導入企業の60%は、公開されているチャットボットを日常の作業に使う、既製のAIを買うといった基礎的な活用や小さな効率化が中心で、前年の72%から下がった。中小企業の定義は、リリースにもレポートの付録にも書かれていない。
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      次世代のAI（自律的に動くエージェント型AIなど）については、導入の準備が「万全」または「非常にできている」と答えた企業が18%で、制約の最多はAI・デジタルスキルの不足の41%だった。正式かつ包括的なAI戦略を持つ企業は15%で、AI施策の投資対効果を測る自信がない、または測っていない企業は40%である。これらは日本のビジネスリーダー1,000名の回答に基づく数字で、中小企業だけを対象にした調査ではない。中小企業にとっては、導入しているかどうかより、自社の使い方がどの段階にあるかを見直す材料になると思う。
+                    </p>
+                    <p style="margin:0 0 4px;"><a href="https://press.aboutamazon.com/jp/2026/11/aws-research-finds-ai-adoption-accelerating-in-japan-with-a-narrowing-gap-between-advanced-and-basic-adopters" class="source-link" style="color:#2563eb; font-size:14px;">▶ 出典: AWS（Amazon）プレスリリース「AWS調査：日本のAI導入が加速 先進的な活用企業と基礎的な活用企業の差は縮小傾向に」（2026年11月12日）</a></p>
+                    <a href="https://www.unlockingaispotential.com/_files/ugd/c4ce6f_63b8b49300ed46949634eaa15ec6be74.pdf" class="source-link" style="color:#2563eb; font-size:14px;">▶ 補助出典: AWS委託調査レポート「Unlocking Japan’s AI Potential 2026」（ページに日付の記載なし、2026年11月16日に確認）</a>（英語）
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 02 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 02</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">Google、Gmailの「AI Overview」による要約と「Help me write」による下書き作成を、Google Workspaceの全顧客に拡大――18歳以上でGmailのスマート機能が有効な場合、11月10日から段階的に展開、既定でオン</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Gmail / Gemini / AI Overview / Help me write</span></p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      Googleは2026年11月10日、公式ブログ「Google Workspace Updates」で、GmailのGemini機能の一部について、使える対象を広げると発表した。対象になったのは、次の2つの機能である。1つは、スレッドが長くなったときに、要点とそこで交わされた返信を、スレッドの先頭にまとめて見せる「AI Overview」。もう1つは、短い指示を入力すると、メールの下書きを丸ごと書く、またはすでに書いた文章を直してくれる「Help me write」で、ブログは「non-personalized」と添えている。ブログによると、この2つはこれまで、個人向けアカウントと一部のWorkspaceのエディションに限られていた。
+                    </p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      対象は、ブログのAvailabilityの欄によると、すべてのGoogle Workspaceの顧客、Workspace Individualの契約者、個人のGoogleアカウントのユーザーで、いずれも18歳以上で、Gmailのスマート機能が有効な場合である。プラン名ごとの一覧は、ブログにない。展開は、Rapid Release・Scheduled Releaseのどちらのドメインでも11月10日に始まり、機能が見えるようになるまで最大15日かかる段階的なもので、発表の日に全員の画面に出るわけではない。既定でオンで、ユーザーはオフにでき、管理者もGmailのGemini機能を無効にできる。
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      日本語で使えるかは、Googleヘルプ「Supported languages for Google Workspace with Gemini」の英語版で確かめた。Gmailの項目に、AI Overviewの会話要約と、Help me writeの両方が載っており、どちらの対応言語にも日本語が含まれている。Help me writeについては、個人のGoogleアカウントでは米国でのみ使える、とも同じページに書かれている。このページには日付の記載がなく、確認したのは2026年11月16日である。中小企業にとっては、既定でオンの機能なので、使う・使わないを自社で決めたうえで、管理者の設定を確かめることになると思う。
+                    </p>
+                    <p style="margin:0 0 4px;"><a href="https://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html" class="source-link" style="color:#2563eb; font-size:14px;">▶ 出典: Google Workspace Updates「Expanding Gemini in Gmail to more Google Workspace users」（2026年11月10日）</a>（英語）</p>
+                    <a href="https://support.google.com/docs/answer/14925782?hl=en" class="source-link" style="color:#2563eb; font-size:14px;">▶ 補助出典: Google ヘルプ「Supported languages for Google Workspace with Gemini」（ページに日付の記載なし、2026年11月16日に確認）</a>（英語）
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- NEWS 03 -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p style="margin:0 0 8px; color:#6b7280; font-size:12px; font-weight:600; letter-spacing:0.5px;">NEWS 03</p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">Anthropic、Google Meetの会議にClaudeが参加する「Claude Meetings」のベータ版を展開開始――対象はTeam・Enterpriseプラン、対応する会議サービスはGoogle Meetのみ</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">Claude Meetings / Beta / Video Calls</span></p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      Anthropicは2026年11月12日（公式ページの表示）、「Claude Meetings」のベータ版を発表した。Claude Meetingsは、Google Meetの通話に、Claudeが参加者の一人として入る機能である。通話中の使い方は大きく3つある。1つめは質問で、声かチャットで呼びかけると、既定では文章で答える。2つめは作業で、ドキュメントやホワイトボードなどをその場で一緒につくり、招待された同僚が手を加えられる。3つめは記録で、議事のメモと行動項目をClaudeが書く。質問に答えるときは、利用者の許可を得て、接続済みのツールを使うこともできる。通話のあとは、これらが会議ごとのページにまとまる。
+                    </p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      対象は、Team・Enterpriseプランで展開が始まったベータ版である。Free・Pro・Maxは、公式ページにもヘルプにも、対象として挙がっていない。連携先はGoogle Meetのみで、ほかの会議サービスは「近日対応」とされ、名称や時期は示されていない。ベータの間は、ゼロデータ保持、HIPAA対応の構成、顧客管理の暗号鍵を使う組織など、一部の組織では使えない。Teamプランでは既定でオンで、管理者（オーナー）がオフにでき、Enterpriseプランでは管理者がオンにして初めて使える。
+                    </p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;">
+                      料金は、ベータの間、メモと文字起こし、接続ツールを使わない回答が、Team・Enterpriseのプランに含まれる。接続したツールを使うと、その利用量に数えられ、組織に料金がかかることがある。会議中につくったドキュメントとホワイトボードは、2027年2月10日まで無料で、それ以降の扱いは、一次情報に書かれていない。使うときの注意として、Claudeを追加する前に、通話の全員が文字起こしされることに同意しているかを確かめるよう、公式が求めている。保存されるのは文字起こし・要約・画面の説明で、音声は保存されない。
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      社外の人が参加する通話での既定は、記載が分かれている。発表記事は、社外の人が招待された通話にはClaudeは既定では参加せず、管理者が許可できると書く。一方、英語版ヘルプは、Teamプランでは社外のゲストがいる通話にも既定で参加でき、オーナーがオフにできると書いている。社外の人がいる会議で使う前に、自社の設定を確かめる必要がある。対応言語は、公式ページにも英語版ヘルプにも記載がなく、日本語の会議で使えるかは、これらの記載の範囲では確認できない。中小企業にとっては、Team以上の有料プランで、会議がGoogle Meetである会社だけが対象になるため、まず自社の契約と会議の使い方が条件に合うかを見ることになる。
+                    </p>
+                    <p style="margin:0 0 4px;"><a href="https://claude.com/resources/articles/claude-meetings" class="source-link" style="color:#2563eb; font-size:14px;">▶ 出典: Anthropic「Introducing Claude Meetings, now in beta」（2026年11月12日）</a>（英語）</p>
+                    <a href="https://support.claude.com/en/articles/18325154-use-claude-meetings" class="source-link" style="color:#2563eb; font-size:14px;">▶ 補助出典: Claude ヘルプセンター「Use Claude Meetings」（ページに日付の記載なし、2026年11月16日に確認）</a>（英語）
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+  <!-- 広告枠B（AdSense承認後にコードを挿入） -->
+  <tr>
+    <td class="content-cell ad-slot" data-ad-slot="b" style="padding:0 40px;">
+      <!-- AdSense code goes here -->
+    </td>
+  </tr>
+
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- 🛠️ 今週のおすすめツール・リソース            -->
+          <!-- ============================================ -->
+
+          <!-- Section 2 見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">🛠️ 今週のおすすめツール・リソース</h2>
+            </td>
+          </tr>
+
+          <!-- TOOL 01: PILOTシリーズ（S&amp;K Consultant） -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); padding:24px;">
+                    <p style="margin:0 0 10px;"><span style="background:#2563eb; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; letter-spacing:0.5px;">TOOL 01</span></p>
+                    <h3 style="margin:0 0 4px; font-size:17px; color:#1e3a5f;">PILOTシリーズ</h3>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.9em;">集客・広告・SNS・補助金をAIが手助けする4サービス</span></p>
+                    <p style="margin:0 0 12px;"><span style="color:#6b7280; font-size:0.85em;">AI Marketing Support / Subsidy Matching / SNS Automation</span></p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;">
+                      株式会社S&amp;K Consultantが2026年11月10日に正式リリースした、中小企業や店舗向けのAI業務支援サービス。検索とGoogleマップの対策の「Shukyaku Pilot」、Web広告の「Marke Pilot」、Instagram投稿の「SNS Pilot」、補助金・助成金の「Shinsei Pilot」の4つがあり、シリーズ共通のアカウント「PILOT ID」で使える。AIが用意した内容を外に出す前の扱いはサービスごとに違う。Shukyaku Pilotはサイトとマップへの反映を、Marke Pilotは広告の配信開始を、利用者が承認してから行う。SNS Pilotは、登録した写真とひとことをもとに、決めた時刻に自動で投稿する。Shinsei Pilotは、使える制度の診断と事業計画書の叩き台づくりを支援するが、申請の代行はせず、申請は利用者自身が行う。いずれも、検索順位・広告の成果・採択などを保証するものではないと、リリースは断っている。
+                    </p>
+                    <p class="body-text" style="margin:0 0 10px; font-size:15px; line-height:1.8; color:#374151;"><strong>こんな人におすすめ：</strong>専任の担当者を置かずに、集客・広告・SNS・補助金の確認を続けるのが難しい、中小企業や店舗の経営者・担当者</p>
+                    <p class="body-text" style="margin:0 0 6px; font-size:15px; line-height:1.8; color:#374151;"><strong>料金目安：</strong>単体の月額（リリースの記載、2026年11月10日）は、Shukyaku Pilotが9,800円〜（税別）、Marke Pilotが29,800円〜（税別）、SNS Pilotが2,980円〜（税込）、Shinsei Pilotが9,800円〜（税別）。組み合わせのスタートパック（Shukyaku Pilot ライト＋Marke Pilot ライト）は月額33,800円（税別）で、無料トライアルは付かない。Marke Pilotの広告費は月額に含まれない</p>
+                    <p class="body-text" style="margin:0 0 12px; font-size:15px; line-height:1.8; color:#374151;"><strong>日本語対応：</strong>あり（リリース、総合サイトとも日本語）</p>
+                    <p style="margin:0 0 4px;"><a href="https://pilotseries.jp/" class="source-link" style="color:#2563eb; font-size:14px;">▶ PILOTシリーズ の詳細はこちら（総合サイト）</a></p>
+                    <a href="https://prtimes.jp/main/html/rd/p/000000001.000194283.html" class="source-link" style="color:#2563eb; font-size:14px;">▶ 正式リリースのプレスリリース（PR TIMES、2026年11月10日）</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- 📖 用語解説・学習コーナー                    -->
+          <!-- ============================================ -->
+
+          <!-- Section 3 見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">📖 用語解説・学習コーナー</h2>
+            </td>
+          </tr>
+
+          <!-- 用語解説カード -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 16px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="card-cell" style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px; padding:24px;">
+                    <h3 style="margin:0 0 10px; font-size:18px; color:#1e3a5f;">既定値（デフォルト設定） <span style="color:#6b7280; font-size:0.85em; font-weight:400;">/ Default Setting</span></h3>
+                    <p style="margin:0 0 14px; font-size:14px; color:#7c3aed; font-weight:600;">一言でいうと：「利用者が何も変えなければ、そのまま適用される初めの設定」</p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      既定値とは、ソフトやサービスの提供側が、あらかじめ決めておく初期の設定のことである。利用者や管理者が変えない限り、その設定のまま動く。NEWS 02のGmailの機能は、既定でオンで、ユーザーも管理者もオフにできる。NEWS 03のClaude Meetingsは、Teamプランでは既定でオンで、Enterpriseプランでは管理者がオンにして初めて使える。同じ機能でも、提供側の設定とプランによって、初めからオンのこともあれば、管理者がオンにするまで使えないこともある。
+                    </p>
+                    <p class="body-text" style="margin:0 0 14px; font-size:15px; line-height:1.8; color:#374151;">
+                      <strong>ビジネスでの使いどころ：</strong>自社で使っているメールや会議のツールについて、AI機能の既定値がオンかオフかを、管理者の設定画面で一覧にして確かめる。オンのまま使う機能は社内に知らせ、使う予定のない機能は、止めるかどうかを決める。
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 区切り線 -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 0;">
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:0;">
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- 💬 編集者コメント・コラム                    -->
+          <!-- ============================================ -->
+
+          <!-- Section 4 見出し -->
+          <tr>
+            <td class="content-cell" style="padding:28px 40px 16px;">
+              <h2 class="section-heading" style="margin:0; font-size:21px; color:#1e3a5f; border-left:4px solid #2563eb; padding-left:12px;">💬 編集者コメント</h2>
+            </td>
+          </tr>
+
+          <!-- 編集者コメントカード -->
+          <tr>
+            <td class="content-cell" style="padding:0 40px 28px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="column-box-cell" style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:24px;">
+                    <p class="body-text" style="margin:0 0 16px; font-size:15px; line-height:1.8; color:#374151;">
+                      AIを使うかどうかは、誰が決めているのか。NEWS 01の調査（ビジネスリーダー1,000名）では、正式かつ包括的なAI戦略を持つとした企業は15%だった。NEWS 02のGmailの機能は、既定でオンで、ユーザーも管理者もオフにできる。NEWS 03のClaude Meetingsは、Teamプランでは既定でオンだが、参加者全員の同意の確認が求められている。まず、自社のメールと会議のツールで、AI機能が既定でオンのものを調べてみるとよいと思う。
+                    </p>
+                    <p style="margin:0; font-size:14px; color:#92400e;">📌 AIを使うかどうかを決める役は、会社の側にあります。次号は来週月曜にお届けします。</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- 📚 Weeklyライブラリへのリンク（編集者コメント直後・フッター直前） -->
+          <tr>
+            <td class="content-cell" style="padding:8px 40px 20px; text-align:right;">
+              <a href="../../index.html" class="library-link" style="color:#2563eb; text-decoration:none; font-size:16px; display:inline-block; transition:transform 0.2s;">
+                <span class="library-emoji" style="display:inline-block; transition:transform 0.3s;">📚</span> Weeklyライブラリへ
+              </a>
+            </td>
+          </tr>
+  <!-- 広告枠C（AdSense承認後にコードを挿入） -->
+  <tr>
+    <td class="content-cell ad-slot" data-ad-slot="c" style="padding:0 40px;">
+      <!-- AdSense code goes here -->
+    </td>
+  </tr>
+
+
+          <!-- フッター -->
+          <!-- ルール: 3行構成（タグライン／フッターナビ／著作権）で固定。Vol番号・日付・注意書きは含めない -->
+          <!-- bgcolor属性はOutlook等グラデーション非対応メーラー向けフォールバック -->
+          <tr>
+            <td bgcolor="#1e3a5f" style="background:#1e3a5f; background:linear-gradient(135deg,#1e3a5f,#2563eb); padding:24px 40px; text-align:center; color:#ffffff; font-size:13px;">
+              <p style="margin:0 0 4px;">AI×DX Weekly ｜ 中小企業のDX推進を応援するニュースレター</p>
+              <p style="margin:0 0 10px;">
+                <a href="../../index.html" style="color:#ffffff; text-decoration:underline;">バックナンバー一覧</a>
+                <span style="opacity:0.5;"> ｜ </span>
+                <a href="../../about.html" style="color:#ffffff; text-decoration:underline;">運営者情報</a>
+                <span style="opacity:0.5;"> ｜ </span>
+                <a href="../../privacy.html" style="color:#ffffff; text-decoration:underline;">プライバシーポリシー</a>
+                <span style="opacity:0.5;"> ｜ </span>
+                <a href="../../contact.html" style="color:#ffffff; text-decoration:underline;">お問い合わせ</a>
+              </p>
+              <p style="margin:0; opacity:0.7;">© 2026 AI×DX Weekly. All rights reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

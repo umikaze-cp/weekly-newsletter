@@ -7255,3 +7255,136 @@ git の操作は行っていない。
 - 日付のない製品ヘルプは、英語版と日本語版で記載が違うことがある。どの版を根拠にしたか、確認した日時とあわせて記録する
 - 「日本語で使えない」と書かず、「言語の一覧に記載がない」とページの記載の範囲で書く。一覧に載らない機能の扱いは、同じページの別の記載（英語のみ）で補う
 - 編集者コメントの冒頭の型（「〜するとき、何を確かめておけばよいのか」）が Vol.29 と同じになっていた。流用の検索は、束ね文の骨格だけでなく、問いの立て方でも行う
+
+
+## Phase 102: Vol.33 発行（2026年11月16日号）
+
+### 課題の整理
+
+SKILL.md テンプレート（直前の Vol.32 の構造）を起点に、対象期間（2026年11月10日〜11月16日）の AI×DX トレンドを反映した Vol.33 を生成するフェーズ。2段階（段階1：トピック収集→STOP／段階2：本文確定→出力）で進行した。段階1の報告は ~/Downloads/vol33-stage1.md、品質チェックの自己採点などは ~/Downloads/vol33-report.md。
+
+| # | 課題 | 状態 |
+|---|------|------|
+| ① | 事前確認：作業ツリーが clean、最新コミットが Vol.32 の発行関連（3b3aaee）、work-log.md の最後の Phase が 101 | ✅ 確認（今号の記録は Phase 102） |
+| ② | Web検索で対象期間（11/10〜11/16）のニュースを収集（統計・調査型／制度・政策型を先に検索） | ✅ 実施（Exa MCP、メインセッション内で逐次実行）。AI×DX と直結する統計・調査型／制度・政策型は期間内に見つからなかった |
+| ③ | 段階1の報告後、編集責任者が NEWS を候補A（Google：Gmail の Gemini 機能の拡大）・候補B（AWS 調査）・次点1（Claude Meetings）の3本に決定（企業発表型3件）。候補C（公取委）・次点2（OpenAI）・IPA 短信・期間外の例外は採用しない | ✅ 反映 |
+| ④ | NEWS の並び順を「ニュースカードのカラーパターン」に従って決める | ✅ 01 薄青（調査）、02 薄緑（新機能）、03 薄黄（ベータ版の新機能） |
+| ⑤ | 過去号の検索（段階1）。Gmail・Gemini・Workspace・Anthropic・AWS・OpenAI・KiAI・PILOT・公取委など | ✅ 同一の発表は未掲載。直近号と話題が近いのは Vol.32（Google フォームの Gemini 機能）。Anthropic は Vol.28（Claude for Google Workspace。別製品） |
+| ⑥ | SKILL.md テンプレート（Vol.32 の構造）を起点に Vol.33 を生成 | ✅ 完了（`<tr>` 29個・h2 4個・h3 5個・card-cell 7個で Vol.32 と一致） |
+| ⑦ | 出典ポリシー・出典の多様性ルールの遵守確認 | ✅ 企業発表型3件。NG ドメインへのリンクなし。統計・調査型／制度・政策型 0 件の理由は下に記録 |
+| ⑧ | TOOL は1件構成（PILOTシリーズ） | ✅ TOOL 02 の必須条件（無料プランまたは無料トライアルの明記）を満たす候補がなく、1件構成とした |
+| ⑨ | 品質チェックリスト全項目を自己採点（~/Downloads/vol33-report.md） | ✅ 実施 |
+| ⑩ | Weeklyライブラリ（index.html）・sitemap.xml・README.md・進捗表に Vol.33 を追加。既出ツール台帳・既出用語台帳に Vol.33 分を追記 | ✅ 完了 |
+
+### 編集責任者の指示で決めたこと（段階2）
+
+① 企業発表型3件にした理由：期間内に AI×DX と直結する統計・調査型／制度・政策型の一次情報がなかった（公取委の支払適正化調査は主題外、IPA AIセキュリティ短信は開発者・セキュリティ担当向けと明記）
+② NEWS 02（Google）は、Availability の原文どおり「すべての Google Workspace の顧客」などと書き、Business Starter を名指しで対象と書かない。発表日（11月10日）と段階的な展開（表示まで最大15日）を書き分け、既定でオンでユーザー・管理者がオフにできる点を入れる。Vol.32 の Google フォームの内容を今号の事実として書かない
+③ NEWS 01（AWS）は、発表日を11月12日とし、調査の対象（ビジネスリーダー1,000名・一般市民1,000名、Strand Partners に委託）を本文に書く。「17%」は「導入企業のうち、最も変革的な段階に達した企業の割合（中小企業）」として書き、「54%」（日本企業）と混ぜない。「198万社」は、リリース・調査レポートのどちらにも推計の扱い（算出方法）が確認できなかったため、使っていない
+④ NEWS 03（Claude Meetings）は、発表日を公式ページの表示（November 12, 2026）で確かめ、対象プラン（Team・Enterprise）・Google Meet のみ・ベータ・Free/Pro/Max が挙がっていないことを書く。料金は一次情報の範囲で書く。対応言語は英語版ヘルプで確かめ、日本語版にだけある記載は本文に使わない。Vol.28 の Claude for Google Workspace とは別製品
+⑤ 編集者コメントは Vol.32 の束ねの骨格・締めの一文に寄っていないかを【流用】の確認で見る
+⑥（報告の確認後の指示）編集者コメントは案オだけを採用し、221字で確定する。NEWS 02 第1段落・NEWS 03 第1段落は、一次情報の並びをなぞっていたため、変更案（A）（B）を1か所ずつ直して採用する（「メールの下書きを丸ごと書く」「Google Meetの通話に」）
+⑦ NEWS 03 の社外ゲストの記述は、発表記事とヘルプの記載が分かれていることを書き、社外の人がいる会議で使う前に自社の設定を確かめる必要がある形に直す。NEWS 02 の日本語対応の記述には、ヘルプの「For personal Google Accounts, this feature is only available in the US.」を根拠に、個人のGoogleアカウントでは Help me write が米国のみである旨を添える
+
+### 時点で変わる数値・日付のないページの確認記録（SKILL.md「時点で変わる数値の扱い」規定2、Phase 101 の記録の形に合わせる）
+
+確認はすべて 2026-11-16（発行日）に行った。
+
+| 確認日時 | URL | 記載（ページの記載のとおり） | 使った場所 |
+|---|---|---|---|
+| 2026-11-16 05:45:56 JST（curl、HTTP 200）。同日の Exa 取得でも同じ内容 | https://support.google.com/docs/answer/14925782?hl=en（英語版。ページに日付の記載なし） | Gmail の項に「AI Overview conversation summaries」（「You can get an AI Overview at the top of an email thread in:」English・French・German・Italian・Japanese・Korean・Portuguese・Spanish）と「Help me write」（「For eligible Google Workspace or Google AI plans, you can draft emails with Gemini in:」同じ8言語。「For personal Google Accounts, this feature is only available in the US.」）。どちらも Japanese が載っている | NEWS 02 本文（日本語が対応言語に含まれる旨、個人のGoogleアカウントでは Help me write が米国のみである旨） |
+| 2026-11-16 05:45:51 JST（curl、HTTP 200）。同日の Exa 取得でも同じ内容 | https://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html（ページに「November 10, 2026」） | Availability：「Available to all Google Workspace customers, Workspace Individual subscribers, and users with personal Google accounts who are 18 years or older and have smart features in Gmail enabled.」展開：「Rapid Release and Scheduled Release domains: Gradual rollout (up to 15 days for feature visibility) starting on November 10, 2026」。「End users: These features will be ON by default and can be disabled by the user.」「Admins: As an admin, you can choose to disable Gemini features in Gmail.」日付付きの一次情報のため規定1による | NEWS 02 本文 |
+| 2026-11-16 05:45:49 JST（curl、HTTP 200）。同日の Exa 取得でも同じ内容 | https://press.aboutamazon.com/jp/2026/11/aws-research-finds-ai-adoption-accelerating-in-japan-with-a-narrowing-gap-between-advanced-and-basic-adopters | 発表日の根拠（編集責任者の指示により11月12日とする）：ページに「Last updated: November 12, 2026」、ページの HTML の公開日時のメタデータに article:published_time「2026-11-12T01:40:01.448」（UTC。日本時間では11月12日10:40）、datePublished「November 12」、dateModified「2026-11-12T01:47:29」。「Last updated」だけでは発表日と断定できないため、公開日時のメタデータと合わせて判断した | NEWS 01 の発表日 |
+| 2026-11-16（Exa 取得）。同日 curl で HTTP 200 | https://www.unlockingaispotential.com/_files/ugd/c4ce6f_63b8b49300ed46949634eaa15ec6be74.pdf（英語。調査レポート本体。日付の記載なし） | 「19% of adopters have reached the most transformative stage of AI integration, using advanced AI systems, combining multiple models, creating custom AI systems, or deploying agentic or autonomous AI. This is up from 13% last year. Startups lead the way with 34% at this stage, contrasted by 17% of SMEs and 24% of large enterprises.」付録の Methodology：「business leaders are defined as founders, CEOs, or members of the C-suite」「online panels」「iterative proportional weight」。SME の定義の記載は見つからず。「198万社」の算出方法の記載は、取得した範囲では見つからず | NEWS 01 本文（最も変革的な段階の説明、調査の方法）。198万社は不使用 |
+| 2026-11-16 05:45:50 JST（curl、HTTP 200） | https://claude.com/resources/articles/claude-meetings（ページに「November 12, 2026」が2か所、メタデータの datePublished「2026-11-12」） | 「Claude Meetings is starting to roll out in beta on Team and Enterprise plans. Support for other video conferencing platforms is coming soon.」「During the beta, Claude’s notes and transcripts are free on Team and Enterprise plans. … The docs, whiteboards, and other artifacts Claude makes in a call are free through February 10, 2027.」対応言語の記載なし。日付付きの一次情報のため規定1による | NEWS 03 の発表日・本文 |
+| 2026-11-16 05:45:57 JST（curl、HTTP 200）。同日の Exa 取得でも同じ内容 | https://support.claude.com/en/articles/18325154-use-claude-meetings（英語版。ページに日付の記載なし。「Updated this week」とのみ） | 「On Team plans, Claude Meetings is on by default, and an owner can turn it off. On Enterprise plans, an owner turns it on for all or part of the organization.」「Before you add Claude or turn on auto-join, make sure everyone on your call is okay with being transcribed.」「It saves a transcript, summary, and screen descriptions, not audio.」「On Team plans, Claude can join calls with outside guests by default, and an owner can turn this off.」Pricing の節：「Notes, transcripts, and answers that don't use your connected tools are included on Team and Enterprise plans. Docs and whiteboards made in a meeting are free through February 10, 2027. Using your connected tools counts toward your own usage and can lead to charges for your organization.」表示される本文に対応言語の記載なし | NEWS 03 本文（既定・同意の確認・保存するもの・社外ゲスト・料金・対応言語の記載がない旨） |
+| 2026-11-16（Exa 取得） | https://support.claude.com/ja/articles/18325154-claude-meetings-%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B（日本語版） | 英語版と同じ内容で、日本語版にだけある記載は見つからなかった（対応言語の記載も両版にない）。本文には英語版を根拠にした | 本文では不使用（記録のみ） |
+
+NEWS 01 の数値（54%・43%・19%・13%・17%・34%・24%・60%・72%・18%・41%・15%・40%）はリリース（2026年11月12日）に、NEWS 02 の展開・対象は Google のブログ（2026年11月10日）に、NEWS 03 の発表・対象・料金は Anthropic の記事（2026年11月12日）に書かれたもの（規定1）。TOOL 01 の料金・機能は、PR TIMES のリリース（2026年11月10日。「本リリースに記載の価格・機能は2026年11月時点のもの」）に書かれたもの（規定1）。
+
+### 編集者コメントの字数（編集責任者の指示、2026-11-16）
+
+git の操作は行っていない。
+
+| # | 修正 | 内容 |
+|---|------|------|
+| 1 | 初稿 | 224字（空白・改行を除く数え方。空白を含めると228字）。目安の150〜200字を24字超えた |
+| 2 | 削る案の採用 | 5案のうち、案オ（NEWS 03 の文の「通話の参加者全員」→「参加者全員」）だけを採用した（3字減） |
+| 3 | 確定 | 221字（空白・改行を除く数え方。空白を含めると225字） |
+
+- 字数は目安の150〜200字を超えている。構成の要件（3本を束ねる問い、NEWS 1本につき1文、行動1つ）と、限定の語（調査の対象「ビジネスリーダー1,000名」、「正式かつ包括的な」、「Teamプランでは」、「既定でオン」、「求められている」）を残すための超過で、字数のみを理由に要件を削っていない。編集責任者が了承した
+- 検討して採らなかった案：ア（「（ビジネスリーダー1,000名）」を削る案。調査の対象範囲が落ち、【注記】の観点から残す）、イ（NEWS 02 の「既定でオンで、」を削る案）、ウ（「自社のメールと会議のツールで、」を「自社のツールで、」にする案。行動の対象が NEWS 02・03 とつながる部分のため残す）、エ（「正式かつ包括的な」を「正式な」にする案）、および問いの文（束ねの主語）を削る案（NEWS 3本すべてを含む主語が消えるため）
+
+### 統計・調査型／制度・政策型が 0 件だった理由と実行したクエリ
+
+期間内（11/10〜11/16）に、AI×DX と直結する統計・調査型／制度・政策型の一次情報がなかった。確認できたのは、公取委の支払適正化調査（11/10。製造委託等の支払の調査で AI×DX の主題外）と、IPA の AIセキュリティ短信 2026年11月号（11/13。開発者・セキュリティ担当向け）で、いずれも採用しなかった。AWS の調査（11/12）は、事業会社の発表のため企業発表型に分類した。実行したクエリは ~/Downloads/vol33-stage1.md の「実行したクエリ」に記載。
+
+### 修正内容
+
+| 種別 | ファイル |
+|---|---|
+| 新規作成 | `outputs/vol33/index.html` |
+| 更新 | `index.html`（Weeklyライブラリ先頭に Vol.33 エントリ追加） |
+| 更新 | `sitemap.xml`（Vol.33 の URL を追加、トップページの lastmod を 2026-11-16 に更新） |
+| 更新 | `SKILL.md`（既出ツール台帳に PILOTシリーズ、既出用語台帳に既定値（デフォルト設定）を追記） |
+| 更新 | `README.md`（発行履歴・公開URLに Vol.33 追加） |
+| 更新 | `docs/aidx-weekly-progress.md`（直近発行・次回発行・Phase 番号・最終更新・sitemap の URL 数・Vol.33 発行の記録） |
+
+### 対象ファイル
+
+| ファイル | 変更種別 |
+|---------|---------|
+| `outputs/vol33/index.html` | 新規作成 — Vol.33 ニュースレター本体 |
+| `index.html` | 更新 — Weeklyライブラリ先頭に Vol.33 エントリ追加 |
+| `sitemap.xml` | 更新 — Vol.33 の URL を追加（全37URL）、トップページの lastmod を更新 |
+| `SKILL.md` | 更新 — 既出ツール台帳・既出用語台帳に Vol.33 分を追記 |
+| `README.md` | 更新 — 発行履歴・公開URLに Vol.33 追加 |
+| `docs/aidx-weekly-progress.md` | 更新 — 直近発行・次回発行・Phase 番号・最終更新・sitemap の URL 数・Vol.33 発行 |
+| `work-log.md` | 本 Phase 記録 |
+
+### Vol.33 コンテンツ概要
+
+| セクション | 内容 |
+|-----------|------|
+| NEWS 01（薄青・企業発表型・調査） | AWS が日本のビジネスリーダー1,000名への調査結果を公表（2026年11月12日）。AI導入54%（前年43%）、導入企業の60%は基礎的な活用が中心。「17%」は導入企業のうち最も変革的な段階に達した企業の割合（中小企業）として記載。補助出典：調査レポート（日付なし・2026年11月16日確認・英語） |
+| NEWS 02（薄緑・企業発表型） | Google が Gmail の「AI Overview」要約と「Help me write」下書きの対象を拡大（2026年11月10日、Google Workspace Updates・英語）。補助出典：Google ヘルプ（日付なし・2026年11月16日確認・英語） |
+| NEWS 03（薄黄・企業発表型） | Anthropic が「Claude Meetings」のベータ版を発表（2026年11月12日、英語）。補助出典：Claude ヘルプ（日付なし・2026年11月16日確認・英語） |
+| TOOL 01 | PILOTシリーズ（S&K Consultant）— 集客・広告・SNS・補助金をAIが手助けする4サービス（1件構成） |
+| 用語解説 | 既定値（デフォルト設定） ／ Default Setting |
+| キャッチコピー | 「メールにも会議にも、AIが入ってくる週。」 |
+
+### 「❌ の5つの型」（Phase 99）との照合（TOOL 01）
+
+- (a) 数値の取り違え：料金は、リリースの表のサービス別の最低プランの月額（Shukyaku Pilot 9,800円〜（税別）、Marke Pilot 29,800円〜（税別）、SNS Pilot 2,980円〜（税込）、Shinsei Pilot 9,800円〜（税別））と、スタートパック33,800円（税別）。税別・税込はリリースの表記のまま書いた
+- (b) 一機能の限定を全体に広げる：「承認してから外に出る」は Shukyaku Pilot（サイト・マップへの反映）と Marke Pilot（広告の配信開始）に限った書き方とし、SNS Pilot は自動投稿、Shinsei Pilot は申請の代行をしないと、サービスごとに分けて書いた。「成果を保証しない」はリリースの注記のとおり
+- (c) 対象のすり替え：サイトへの自動書き込みが WordPress 対応であること、MEO に Google ビジネスプロフィール連携が要ることなどの条件は、本文を長くしないため書いていないが、「誰でも」「簡単」などの語は使っていない
+- (d) 程度語の追加：「簡単」「誰でも」「自動操縦」などの語を使っていない（総合サイトのタイトルの「自動操縦」は本文に使っていない）
+- (e) 語の取り違え：「無料トライアルは付かない」は、リリースの「パック商品には無料トライアル・返金保証は付きません」をスタートパックの説明に限って書いた（SNS Pilot の30日間返金保証は書いていない）
+
+### ドキュメント更新
+
+| ファイル | 更新内容 |
+|---------|---------|
+| `SKILL.md` | 既出ツール台帳・既出用語台帳に追記。プロジェクトのナレッジは手動同期のため、差し替えが必要 |
+| `docs/aidx-weekly-progress.md` | 上記のとおり。プロジェクトのナレッジは手動同期のため、差し替えが必要 |
+| `README.md` | 発行履歴・公開URLに追加 |
+| `CLAUDE.md` | 更新なし |
+
+### 確認できなかったこと・記録
+
+- 公開前のため、canonical の URL（https://www.aidx-weekly.com/outputs/vol33/）は HTTP 404（公開後に解消。2026-11-16 05:43:45 JST の curl）
+- curl で 403・429・タイムアウトになった外部リンクはなかった（Vol.33 の外部リンク8件（canonical を除く）は、2026-11-16 05:43 JST の curl でいずれも HTTP 200）
+- AWS の調査での「中小企業」の定義、17% の母数（導入した中小企業を母数にしているか）は、リリース・調査レポートの取得した範囲に明記がない。本文は、リリースの書き方のとおり「導入企業のうち最も変革的な段階に達した企業の割合は、中小企業については17%」とし、中小企業の定義が書かれていないことを本文に書いた
+- 「198万社」は、算出方法を確認できなかったため使っていない
+- Claude Meetings で、社外の参加者がいる通話の既定は、発表記事（社外の人が招待された場合は既定では参加せず、管理者が許可できる）と英語版ヘルプ（Team プランでは既定で参加でき、オーナーがオフにできる）で記載が分かれている。どちらが正かは未確認。本文には、記載が分かれていることと、社外の人がいる会議で使う前に自社の設定を確かめる必要があることを書いた
+- Claude Meetings の日本語の会議での利用は、公式ページにも英語版ヘルプにも対応言語の記載がなく、確認できていない
+
+### 🎓 今回の学び
+
+**タグ**: [Vol33][企業発表型3件][調査の対象範囲][対応言語][既定値][発表日の確認][Phase102]
+
+**学んだこと**:
+- 調査の数値は、リリースの見出しの数字（54%）と、区分別の内訳（17%）で母数が違う。「導入企業のうち」「日本企業」のように、数字ごとに対象を書き分けないと、中小企業の数字が全体の数字に読める
+- 「Last updated」だけの表示は発表日と断定できない。ページの HTML の公開日時のメタデータ（article:published_time）まで確かめて、確認日時とあわせて記録する
+- 同じ機能の記載が、公式ページとヘルプで食い違うことがある（Claude Meetings の社外ゲストの既定）。記載が分かれていることを書き、読者が自社の設定を確かめられる形にする
+- 3本とも「誰が・どの条件で使えるか」が話題になる号は、編集者コメントの骨格が前号に寄りやすい。問いの立て方（「誰が決めているのか」）と締めの文を、過去号の文面で検索して確かめる
