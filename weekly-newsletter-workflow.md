@@ -96,7 +96,7 @@ CLAUDE.md と SKILL.md に従って、AI×DX Weekly Vol.30 を制作してくだ
   - 出典の型（SKILL.md「出典の多様性ルール」の分類）
   - 選定理由（1〜2文）
   統計・調査型／制度・政策型が期間内に見つからない場合は、その旨と実行したクエリを書く。
-  報告は ~/Downloads/vol30-stage1.md に保存する。
+  報告は ~/Downloads/aidx-reports/vol30-stage1.md に保存する。
   私が「進めて」と返したら段階2へ進む。差し替えの指示があればそれに従う。
 
 段階2：SKILL.md の Step 2〜7 を行う。
@@ -110,7 +110,7 @@ CLAUDE.md と SKILL.md に従って、AI×DX Weekly Vol.30 を制作してくだ
 ■ 作業終了時
 - CLAUDE.md の「作業終了時の必須アクション」に従う。work-log.md への記録は、直近の Phase 番号の次の番号とする
 - 品質チェックリストの自己採点・NEWS ごとの一次情報 URL と発表日・変更ファイル一覧（git diff --stat）・推奨コミットメッセージを
-  ~/Downloads/vol30-report.md にまとめる
+  ~/Downloads/aidx-reports/vol30-report.md にまとめる
 - git の書き込み操作（add / commit / push など）は行わない
 ```
 
@@ -127,7 +127,7 @@ CLAUDE.md と SKILL.md に従って、AI×DX Weekly Vol.30 を制作してくだ
 
 ### 段階1：候補の確認（人の作業）
 
-Claude Code が STOP したら、`~/Downloads/vol30-stage1.md` を読んで次を決め、返信する。
+Claude Code が STOP したら、`~/Downloads/aidx-reports/vol30-stage1.md` を読んで次を決め、返信する。
 
 - NEWS の候補を差し替えるか
 - 期間外の例外を使うか（使うかどうかは人が決める。条件は SKILL.md Step 2 セクション1「ニュースの対象期間」の「期間外の例外」）
@@ -139,7 +139,7 @@ Claude Code が STOP したら、`~/Downloads/vol30-stage1.md` を読んで次�
 
 SKILL.md の Step 2〜7 と、CLAUDE.md の「作業終了時の必須アクション」まで進む。
 work-log.md・README.md・進捗表（docs/aidx-weekly-progress.md）の更新も段階2に含まれる。
-何を作ったか・何を変更したかは `~/Downloads/vol30-report.md` に出る。
+何を作ったか・何を変更したかは `~/Downloads/aidx-reports/vol30-report.md` に出る。
 
 ---
 
@@ -152,7 +152,7 @@ VSCodeのエクスプローラーで `outputs/volX/index.html` を開く。
 ### 確認ポイント
 
 チェック項目の正本は SKILL.md の「品質チェックリスト」。Claude Code が段階2の終わりに自己採点した
-`~/Downloads/volX-report.md` を読み、次を確認する。
+`~/Downloads/aidx-reports/volX-report.md` を読み、次を確認する。
 
 - 自己採点の結果と【対象期間】の発表日一覧を読む。✅ の項目は、気になるものを抜き取って本文と照らす
 - `prompt.md` で指定した内容（特集テーマ・除外トピック・対象期間）が反映されているか
@@ -236,7 +236,7 @@ weekly-newsletter リポジトリを開くと、変更されたファイルが�
 
 ### 5-2. 変更内容の差分を確認
 
-Claude Code が段階2の終わりに出した変更ファイル一覧（`~/Downloads/volX-report.md`）と、
+Claude Code が段階2の終わりに出した変更ファイル一覧（`~/Downloads/aidx-reports/volX-report.md`）と、
 Sourcetree の「作業ツリーのファイル」が一致しているか確認する。
 差分（diff）を見て、意図しない変更がないかチェックする。
 
